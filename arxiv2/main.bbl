@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+
+\bibitem{albert2025randlora}
+Paul Albert, Frederic~Z. Zhang, Hemanth Saratchandran, Cristian
+  Rodriguez-Opazo, Anton van~den Hengel, and Ehsan Abbasnejad.
+\newblock {RandLoRA}: Full-rank parameter-efficient fine-tuning of large
+  models.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2025.
+
+\bibitem{balazy2024loraxs}
+Klaudia Ba{\l}azy, Mohammadreza Banaei, Karl Aberer, and Jacek Tabor.
+\newblock {LoRA-XS}: Low-rank adaptation with extremely small number of
+  parameters.
+\newblock {\em arXiv preprint arXiv:2405.17604}, 2024.
+
+\bibitem{charakorn2025texttolora}
+Rujikorn Charakorn, Edoardo Cetin, Yujin Tang, and Robert~T. Lange.
+\newblock Text-to-{LoRA}: Instant transformer adaption.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2025.
+
+\bibitem{huang2024lorahub}
+Chengsong Huang, Qian Liu, Bill~Yuchen Lin, Tianyu Pang, Chao Du, and Min Lin.
+\newblock {LoraHub}: Efficient cross-task generalization via dynamic {LoRA}
+  composition.
+\newblock In {\em First Conference on Language Modeling (COLM)}, 2024.
+
+\bibitem{koohpayegani2024nola}
+Soroush~Abbasi Koohpayegani, K~L Navaneet, Parsa Nooralinejad, Soheil Kolouri,
+  and Hamed Pirsiavash.
+\newblock {NOLA}: Compressing {LoRA} using linear combination of random basis.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2024.
+
+\bibitem{kopiczko2024vera}
+Dawid~J. Kopiczko, Tijmen Blankevoort, and Yuki~M. Asano.
+\newblock {VeRA}: Vector-based random matrix adaptation.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2024.
+
+\bibitem{li2025toplora}
+Shiwei Li, Xiandi Luo, Haozhao Wang, Xing Tang, Ziqiang Cui, Dugang Liu, Yuhua
+  Li, Xiuqiang He, and Ruixuan Li.
+\newblock Beyond higher rank: Token-wise input-output projections for efficient
+  low-rank adaptation.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2025.
+
+\bibitem{li2024vblora}
+Yang Li, Shaobo Han, and Shihao Ji.
+\newblock {VB-LoRA}: Extreme parameter efficient fine-tuning with vector banks.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2024.
+
+\bibitem{nooralinejad2023pranc}
+Parsa Nooralinejad, Ali Abbasi, Soroush~Abbasi Koohpayegani, Kossar~Pourahmadi
+  Meibodi, Rana Muhammad~Shahroz Khan, Soheil Kolouri, and Hamed Pirsiavash.
+\newblock {PRANC}: Pseudo {RAndom} networks for compacting deep models.
+\newblock In {\em International Conference on Computer Vision (ICCV)}, 2023.
+
+\bibitem{penov2026note}
+Franci Penov.
+\newblock Conditional {LoRA} bridges at {230M}: {What} replicates, what
+  softens, and what inverts, 2026.
+\newblock Research note. \url{https://github.com/kortexa-ai/legolm.paper}.
+
+\bibitem{penov2026bridges}
+Franci Penov.
+\newblock Conditional {LoRA} bridges for modular sensor adaptation of frozen
+  small language models, 2026.
+\newblock Preprint. \url{https://github.com/kortexa-ai/legolm.paper}.
+
+\bibitem{phang2022hypertuning}
+Jason Phang, Yi~Mao, Pengcheng He, and Weizhu Chen.
+\newblock {HyperTuning}: Toward adapting large language models without
+  back-propagation.
+\newblock In {\em International Conference on Machine Learning}, 2023.
+\newblock arXiv:2211.12485.
+
+\bibitem{renduchintala2024tiedlora}
+Adithya Renduchintala, Tugrul Konuk, and Oleksii Kuchaiev.
+\newblock Tied-{LoRA}: Enhancing parameter efficiency of {LoRA} with weight
+  tying.
+\newblock In {\em Proceedings of NAACL-HLT}, 2024.
+
+\bibitem{tian2024hydralora}
+Chunlin Tian, Zhan Shi, Zhijiang Guo, Li~Li, and Chengzhong Xu.
+\newblock {HydraLoRA}: An asymmetric {LoRA} architecture for efficient
+  fine-tuning.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2024.
+
+\bibitem{wu2024mole}
+Xun Wu, Shaohan Huang, and Furu Wei.
+\newblock Mixture of {LoRA} experts.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2024.
+
+\end{thebibliography}
