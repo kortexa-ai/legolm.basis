@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{aghajanyan2021intrinsic}
+Armen Aghajanyan, Sonal Gupta, and Luke Zettlemoyer.
+\newblock Intrinsic dimensionality explains the effectiveness of language model
+  fine-tuning.
+\newblock In {\em Proceedings of the 59th Annual Meeting of the Association for
+  Computational Linguistics}, pages 7319--7328, 2021.
+
 \bibitem{albert2025randlora}
 Paul Albert, Frederic~Z. Zhang, Hemanth Saratchandran, Cristian
   Rodriguez-Opazo, Anton van~den Hengel, and Ehsan Abbasnejad.
@@ -37,6 +44,11 @@ Dawid~J. Kopiczko, Tijmen Blankevoort, and Yuki~M. Asano.
 \newblock {VeRA}: Vector-based random matrix adaptation.
 \newblock In {\em International Conference on Learning Representations (ICLR)},
   2024.
+
+\bibitem{li2018intrinsic}
+Chunyuan Li, Heerad Farkhoor, Rosanne Liu, and Jason Yosinski.
+\newblock Measuring the intrinsic dimension of objective landscapes.
+\newblock In {\em International Conference on Learning Representations}, 2018.
 
 \bibitem{li2025toplora}
 Shiwei Li, Xiandi Luo, Haozhao Wang, Xing Tang, Ziqiang Cui, Dugang Liu, Yuhua

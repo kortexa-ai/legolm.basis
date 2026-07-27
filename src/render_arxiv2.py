@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import math
 import shutil
 import subprocess
 from pathlib import Path
-from typing import Any
+from typing import Any, Sequence
 
 from .render_arxiv import REPO_ROOT, copy_summary, fmt, load_summary, r, stats
 
@@ -36,6 +37,68 @@ def stask(sweep: dict[str, Any], name: str, condition: str = "true", field: str 
 
 def task_std(payload: dict[str, Any], modality: str, condition: str = "true", field: str = "rank1") -> float:
     return float(r(payload, f"task-{modality}")["results"][condition][field])
+
+
+SEEDS = ("42", "1042", "2042", "3042", "4042")
+
+
+def seeded_name(base: str, seed: str) -> str:
+    """Sweep convention: seed 42 is the default and carries no suffix."""
+    return base if seed == "42" else f"{base}-seed{seed}"
+
+
+def seed_values(
+    sweep: dict[str, Any],
+    base: str,
+    seeds: Sequence[str] = SEEDS,
+    condition: str = "true",
+    field: str = "rank1",
+) -> list[float]:
+    """Every seed of one run that is present in the artifact, in seed order."""
+    values = []
+    for seed in seeds:
+        try:
+            values.append(stask(sweep, seeded_name(base, seed), condition, field))
+        except KeyError:
+            continue
+    return values
+
+
+def mean_of(values: Sequence[float]) -> float:
+    return sum(values) / len(values)
+
+
+def stdev_of(values: Sequence[float]) -> float:
+    if len(values) < 2:
+        return 0.0
+    mu = mean_of(values)
+    return math.sqrt(sum((v - mu) ** 2 for v in values) / (len(values) - 1))
+
+
+def span_table(sweep: dict[str, Any], dense: dict[str, Any]) -> str:
+    """Frozen-basis conditioning against k, at both task complexities.
+
+    The published paper bracketed a threshold between two measured points per
+    task. These rows map it, which is why the manuscript now describes a ramp.
+    """
+    rows = []
+    for k in (16, 32, 48, 64, 96, 128, 256):
+        imu = seed_values(sweep, f"task-imu-basis-{k}-blr0")
+        audio = seed_values(sweep, f"task-audio-basis-{k}-s1200-blr0")
+        if not imu and not audio:
+            continue
+
+        def cell(values: Sequence[float], places: int) -> str:
+            if not values:
+                return "--"
+            if len(values) == 1:
+                return fmt(values[0], places)
+            return rf"{fmt(mean_of(values), places)} {{\footnotesize ($n{{=}}{len(values)}$)}}"
+
+        # Audio chance is 0.02, so two decimals collapse the low end of the
+        # ramp into a column of identical 0.03 cells.
+        rows.append(rf"{k} & {cell(imu, 2)} & {cell(audio, 3)} \\")
+    return "\n".join(rows)
 
 
 def bridge_params(sweep: dict[str, Any], k: int) -> int:
@@ -167,6 +230,13 @@ def write_tex(sweep: dict[str, Any], dense: dict[str, Any], scaling: dict[str, A
     dense_repro_imu = float(r(dense, "repro-imu")["mean_improvement"])
     imu_dense_mean = (task_std(dense, "imu") + stask(sweep, "task-imu-dense-seed1042") + stask(sweep, "task-imu-dense-seed2042")) / 3
     imu_b16_mean = (stask(sweep, "task-imu-basis-16") + stask(sweep, "task-imu-basis-16-seed1042") + stask(sweep, "task-imu-basis-16-seed2042")) / 3
+    # Five-seed headline rows. The dense seed-42 IMU probe lives in the dense
+    # reference suite rather than the sweep, so it is prepended by hand.
+    dense_seeds = [task_std(dense, "imu")] + seed_values(sweep, "task-imu-dense", SEEDS[1:])
+    b16_seeds = seed_values(sweep, "task-imu-basis-16")
+    dense_seed_mean = mean_of(dense_seeds)
+    b16_seed_mean = mean_of(b16_seeds)
+    span_rows = span_table(sweep, dense)
     frozen_2400_mean = (
         stask(sweep, "task-audio-basis-256-s2400-blr0")
         + stask(sweep, "task-audio-basis-256-s2400-blr0-seed1042")
@@ -208,17 +278,17 @@ def write_tex(sweep: dict[str, Any], dense: dict[str, Any], scaling: dict[str, A
 \maketitle
 
 \begin{{abstract}}
-Conditional LoRA bridges condition a frozen language model on an external sensor stream by generating per-input low-rank weight updates, but the generating hypernetwork is dominated by one dense output layer that scales with the adapted model. We reparameterize that output as $k$ coefficients over a learned basis of LoRA directions and characterize the design space on a pretrained 230M-parameter model with capacity-matched controls, task-aligned probes, and weight-space diversity probes. Two regimes emerge. With a small \emph{{trained}} basis ($k{{=}}16$; {dense_params / p16:.0f}$\times$ fewer parameters), the bridge matches the dense hypernetwork's language-modeling gain and its six-way task conditioning, and the diversity--quality tradeoff dissolves: cross-input cosine of generated weights falls from {fmt(scos(sweep, 'diversity-imu-l0.00-basis-16'), 2)} to {fmt(b16_cos20, 2)} with no loss of language-modeling improvement, where the dense bridge pays for every increment. With a large \emph{{frozen}} basis ($k{{=}}256$, reconstructible from a random seed), only {fro256:,} parameters ({fro256 / dense_params * 100:.2f}\% of dense) train, and the bridge reaches the dense model's hard-task conditioning at roughly twice the training steps. At the standard budget that step-for-parameter trade applies to every basis size we tested on the fifty-way task. A span threshold separates the regimes, and it scales with task complexity: a frozen random subspace of 64 directions supports six-way IMU conditioning but is at chance on fifty-way audio, where 256 directions succeed. We also report what fails: accelerating basis training destabilizes it; training the basis above the span threshold is mildly harmful; and composing bridges by coefficient averaging inherits the sub-additivity of weight averaging. The obstacle is the merge operation, not the representation.
+Conditional LoRA bridges condition a frozen language model on an external sensor stream by generating per-input low-rank weight updates, but the generating hypernetwork is dominated by one dense output layer that scales with the adapted model. We reparameterize that output as $k$ coefficients over a learned basis of LoRA directions and characterize the design space on a pretrained 230M-parameter model with capacity-matched controls, task-aligned probes, and weight-space diversity probes. Two regimes emerge. With a small \emph{{trained}} basis ($k{{=}}16$; {dense_params / p16:.0f}$\times$ fewer parameters), the bridge matches the dense hypernetwork's language-modeling gain and its six-way task conditioning, and the diversity--quality tradeoff dissolves: cross-input cosine of generated weights falls from {fmt(scos(sweep, 'diversity-imu-l0.00-basis-16'), 2)} to {fmt(b16_cos20, 2)} with no loss of language-modeling improvement, where the dense bridge pays for every increment. With a large \emph{{frozen}} basis ($k{{=}}256$, reconstructible from a random seed), only {fro256:,} parameters ({fro256 / dense_params * 100:.2f}\% of dense) train, and the bridge reaches the dense model's hard-task conditioning at roughly twice the training steps. At the standard budget that step-for-parameter trade applies to every basis size we tested on the fifty-way task. Mapping frozen-basis conditioning across five widths per task replaces the threshold we first reported with a ramp: conditioning rises monotonically and gradually with $k$, and the two tasks' ramps are offset rather than sharing a boundary. A frozen subspace of 48 directions already carries six-way IMU conditioning while the fifty-way audio probe is still at chance, and audio does not lift until 96. We also report what fails: accelerating basis training destabilizes it; training the basis at large $k$ is mildly harmful; and composing bridges by coefficient averaging inherits the sub-additivity of weight averaging. The obstacle is the merge operation, not the representation.
 \end{{abstract}}
 
 \section{{Introduction}}
 A conditional LoRA bridge \cite{{penov2026bridges}} maps features from a frozen sensor encoder to per-input Low-Rank Adaptation (LoRA) parameters injected into a frozen language model, giving the model an ambient, token-free awareness of an external signal. The original study established an evaluation discipline (language-modeling metrics cannot certify conditioning; capacity-matched controls and task-aligned probes can) and named its scaling bottleneck: the bridge's final linear layer emits the full flattened LoRA vector, so its parameter count grows with the adapted model. On the 230M-parameter model used here, the dense bridge has {dense_params / 1e6:.0f}M parameters against a {lora_dim:,}-dimensional LoRA vector \cite{{penov2026note}}.
 
-This paper attacks that bottleneck by construction. The bridge's output layer is replaced by a coefficient head: the hypernetwork emits $k$ coefficients $c$, and the generated weights are $w = c \cdot B$ for a $k \times D$ basis $B$ of LoRA directions. Compression is trivial by construction; the cost is not. That cost has a structure: a \emph{{span threshold}} in $k$, scaling with task complexity, that separates two operating regimes with qualitatively different economics. Contributions:
+This paper attacks that bottleneck by construction. The bridge's output layer is replaced by a coefficient head: the hypernetwork emits $k$ coefficients $c$, and the generated weights are $w = c \cdot B$ for a $k \times D$ basis $B$ of LoRA directions. Compression is trivial by construction; the cost is not. That cost has a structure: conditioning is a monotone \emph{{span ramp}} in $k$ whose position scales with task complexity, and it separates two operating regimes with qualitatively different economics. Contributions:
 \begin{{itemize}}
   \item \textbf{{A trained-basis regime}} ($k$ small): {dense_params / p16:.0f}$\times$ fewer bridge parameters with language-modeling gains slightly above dense ({fmt(b16_mean, sign=True)} vs {fmt(dense_repro_imu, sign=True)} on IMU, three seeds each) and six-way task conditioning at parity ({fmt(imu_b16_mean, 2)} vs {fmt(imu_dense_mean, 2)} mean rank-1); on the fifty-way task, small trained bases share the step-for-parameter trade quantified below. In this regime the diversity--quality tradeoff reported for dense bridges dissolves.
   \item \textbf{{A frozen-basis regime}} ($k$ large): with the basis frozen at its random orthonormal initialization (reconstructible from an RNG seed, so never stored), only the coefficient head trains ({fro256:,} parameters, {fro256 / dense_params * 100:.2f}\% of dense), reaching dense-level conditioning on a fifty-way task at roughly $2\times$ the steps.
-  \item \textbf{{The span threshold}} separating them, measured at two task complexities, plus three informative negatives: faster basis learning rates destabilize training, basis training above the threshold is mildly harmful, and coefficient-space composition inherits weight-space sub-additivity exactly.
+  \item \textbf{{The span ramp}} separating them, mapped at five widths on each of two task complexities, plus three informative negatives: faster basis learning rates destabilize training, basis training at large $k$ is mildly harmful, and coefficient-space composition inherits weight-space sub-additivity exactly.
 \end{{itemize}}
 All experiments use the published bridge harness and its controls unchanged \cite{{penov2026bridges,penov2026note}}; the reparameterization is the only manipulated variable.
 
@@ -265,7 +335,7 @@ Bridge & Params & \% dense & $\Delta$BPB & Constant & Cross-cos \\
 \end{{figure}}
 
 \subsection{{Task conditioning: parity for trained bases}}
-Table~\ref{{tab:imutask}} reports the six-way IMU probe. The trained $k{{=}}16$ bridge averages {fmt(imu_b16_mean, 2)} rank-1 over three seeds against the dense bridge's {fmt(imu_dense_mean, 2)}; every control (no-bridge, shuffled, random features) sits at chance in every run. Seed spread is wide for both (dense {fmt(task_std(dense, 'imu'), 2)}--{fmt(stask(sweep, 'task-imu-dense-seed2042'), 2)}; basis-16 {fmt(stask(sweep, 'task-imu-basis-16-seed2042'), 2)}--{fmt(stask(sweep, 'task-imu-basis-16'), 2)}), and single-seed values for $k{{=}}64$ and $k{{=}}256$ fall inside it: we detect no systematic dependence of easy-task conditioning on $k$ for trained bases. The fifty-way audio probe separates the parameterizations more sharply at the standard budget: trained bases reach {fmt(stask(sweep, "task-audio-basis-16"), 2)} ($k{{=}}16$), {fmt(stask(sweep, "task-audio-basis-64"), 2)} ($k{{=}}64$), and {fmt(stask(sweep, "task-audio-basis-256"), 2)} ($k{{=}}256$) against the dense bridge's {fmt(task_std(dense, "audio"), 2)}: well above chance, well below dense. Section~\ref{{sec:span}} shows this gap closing with training budget for $k{{=}}256$; we did not budget-extend the smaller $k$.
+Table~\ref{{tab:imutask}} reports the six-way IMU probe over five seeds per parameterization. The trained $k{{=}}16$ bridge averages {fmt(b16_seed_mean, 2)} rank-1 against the dense bridge's {fmt(dense_seed_mean, 2)}; every control (no-bridge, shuffled, random features) sits at chance in every run. The seed spread is large enough to swallow that difference: dense runs from {fmt(min(dense_seeds), 2)} to {fmt(max(dense_seeds), 2)} (s.d.\ {fmt(stdev_of(dense_seeds), 3)}) and basis-16 from {fmt(min(b16_seeds), 2)} to {fmt(max(b16_seeds), 2)} (s.d.\ {fmt(stdev_of(b16_seeds), 3)}), so a {fmt(abs(b16_seed_mean - dense_seed_mean), 3)} gap between five-seed means is not a difference we can claim. The honest reading is parity, now measured rather than asserted: reparameterizing to a 16-dimensional coefficient space costs nothing detectable on this task at {dense_params / p16:.0f}$\times$ fewer parameters. Single-seed values for $k{{=}}64$ and $k{{=}}256$ fall inside the same spread. The fifty-way audio probe separates the parameterizations more sharply at the standard budget: trained bases reach {fmt(stask(sweep, "task-audio-basis-16"), 2)} ($k{{=}}16$), {fmt(stask(sweep, "task-audio-basis-64"), 2)} ($k{{=}}64$), and {fmt(stask(sweep, "task-audio-basis-256"), 2)} ($k{{=}}256$) against the dense bridge's {fmt(task_std(dense, "audio"), 2)}: well above chance, well below dense. Section~\ref{{sec:span}} shows this gap closing with training budget for $k{{=}}256$; we did not budget-extend the smaller $k$.
 
 \begin{{table}}[t]
 \centering
@@ -297,11 +367,28 @@ $\lambda$ & $\Delta$BPB & Cross-cos & $\Delta$BPB & Cross-cos \\
 \end{{tabular}}
 \end{{table}}
 
-\subsection{{The span threshold and the frozen regime}}
+\subsection{{Span: a ramp, not a threshold}}
 \label{{sec:span}}
-The frozen rows of Table~\ref{{tab:imutask}} and the audio results in Table~\ref{{tab:budget}} locate the paper's central structure. A frozen random basis of 16 directions supports nothing: the IMU probe is at chance ({fmt(stask(sweep, 'task-imu-basis-16-blr0'), 2)}) and even the capacity gain vanishes ($\Delta$BPB {fmt(simp(sweep, 'diversity-imu-l0.10-basis-16-blr0'), sign=True)} under regularization). Sixteen random directions in a {lora_dim:,}-dimensional weight space almost surely span nothing useful, and below this threshold the basis \emph{{must}} be learned. This is the intrinsic-dimension picture applied to a generated update: training in a random subspace succeeds once the subspace is wide enough to intersect the solution set, and the required width is a property of the task \cite{{li2018intrinsic,aghajanyan2021intrinsic}}. What differs here is that the subspace carries a \emph{{per-input}} update rather than one fixed adaptation, so the threshold is set by the family of updates the task demands rather than by a single point in weight space. At $k{{=}}64$ the frozen basis supports the six-way task ({fmt(stask(sweep, 'task-imu-basis-64-blr0'), 2)}) but is at chance on the fifty-way one ({fmt(stask(sweep, 'task-audio-basis-64-s1200-blr0'), 2)} at 1200 steps). At $k{{=}}256$ it supports both. The threshold scales with the task's complexity rather than being a constant of the architecture: the random subspace must be wide enough to intersect the directions the task requires.
+Table~\ref{{tab:span}} maps frozen-basis conditioning against $k$ at both task complexities. An earlier version of this study measured two points per task and reported a \emph{{span threshold}} bracketing them. With five widths per task the structure is visible, and it is not a threshold: conditioning rises monotonically and gradually with $k$. On the six-way IMU probe a frozen basis moves from chance at $k{{=}}16$ ({fmt(stask(sweep, 'task-imu-basis-16-blr0'), 2)}) through {fmt(mean_of(seed_values(sweep, 'task-imu-basis-32-blr0')), 2)} at $k{{=}}32$ and {fmt(mean_of(seed_values(sweep, 'task-imu-basis-48-blr0')), 2)} at $k{{=}}48$ to {fmt(mean_of(seed_values(sweep, 'task-imu-basis-96-blr0')), 2)} at $k{{=}}96$, after which it flattens. Nothing in that sequence marks a boundary; a bracket drawn between any two adjacent points would have looked like a threshold.
 
-Above the threshold, freezing is an advantage rather than a compromise. Table~\ref{{tab:budget}} and Figure~\ref{{fig:budget}} track the fifty-way audio probe across training budgets: the frozen $k{{=}}256$ bridge reaches {fmt(frozen_2400_mean, 2)} mean rank-1 at 2400 steps (three seeds), the level the dense bridge reaches at 1200 ({fmt(stask(sweep, 'task-audio-dense-s1200'), 2)}). That is dense-level conditioning at $\sim$$2\times$ the steps from {fro256 / dense_params * 100:.2f}\% of the trainable parameters, with the basis reproducible from a seed rather than stored. The same table shows the trained $k{{=}}256$ basis \emph{{trailing}} its own frozen variant at 2400 steps ({fmt(stask(sweep, 'task-audio-basis-256-s2400'), 2)} vs {fmt(frozen_2400_mean, 2)}): above the span threshold, a churning basis is a moving target for the coefficient head, and stationarity wins. The dense bridge continues to improve with budget ({fmt(stask(sweep, 'task-audio-dense-s2400'), 2)} at 2400; {fmt(audio_dense_6000, 2)} at 6000 in the replication note's $10\times$ suite \cite{{penov2026note}}), so the frozen regime buys its parameter economy with training compute, not with a performance ceiling we could detect.
+What survives, and is now much better supported, is the complexity scaling. The two ramps are offset: at $k{{=}}48$ the IMU probe is already well clear of chance ({fmt(mean_of(seed_values(sweep, 'task-imu-basis-48-blr0')), 2)} against 0.17) while the fifty-way audio probe is still at it ({fmt(mean_of(seed_values(sweep, 'task-audio-basis-48-s1200-blr0')), 3)} against 0.02). Audio lifts first at $k{{=}}96$ ({fmt(mean_of(seed_values(sweep, 'task-audio-basis-96-s1200-blr0')), 3)}) and reaches {fmt(stask(sweep, 'task-audio-basis-256-s1200-blr0'), 2)} by $k{{=}}256$. A random subspace has to be wider for the harder task, which is the intrinsic-dimension picture applied to a generated update: training inside a random subspace works once the subspace is wide enough to intersect the solution set, and the required width is a property of the task \cite{{li2018intrinsic,aghajanyan2021intrinsic}}. What differs here is that the subspace carries a \emph{{per-input}} family of updates rather than one fixed adaptation, so the width is set by the family the task demands.
+
+The practical consequence is milder than a threshold rule and easier to apply. There is no width at which a frozen basis switches on, so sizing $k$ is a cost curve rather than a boundary: pick the smallest width whose conditioning is good enough for the deployment, and expect diminishing returns rather than a cliff. The $k{{=}}16$ frozen bridge remains a genuine floor, though, with the IMU probe at chance and the capacity gain gone under regularization ($\Delta$BPB {fmt(simp(sweep, 'diversity-imu-l0.10-basis-16-blr0'), sign=True)}): sixteen random directions in a {lora_dim:,}-dimensional weight space span nothing useful, and at that width the basis must be learned.
+
+\begin{{table}}[t]
+\centering
+\caption{{Frozen-basis task conditioning against basis width $k$ (rank-1 accuracy, true-feature condition; IMU chance 0.17 at 600 steps, audio chance 0.02 at 1200 steps). Cells give the seed mean with $n$ where more than one seed was run; $k{{=}}16$, 64, and 256 are the original single-seed points. Both columns rise monotonically, and the audio ramp arrives later than the IMU one.}}
+\label{{tab:span}}
+\begin{{tabular}}{{rll}}
+\toprule
+$k$ & IMU (six-way) & Audio (fifty-way) \\
+\midrule
+{span_rows}
+\bottomrule
+\end{{tabular}}
+\end{{table}}
+
+High on the ramp, freezing is an advantage rather than a compromise. Table~\ref{{tab:budget}} and Figure~\ref{{fig:budget}} track the fifty-way audio probe across training budgets: the frozen $k{{=}}256$ bridge reaches {fmt(frozen_2400_mean, 2)} mean rank-1 at 2400 steps (three seeds), the level the dense bridge reaches at 1200 ({fmt(stask(sweep, 'task-audio-dense-s1200'), 2)}). That is dense-level conditioning at $\sim$$2\times$ the steps from {fro256 / dense_params * 100:.2f}\% of the trainable parameters, with the basis reproducible from a seed rather than stored. The same table shows the trained $k{{=}}256$ basis \emph{{trailing}} its own frozen variant at 2400 steps ({fmt(stask(sweep, 'task-audio-basis-256-s2400'), 2)} vs {fmt(frozen_2400_mean, 2)}): high on the ramp, a churning basis is a moving target for the coefficient head, and stationarity wins. The dense bridge continues to improve with budget ({fmt(stask(sweep, 'task-audio-dense-s2400'), 2)} at 2400; {fmt(audio_dense_6000, 2)} at 6000 in the replication note's $10\times$ suite \cite{{penov2026note}}), so the frozen regime buys its parameter economy with training compute, not with a performance ceiling we could detect.
 
 \begin{{table}}[t]
 \centering
@@ -327,7 +414,7 @@ Steps & dense & basis-256 (trained) & basis-256 (frozen) \\
 \subsection{{What does not work}}
 \label{{sec:negative}}
 \paragraph{{Accelerating the basis.}}
-If the frozen regime's $2\times$ step cost came from a slowly-rotating basis, raising the basis learning rate should recover it. The opposite happens: at 1200 audio steps, scaling the basis learning rate by $3\times$ drops rank-1 from {fmt(stask(sweep, 'task-audio-basis-256-s1200'), 2)} to {fmt(stask(sweep, 'task-audio-basis-256-s1200-blr3'), 2)}, and $10\times$ to {fmt(stask(sweep, 'task-audio-basis-256-s1200-blr10'), 2)}, near chance. The coefficient head learns against the basis; making the basis move faster destroys the target it is learning to address. Consistent with this, the frozen basis at the same budget matches the trained one ({fmt(stask(sweep, 'task-audio-basis-256-s1200-blr0'), 2)} vs {fmt(stask(sweep, 'task-audio-basis-256-s1200'), 2)}): basis training contributes nothing above the span threshold, and the head does all the work.
+If the frozen regime's $2\times$ step cost came from a slowly-rotating basis, raising the basis learning rate should recover it. The opposite happens: at 1200 audio steps, scaling the basis learning rate by $3\times$ drops rank-1 from {fmt(stask(sweep, 'task-audio-basis-256-s1200'), 2)} to {fmt(stask(sweep, 'task-audio-basis-256-s1200-blr3'), 2)}, and $10\times$ to {fmt(stask(sweep, 'task-audio-basis-256-s1200-blr10'), 2)}, near chance. The coefficient head learns against the basis; making the basis move faster destroys the target it is learning to address. Consistent with this, the frozen basis at the same budget matches the trained one ({fmt(stask(sweep, 'task-audio-basis-256-s1200-blr0'), 2)} vs {fmt(stask(sweep, 'task-audio-basis-256-s1200'), 2)}): basis training contributes nothing at large $k$, and the head does all the work.
 
 \paragraph{{Composition by coefficient averaging.}}
 With a shared basis, averaging generated weights is algebraically identical to averaging coefficients ($\mathrm{{mean}}(c_i B) = \mathrm{{mean}}(c_i) B$), so the harness's additive-merge composition directly tests coefficient-space composition. Table~\ref{{tab:compose}}: it inherits the dense bridge's sub-additivity, slightly worse. The interference comes from the averaging operation, which dilutes each constituent's contribution regardless of the space it is expressed in. (The frozen row's low absolute values reflect its $2\times$ budget law: the 150-step bricks are under-trained, so its retention should be read with caution.) Constructive composition needs a different merge, not a different representation; we return to this in the discussion.
@@ -349,15 +436,15 @@ Bridge & Singles mean & Triple & Retention \\
 Training within a random low-dimensional subspace has a long precedent: Li et al.\ \cite{{li2018intrinsic}} measure the intrinsic dimension of an objective landscape by the smallest random subspace in which training still succeeds, and Aghajanyan et al.\ \cite{{aghajanyan2021intrinsic}} show that language-model fine-tuning has a low intrinsic dimension that shrinks with pretraining. Our span threshold is the same quantity measured for a per-input generated update rather than a single fixed one. Static-coefficient random-basis adaptation is well established: PRANC \cite{{nooralinejad2023pranc}} trains coefficients over seed-reconstructible pseudo-random basis networks; NOLA \cite{{koohpayegani2024nola}} applies the idea to LoRA factors; VeRA \cite{{kopiczko2024vera}} shares one frozen random matrix pair across layers with trained per-layer scalings; RandLoRA \cite{{albert2025randlora}} scales many frozen random low-rank matrices to full-rank updates; VB-LoRA \cite{{li2024vblora}} mixes from a shared \emph{{learned}} vector bank. All train coefficients once per task. Input-conditioned mixing exists over \emph{{trained}} factors: TopLoRA \cite{{li2025toplora}} generates per-token diagonal coefficients modulating learned per-module LoRA factors --- the closest prior work to ours --- HydraLoRA \cite{{tian2024hydralora}} routes per sample over trained expert heads, and the mixture-of-LoRA-experts line routes per token \cite{{wu2024mole}}. Hypernetworks that generate adapters condition on task descriptions or exemplars rather than individual inputs: HyperTuning \cite{{phang2022hypertuning}}, Text-to-LoRA \cite{{charakorn2025texttolora}}. Against all three lines, our setting combines a frozen \emph{{random}} shared basis with coefficients generated \emph{{per input}} by a hypernetwork --- and conditioned on an external sensor stream rather than the text itself \cite{{penov2026bridges}}. To our knowledge no prior work occupies this intersection, and none reports an analog of the span threshold, the free-diversity property of trained low-dimensional coefficient spaces, or capacity-vs-conditioning probes for generated weights. LoRA composition via learned per-task mixing (LoraHub \cite{{huang2024lorahub}}) contrasts with our per-input merge negative; tying and factor-freezing for parameter economy appear in Tied-LoRA \cite{{renduchintala2024tiedlora}} and LoRA-XS \cite{{balazy2024loraxs}}.
 
 \section{{Discussion}}
-The two regimes answer different engineering questions. When bridge quality and conditioning fidelity dominate (a deployed always-on sensor with a modest parameter budget), the trained small basis dominates the dense bridge on the axes we measured for single-sensor deployment: {dense_params / p16:.0f}$\times$ smaller, language-modeling gain slightly higher, six-way conditioning at parity, and diversity regularization free. It still shares the family's step-for-parameter trade on harder tasks and, like every parameterization tested, composes sub-additively. When parameter and storage economy dominate (many sensors, many model versions, over-the-air updates), the frozen seeded basis reduces the entire sensor-specific artifact to a $\sim${fro256 / 1000:.0f}k-parameter head plus a seed, at the cost of a task-complexity-dependent minimum $k$ and roughly doubled training. The span threshold gives the selection rule: estimate task complexity, size $k$ with margin, freeze if $k$ clears the threshold, train the basis if it cannot.
+The two regimes answer different engineering questions. When bridge quality and conditioning fidelity dominate (a deployed always-on sensor with a modest parameter budget), the trained small basis dominates the dense bridge on the axes we measured for single-sensor deployment: {dense_params / p16:.0f}$\times$ smaller, language-modeling gain slightly higher, six-way conditioning at parity, and diversity regularization free. It still shares the family's step-for-parameter trade on harder tasks and, like every parameterization tested, composes sub-additively. When parameter and storage economy dominate (many sensors, many model versions, over-the-air updates), the frozen seeded basis reduces the entire sensor-specific artifact to a $\sim${fro256 / 1000:.0f}k-parameter head plus a seed, at the cost of a task-complexity-dependent minimum $k$ and roughly doubled training. The span ramp gives the selection rule, and its gradualness makes that rule forgiving: there is no width to clear, so size $k$ by the conditioning the deployment needs and expect diminishing returns rather than a cliff. Train the basis only at the smallest widths, where a random subspace spans nothing.
 
 The composition negative sharpens the agenda the original paper left open. Since the interference comes from the merge operation rather than the representation, the shared frozen basis becomes an asset rather than a fix: it makes \emph{{disjoint coefficient allocation}} trivial (each modality claims its own block of an orthonormal basis, making weight-space interference zero by construction), and it makes task-level composition probes the right instrument, since BPB retention mostly measures adaptation magnitude surviving a mean. Both are mechanical extensions of the present harness.
 
 \section{{Limitations}}
-All results are on one pretrained base model and two sensor task complexities; the span threshold is bracketed ($16 < k^* \le 64$ for six-way IMU, $64 < k^* \le 256$ for fifty-way audio), not mapped. Task probes beyond $k{{=}}16$ and the $\lambda$ sweep are single-seed; the IMU probe's own seed spread is wide, so per-$k$ differences on the easy task should not be over-read. The frozen regime's $2\times$ step law is measured at one task and bracketed budgets. BPB retention is a weak composition metric, used here only to show the negative transfers across parameterizations. Conclusions about scale inherit the caveats of the replication note \cite{{penov2026note}}, including the pretraining-vs-scale confound.
+All results are on one pretrained base model and two sensor task complexities. The span ramp is mapped at five widths per task with three seeds at the four new widths, but the three original widths ($k{{=}}16$, 64, 256) remain single-seed, and the IMU ramp is noisy enough at small $k$ that individual points should not be over-read. The $\lambda$ sweep is still single-seed; the IMU probe's own seed spread is wide, so per-$k$ differences on the easy task should not be over-read. The frozen regime's $2\times$ step law is measured at one task and bracketed budgets. BPB retention is a weak composition metric, used here only to show the negative transfers across parameterizations. Conclusions about scale inherit the caveats of the replication note \cite{{penov2026note}}, including the pretraining-vs-scale confound.
 
 \section{{Conclusion}}
-Reparameterizing a conditional LoRA bridge's output as coefficients over a basis of LoRA directions turns its main scaling liability into a design space with two useful regimes: a trained low-dimensional regime that compresses {dense_params / p16:.0f}$\times$ while dissolving the diversity--quality tradeoff, and a frozen seeded regime that reduces the trainable and storable footprint to a coefficient head at {fro256 / dense_params * 100:.2f}\% of the dense bridge, for a measured $2\times$ training cost. A span threshold that grows with task complexity separates the regimes and gives practitioners a selection rule. The failures are as instructive as the successes: the basis should be stationary or absent, not fast, and composition fails in coefficient space exactly as it does in weight space. That locates the problem in the merge operation, and makes disjoint allocation over a shared frozen basis the next constructive step.
+Reparameterizing a conditional LoRA bridge's output as coefficients over a basis of LoRA directions turns its main scaling liability into a design space with two useful regimes: a trained low-dimensional regime that compresses {dense_params / p16:.0f}$\times$ while dissolving the diversity--quality tradeoff, and a frozen seeded regime that reduces the trainable and storable footprint to a coefficient head at {fro256 / dense_params * 100:.2f}\% of the dense bridge, for a measured $2\times$ training cost. A span ramp whose position grows with task complexity separates the regimes and gives practitioners a selection rule; mapping it at five widths per task showed the boundary we first reported to be a gradual rise rather than a threshold. The failures are as instructive as the successes: the basis should be stationary or absent, not fast, and composition fails in coefficient space exactly as it does in weight space. That locates the problem in the merge operation, and makes disjoint allocation over a shared frozen basis the next constructive step.
 
 \section*{{Reproducibility Statement}}
 All experiments run through the published bridge harness with the basis parameterization selected by \texttt{{--bridge basis-<k>}} and the frozen variant by \texttt{{--basis-lr-scale 0}}. Every number in this manuscript is rendered from three bundled artifacts (the basis-sweep summary and the two dense reference suites) by the repository's renderer; run names in the sweep artifact encode each experiment's configuration. Code, artifacts, and the exact render pipeline: \url{{https://github.com/kortexa-ai/legolm.basis}}.
