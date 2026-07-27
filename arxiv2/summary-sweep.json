@@ -1486,6 +1486,165 @@
       },
       "source_file": "task-audio-basis-16.json"
     },
+    "task-audio-basis-16-s1200-blr0": {
+      "group": "task",
+      "name": "task-audio-basis-16-s1200-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-16",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.465,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.40543341636658
+          },
+          "shuffled": {
+            "avg_rank": 25.52,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.015,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.22101092338562
+          },
+          "true": {
+            "avg_rank": 24.985,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.035,
+            "train_elapsed_s": 79.97187876701355
+          }
+        }
+      },
+      "source_file": "task-audio-basis-16-s1200-blr0.json"
+    },
+    "task-audio-basis-16-s1200-blr0-seed1042": {
+      "group": "task",
+      "name": "task-audio-basis-16-s1200-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-16",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.635,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.03,
+            "steps": 1200,
+            "top2": 0.05,
+            "train_elapsed_s": 80.21597099304199
+          },
+          "shuffled": {
+            "avg_rank": 25.545,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.06978368759155
+          },
+          "true": {
+            "avg_rank": 25.215,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.015,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.0596113204956
+          }
+        }
+      },
+      "source_file": "task-audio-basis-16-s1200-blr0-seed1042.json"
+    },
+    "task-audio-basis-16-s1200-blr0-seed2042": {
+      "group": "task",
+      "name": "task-audio-basis-16-s1200-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-16",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.415,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.85875058174133
+          },
+          "shuffled": {
+            "avg_rank": 25.53,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 80.63788509368896
+          },
+          "true": {
+            "avg_rank": 25.17,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.51070141792297
+          }
+        }
+      },
+      "source_file": "task-audio-basis-16-s1200-blr0-seed2042.json"
+    },
     "task-audio-basis-256": {
       "group": "task",
       "name": "task-audio-basis-256",
