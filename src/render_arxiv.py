@@ -590,10 +590,32 @@ def copy_figures(src: Path, dst: Path) -> None:
         shutil.copy2(png, dst / png.name)
 
 
+def strip_absolute_paths(payload: Any) -> Any:
+    """Reduce absolute filesystem paths in a result artifact to basenames.
+
+    Run metadata records the checkpoint and output directory as absolute paths
+    on the machine that produced the run. Those carry a home directory into a
+    published artifact and mean nothing to a reader, while the basename — the
+    checkpoint file, the run name — is the part the reproducibility statement
+    actually refers to.
+    """
+    if isinstance(payload, dict):
+        return {key: strip_absolute_paths(value) for key, value in payload.items()}
+    if isinstance(payload, list):
+        return [strip_absolute_paths(value) for value in payload]
+    if isinstance(payload, str) and payload.startswith("/") and "/" in payload[1:]:
+        return payload.rsplit("/", 1)[-1]
+    return payload
+
+
 def copy_summary(summary_path: Path, dst: Path, name: str = "summary.json") -> Path:
+    """Copy a result artifact for publication, with absolute paths stripped."""
     dst.mkdir(parents=True, exist_ok=True)
     target = dst / name
-    shutil.copy2(summary_path, target)
+    payload = strip_absolute_paths(load_summary(summary_path))
+    with open(target, "w") as handle:
+        json.dump(payload, handle, indent=2, sort_keys=True)
+        handle.write("\n")
     return target
 
 
