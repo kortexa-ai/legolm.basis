@@ -73,8 +73,6 @@ for k in 32 48 96 128; do
   done
 done
 
-echo "=== done. $(ls -1 "${OUT}"/*.json 2>/dev/null | wc -l) result files in ${OUT}"
-
 echo "=== 4. Fill the bottom of the audio ramp"
 # k=16 frozen on audio completes the span table; without it the audio column
 # starts at 32 while the IMU column starts at 16.
@@ -83,3 +81,5 @@ for seed in 42 1042 2042; do
     task-eval --modality audio --checkpoint "${CKPT}" \
     --bridge basis-16 --basis-lr-scale 0 --seed "${seed}" --steps 1200
 done
+
+echo "=== done. $(ls -1 "${OUT}"/*.json 2>/dev/null | wc -l) result files in ${OUT}"
