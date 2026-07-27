@@ -1275,6 +1275,165 @@
       },
       "source_file": "diversity-imu-l0.20-basis-16.json"
     },
+    "task-audio-basis-128-s1200-blr0": {
+      "group": "task",
+      "name": "task-audio-basis-128-s1200-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.445,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.015,
+            "steps": 1200,
+            "top2": 0.025,
+            "train_elapsed_s": 87.1219391822815
+          },
+          "shuffled": {
+            "avg_rank": 25.54,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 87.01917266845703
+          },
+          "true": {
+            "avg_rank": 15.4,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.085,
+            "steps": 1200,
+            "top2": 0.165,
+            "train_elapsed_s": 86.66220235824585
+          }
+        }
+      },
+      "source_file": "task-audio-basis-128-s1200-blr0.json"
+    },
+    "task-audio-basis-128-s1200-blr0-seed1042": {
+      "group": "task",
+      "name": "task-audio-basis-128-s1200-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.555,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 88.23112344741821
+          },
+          "shuffled": {
+            "avg_rank": 25.28,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 88.10050559043884
+          },
+          "true": {
+            "avg_rank": 16.585,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.07,
+            "steps": 1200,
+            "top2": 0.135,
+            "train_elapsed_s": 87.90700459480286
+          }
+        }
+      },
+      "source_file": "task-audio-basis-128-s1200-blr0-seed1042.json"
+    },
+    "task-audio-basis-128-s1200-blr0-seed2042": {
+      "group": "task",
+      "name": "task-audio-basis-128-s1200-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.375,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 88.94400000572205
+          },
+          "shuffled": {
+            "avg_rank": 25.485,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 89.05634713172913
+          },
+          "true": {
+            "avg_rank": 17.915,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.055,
+            "steps": 1200,
+            "top2": 0.095,
+            "train_elapsed_s": 88.83994913101196
+          }
+        }
+      },
+      "source_file": "task-audio-basis-128-s1200-blr0-seed2042.json"
+    },
     "task-audio-basis-16": {
       "group": "task",
       "name": "task-audio-basis-16",
@@ -1802,6 +1961,324 @@
       },
       "source_file": "task-audio-basis-256-s2400-blr0-seed2042.json"
     },
+    "task-audio-basis-32-s1200-blr0": {
+      "group": "task",
+      "name": "task-audio-basis-32-s1200-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.53,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.28931093215942
+          },
+          "shuffled": {
+            "avg_rank": 25.39,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 80.43855476379395
+          },
+          "true": {
+            "avg_rank": 25.085,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.08225655555725
+          }
+        }
+      },
+      "source_file": "task-audio-basis-32-s1200-blr0.json"
+    },
+    "task-audio-basis-32-s1200-blr0-seed1042": {
+      "group": "task",
+      "name": "task-audio-basis-32-s1200-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.355,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 81.80543518066406
+          },
+          "shuffled": {
+            "avg_rank": 25.59,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.03,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 81.5297920703888
+          },
+          "true": {
+            "avg_rank": 25.1,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.025,
+            "steps": 1200,
+            "top2": 0.055,
+            "train_elapsed_s": 81.30064964294434
+          }
+        }
+      },
+      "source_file": "task-audio-basis-32-s1200-blr0-seed1042.json"
+    },
+    "task-audio-basis-32-s1200-blr0-seed2042": {
+      "group": "task",
+      "name": "task-audio-basis-32-s1200-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.53,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 80.85826063156128
+          },
+          "shuffled": {
+            "avg_rank": 25.475,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 80.91933822631836
+          },
+          "true": {
+            "avg_rank": 24.875,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.04,
+            "steps": 1200,
+            "top2": 0.06,
+            "train_elapsed_s": 80.44597101211548
+          }
+        }
+      },
+      "source_file": "task-audio-basis-32-s1200-blr0-seed2042.json"
+    },
+    "task-audio-basis-48-s1200-blr0": {
+      "group": "task",
+      "name": "task-audio-basis-48-s1200-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.4,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 81.60241079330444
+          },
+          "shuffled": {
+            "avg_rank": 25.64,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 81.49908566474915
+          },
+          "true": {
+            "avg_rank": 22.555,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.03,
+            "steps": 1200,
+            "top2": 0.05,
+            "train_elapsed_s": 81.29127264022827
+          }
+        }
+      },
+      "source_file": "task-audio-basis-48-s1200-blr0.json"
+    },
+    "task-audio-basis-48-s1200-blr0-seed1042": {
+      "group": "task",
+      "name": "task-audio-basis-48-s1200-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.505,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.03,
+            "train_elapsed_s": 82.56004786491394
+          },
+          "shuffled": {
+            "avg_rank": 25.37,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 82.49902582168579
+          },
+          "true": {
+            "avg_rank": 23.695,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.025,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 82.05158281326294
+          }
+        }
+      },
+      "source_file": "task-audio-basis-48-s1200-blr0-seed1042.json"
+    },
+    "task-audio-basis-48-s1200-blr0-seed2042": {
+      "group": "task",
+      "name": "task-audio-basis-48-s1200-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.535,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 82.41626310348511
+          },
+          "shuffled": {
+            "avg_rank": 25.585,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 82.18867874145508
+          },
+          "true": {
+            "avg_rank": 23.195,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.04,
+            "steps": 1200,
+            "top2": 0.05,
+            "train_elapsed_s": 82.17096829414368
+          }
+        }
+      },
+      "source_file": "task-audio-basis-48-s1200-blr0-seed2042.json"
+    },
     "task-audio-basis-64": {
       "group": "task",
       "name": "task-audio-basis-64",
@@ -1907,6 +2384,165 @@
       },
       "source_file": "task-audio-basis-64-s1200-blr0.json"
     },
+    "task-audio-basis-96-s1200-blr0": {
+      "group": "task",
+      "name": "task-audio-basis-96-s1200-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.59,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 85.21912884712219
+          },
+          "shuffled": {
+            "avg_rank": 25.485,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.025,
+            "train_elapsed_s": 85.19457340240479
+          },
+          "true": {
+            "avg_rank": 18.18,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.07,
+            "steps": 1200,
+            "top2": 0.135,
+            "train_elapsed_s": 84.82313942909241
+          }
+        }
+      },
+      "source_file": "task-audio-basis-96-s1200-blr0.json"
+    },
+    "task-audio-basis-96-s1200-blr0-seed1042": {
+      "group": "task",
+      "name": "task-audio-basis-96-s1200-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.57,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.04,
+            "train_elapsed_s": 86.3594741821289
+          },
+          "shuffled": {
+            "avg_rank": 25.46,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.05,
+            "train_elapsed_s": 86.0022644996643
+          },
+          "true": {
+            "avg_rank": 20.575,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.06,
+            "steps": 1200,
+            "top2": 0.095,
+            "train_elapsed_s": 85.89081072807312
+          }
+        }
+      },
+      "source_file": "task-audio-basis-96-s1200-blr0-seed1042.json"
+    },
+    "task-audio-basis-96-s1200-blr0-seed2042": {
+      "group": "task",
+      "name": "task-audio-basis-96-s1200-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-audio",
+        "modality": "audio",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 25.5,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 0,
+            "top2": 0.04,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 25.19,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 85.33223986625671
+          },
+          "shuffled": {
+            "avg_rank": 25.48,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.02,
+            "steps": 1200,
+            "top2": 0.045,
+            "train_elapsed_s": 85.28920769691467
+          },
+          "true": {
+            "avg_rank": 18.675,
+            "count": 200,
+            "examples_seen": 4800,
+            "lr": 0.001,
+            "rank1": 0.06,
+            "steps": 1200,
+            "top2": 0.11,
+            "train_elapsed_s": 84.7434766292572
+          }
+        }
+      },
+      "source_file": "task-audio-basis-96-s1200-blr0-seed2042.json"
+    },
     "task-audio-dense-s1200": {
       "group": "task",
       "name": "task-audio-dense-s1200",
@@ -2011,6 +2647,165 @@
         }
       },
       "source_file": "task-audio-dense-s2400.json"
+    },
+    "task-imu-basis-128-blr0": {
+      "group": "task",
+      "name": "task-imu-basis-128-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.54,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 44.718403577804565
+          },
+          "shuffled": {
+            "avg_rank": 3.475,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.175,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 44.64639472961426
+          },
+          "true": {
+            "avg_rank": 1.405,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.63,
+            "steps": 600,
+            "top2": 0.965,
+            "train_elapsed_s": 44.62610960006714
+          }
+        }
+      },
+      "source_file": "task-imu-basis-128-blr0.json"
+    },
+    "task-imu-basis-128-blr0-seed1042": {
+      "group": "task",
+      "name": "task-imu-basis-128-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.555,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.16,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 43.87125039100647
+          },
+          "shuffled": {
+            "avg_rank": 3.435,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 43.74956035614014
+          },
+          "true": {
+            "avg_rank": 1.415,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.615,
+            "steps": 600,
+            "top2": 0.97,
+            "train_elapsed_s": 43.78436803817749
+          }
+        }
+      },
+      "source_file": "task-imu-basis-128-blr0-seed1042.json"
+    },
+    "task-imu-basis-128-blr0-seed2042": {
+      "group": "task",
+      "name": "task-imu-basis-128-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-128",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.505,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.325,
+            "train_elapsed_s": 44.01137375831604
+          },
+          "shuffled": {
+            "avg_rank": 3.51,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.16,
+            "steps": 600,
+            "top2": 0.335,
+            "train_elapsed_s": 43.834492206573486
+          },
+          "true": {
+            "avg_rank": 1.395,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.66,
+            "steps": 600,
+            "top2": 0.95,
+            "train_elapsed_s": 43.96499228477478
+          }
+        }
+      },
+      "source_file": "task-imu-basis-128-blr0-seed2042.json"
     },
     "task-imu-basis-16": {
       "group": "task",
@@ -2221,6 +3016,112 @@
       },
       "source_file": "task-imu-basis-16-seed2042.json"
     },
+    "task-imu-basis-16-seed3042": {
+      "group": "task",
+      "name": "task-imu-basis-16-seed3042",
+      "result": {
+        "basis_lr_scale": 1.0,
+        "bridge": "basis-16",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.525,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.17,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 39.98348689079285
+          },
+          "shuffled": {
+            "avg_rank": 3.505,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 39.97557735443115
+          },
+          "true": {
+            "avg_rank": 1.175,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.88,
+            "steps": 600,
+            "top2": 0.965,
+            "train_elapsed_s": 39.84728813171387
+          }
+        }
+      },
+      "source_file": "task-imu-basis-16-seed3042.json"
+    },
+    "task-imu-basis-16-seed4042": {
+      "group": "task",
+      "name": "task-imu-basis-16-seed4042",
+      "result": {
+        "basis_lr_scale": 1.0,
+        "bridge": "basis-16",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.46,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 39.657777309417725
+          },
+          "shuffled": {
+            "avg_rank": 3.39,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 39.69032573699951
+          },
+          "true": {
+            "avg_rank": 1.125,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.905,
+            "steps": 600,
+            "top2": 0.975,
+            "train_elapsed_s": 39.57086253166199
+          }
+        }
+      },
+      "source_file": "task-imu-basis-16-seed4042.json"
+    },
     "task-imu-basis-256": {
       "group": "task",
       "name": "task-imu-basis-256",
@@ -2327,6 +3228,324 @@
       },
       "source_file": "task-imu-basis-256-blr0.json"
     },
+    "task-imu-basis-32-blr0": {
+      "group": "task",
+      "name": "task-imu-basis-32-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.51,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 40.80714440345764
+          },
+          "shuffled": {
+            "avg_rank": 3.5,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 40.70732021331787
+          },
+          "true": {
+            "avg_rank": 3.015,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.33,
+            "steps": 600,
+            "top2": 0.485,
+            "train_elapsed_s": 40.56015157699585
+          }
+        }
+      },
+      "source_file": "task-imu-basis-32-blr0.json"
+    },
+    "task-imu-basis-32-blr0-seed1042": {
+      "group": "task",
+      "name": "task-imu-basis-32-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.48,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.16,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 40.594290256500244
+          },
+          "shuffled": {
+            "avg_rank": 3.58,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.32,
+            "train_elapsed_s": 40.54335045814514
+          },
+          "true": {
+            "avg_rank": 2.775,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.32,
+            "steps": 600,
+            "top2": 0.59,
+            "train_elapsed_s": 40.391621589660645
+          }
+        }
+      },
+      "source_file": "task-imu-basis-32-blr0-seed1042.json"
+    },
+    "task-imu-basis-32-blr0-seed2042": {
+      "group": "task",
+      "name": "task-imu-basis-32-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-32",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.48,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.335,
+            "train_elapsed_s": 40.74715828895569
+          },
+          "shuffled": {
+            "avg_rank": 3.485,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.335,
+            "train_elapsed_s": 40.587024450302124
+          },
+          "true": {
+            "avg_rank": 3.02,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.48,
+            "train_elapsed_s": 40.639573097229004
+          }
+        }
+      },
+      "source_file": "task-imu-basis-32-blr0-seed2042.json"
+    },
+    "task-imu-basis-48-blr0": {
+      "group": "task",
+      "name": "task-imu-basis-48-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.455,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.36,
+            "train_elapsed_s": 41.85035848617554
+          },
+          "shuffled": {
+            "avg_rank": 3.3,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.255,
+            "steps": 600,
+            "top2": 0.34,
+            "train_elapsed_s": 41.85841751098633
+          },
+          "true": {
+            "avg_rank": 1.52,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.645,
+            "steps": 600,
+            "top2": 0.835,
+            "train_elapsed_s": 41.64949870109558
+          }
+        }
+      },
+      "source_file": "task-imu-basis-48-blr0.json"
+    },
+    "task-imu-basis-48-blr0-seed1042": {
+      "group": "task",
+      "name": "task-imu-basis-48-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.55,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.325,
+            "train_elapsed_s": 41.38054585456848
+          },
+          "shuffled": {
+            "avg_rank": 3.54,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 41.24975872039795
+          },
+          "true": {
+            "avg_rank": 1.875,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.44,
+            "steps": 600,
+            "top2": 0.745,
+            "train_elapsed_s": 41.23925495147705
+          }
+        }
+      },
+      "source_file": "task-imu-basis-48-blr0-seed1042.json"
+    },
+    "task-imu-basis-48-blr0-seed2042": {
+      "group": "task",
+      "name": "task-imu-basis-48-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-48",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.515,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.32,
+            "train_elapsed_s": 41.22060298919678
+          },
+          "shuffled": {
+            "avg_rank": 3.525,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.125,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 41.253554821014404
+          },
+          "true": {
+            "avg_rank": 2.01,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.325,
+            "steps": 600,
+            "top2": 0.7,
+            "train_elapsed_s": 41.04927086830139
+          }
+        }
+      },
+      "source_file": "task-imu-basis-48-blr0-seed2042.json"
+    },
     "task-imu-basis-64": {
       "group": "task",
       "name": "task-imu-basis-64",
@@ -2432,6 +3651,165 @@
       },
       "source_file": "task-imu-basis-64-blr0.json"
     },
+    "task-imu-basis-96-blr0": {
+      "group": "task",
+      "name": "task-imu-basis-96-blr0",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.5,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.34,
+            "train_elapsed_s": 42.91172242164612
+          },
+          "shuffled": {
+            "avg_rank": 3.63,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.335,
+            "train_elapsed_s": 42.765042781829834
+          },
+          "true": {
+            "avg_rank": 1.535,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.62,
+            "steps": 600,
+            "top2": 0.845,
+            "train_elapsed_s": 42.7782986164093
+          }
+        }
+      },
+      "source_file": "task-imu-basis-96-blr0.json"
+    },
+    "task-imu-basis-96-blr0-seed1042": {
+      "group": "task",
+      "name": "task-imu-basis-96-blr0-seed1042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.56,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.15,
+            "steps": 600,
+            "top2": 0.315,
+            "train_elapsed_s": 42.865153551101685
+          },
+          "shuffled": {
+            "avg_rank": 3.615,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.305,
+            "train_elapsed_s": 42.98710918426514
+          },
+          "true": {
+            "avg_rank": 1.505,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.51,
+            "steps": 600,
+            "top2": 0.985,
+            "train_elapsed_s": 42.71174740791321
+          }
+        }
+      },
+      "source_file": "task-imu-basis-96-blr0-seed1042.json"
+    },
+    "task-imu-basis-96-blr0-seed2042": {
+      "group": "task",
+      "name": "task-imu-basis-96-blr0-seed2042",
+      "result": {
+        "basis_lr_scale": 0.0,
+        "bridge": "basis-96",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.515,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.325,
+            "train_elapsed_s": 42.25718402862549
+          },
+          "shuffled": {
+            "avg_rank": 3.48,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 42.17066168785095
+          },
+          "true": {
+            "avg_rank": 1.38,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.725,
+            "steps": 600,
+            "top2": 0.92,
+            "train_elapsed_s": 42.23224925994873
+          }
+        }
+      },
+      "source_file": "task-imu-basis-96-blr0-seed2042.json"
+    },
     "task-imu-dense-seed1042": {
       "group": "task",
       "name": "task-imu-dense-seed1042",
@@ -2535,6 +3913,112 @@
         }
       },
       "source_file": "task-imu-dense-seed2042.json"
+    },
+    "task-imu-dense-seed3042": {
+      "group": "task",
+      "name": "task-imu-dense-seed3042",
+      "result": {
+        "basis_lr_scale": 1.0,
+        "bridge": "dense",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.34,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.185,
+            "steps": 600,
+            "top2": 0.36,
+            "train_elapsed_s": 48.364559173583984
+          },
+          "shuffled": {
+            "avg_rank": 3.365,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.275,
+            "steps": 600,
+            "top2": 0.36,
+            "train_elapsed_s": 48.27439832687378
+          },
+          "true": {
+            "avg_rank": 1.51,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.645,
+            "steps": 600,
+            "top2": 0.945,
+            "train_elapsed_s": 48.1973557472229
+          }
+        }
+      },
+      "source_file": "task-imu-dense-seed3042.json"
+    },
+    "task-imu-dense-seed4042": {
+      "group": "task",
+      "name": "task-imu-dense-seed4042",
+      "result": {
+        "basis_lr_scale": 1.0,
+        "bridge": "dense",
+        "experiment": "task-imu",
+        "modality": "imu",
+        "results": {
+          "no_bridge": {
+            "avg_rank": 3.52,
+            "count": 200,
+            "examples_seen": 0,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 0,
+            "top2": 0.33,
+            "train_elapsed_s": 0.0
+          },
+          "random": {
+            "avg_rank": 3.49,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.18,
+            "steps": 600,
+            "top2": 0.35,
+            "train_elapsed_s": 48.50071120262146
+          },
+          "shuffled": {
+            "avg_rank": 3.5,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.165,
+            "steps": 600,
+            "top2": 0.33,
+            "train_elapsed_s": 48.356375217437744
+          },
+          "true": {
+            "avg_rank": 1.26,
+            "count": 200,
+            "examples_seen": 2400,
+            "lr": 0.001,
+            "rank1": 0.75,
+            "steps": 600,
+            "top2": 0.99,
+            "train_elapsed_s": 48.31568098068237
+          }
+        }
+      },
+      "source_file": "task-imu-dense-seed4042.json"
     }
   },
   "summary": {
