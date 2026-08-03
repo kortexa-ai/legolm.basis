@@ -1,0 +1,18 @@
+{
+  "basis_lr_scale": 1.0,
+  "bridge": "basis-frozen-256",
+  "experiment": "task-audio",
+  "modality": "audio",
+  "results": {
+    "true": {
+      "avg_rank": 18.421875,
+      "count": 64,
+      "examples_seen": 2400,
+      "lr": 0.001,
+      "rank1": 0.078125,
+      "steps": 600,
+      "top2": 0.109375,
+      "train_elapsed_s": 148.33719539642334
+    }
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "allocation": "disjoint",
+  "basis_diagnostics": {
+    "basis_dim": 768,
+    "basis_seed": 42,
+    "max_diag_error": 4.291534423828125e-06,
+    "max_offdiag_abs": 4.678440745919943e-08,
+    "output_dim": 774144,
+    "whitening_passes": 1
+  },
+  "basis_seed": 42,
+  "bricks": [
+    "imu",
+    "audio",
+    "vision"
+  ],
+  "bridge": "basis-disjoint-768",
+  "coefficient_checks": {
+    "audio": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.584138364156388e-06,
+        "recovered_scale_ratio_mean": 1.0000055292195462
+      }
+    },
+    "imu": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.692653928690561e-06,
+        "recovered_scale_ratio_mean": 1.0000056321061506
+      }
+    }
+  },
+  "conditions": [
+    "true",
+    "shuffled"
+  ],
+  "context_bricks": [
+    "vision"
+  ],
+  "context_results": {
+    "vision": {
+      "baseline": 1.1839299754913313,
+      "basis_lr_scale": 1.0,
+      "basis_seed": 42,
+      "basis_slice": [
+        512,
+        768
+      ],
+      "bridge": "basis-disjoint-768",
+      "diversity_weight": 0.0,
+      "eval_elapsed_s": 16.20095467567444,
+      "examples_seen": 2400,
+      "experiment": "bridge-vision",
+      "final": 1.1419378704657481,
+      "improvement": 0.04199210502558315,
+      "last_diversity": 0.0,
+      "lora_dim": 774144,
+      "lr": 0.001,
+      "steps": 300,
+      "steps_per_second": 0.9224394185196232,
+      "tokens_seen": 307200,
+      "train_elapsed_s": 325.22460985183716,
+      "trainable_params": 197504
+    }
+  },
+  "eval_elapsed_s": 205.53706169128418,
+  "experiment": "compose-task-IAV",
+  "fixed_merge_modes": [
+    "sum"
+  ],
+  "gate_modes": [
+    "gate-oracle",
+    "gate-learned",
+    "gate-task"
+  ],
+  "gate_stats": {
+    "gate-learned": {
+      "steps": 600,
+      "train_elapsed_s": 49.421409130096436
+    },
+    "gate-task": {
+      "steps": 600,
+      "train_elapsed_s": 50.27035689353943
+    }
+  },
+  "gate_steps": 600,
+  "lora_dim": 774144,
+  "lr": 0.001,
+  "magnitudes": {
+    "audio": {
+      "gate-learned_cos_own": -2.561137080192566e-09,
+      "gate-learned_l2": 52.59066390991211,
+      "gate-oracle_cos_own": 0.9999999403953552,
+      "gate-oracle_l2": 46.624916076660156,
+      "gate-task_cos_own": -2.561137080192566e-09,
+      "gate-task_l2": 52.59066390991211,
+      "others_sum_l2": 55.902259826660156,
+      "own_l2": 46.624916076660156,
+      "single_cos_own": 0.9999999403953552,
+      "single_l2": 46.624916076660156,
+      "sum_cos_own": 0.6405061483383179,
+      "sum_l2": 72.79385375976562
+    },
+    "imu": {
+      "gate-learned_cos_own": 1.0000001192092896,
+      "gate-learned_l2": 52.59066390991211,
+      "gate-oracle_cos_own": 1.0000001192092896,
+      "gate-oracle_l2": 52.59066390991211,
+      "gate-task_cos_own": 1.0000001192092896,
+      "gate-task_l2": 52.59066390991211,
+      "others_sum_l2": 50.3305778503418,
+      "own_l2": 52.59066390991211,
+      "single_cos_own": 1.0000001192092896,
+      "single_l2": 52.59066390991211,
+      "sum_cos_own": 0.7224602699279785,
+      "sum_l2": 72.79385375976562
+    }
+  },
+  "max_eval_items": 64,
+  "merge_modes": [
+    "sum",
+    "gate-oracle",
+    "gate-learned",
+    "gate-task"
+  ],
+  "rank": 4,
+  "results": {
+    "audio": {
+      "categories": 50,
+      "chance_rank1": 0.02,
+      "gate_weights": {
+        "gate-learned": {
+          "per_brick_mean": [
+            0.9999998547136784,
+            1.3665558643143833e-07,
+            8.587036859370319e-09
+          ],
+          "self_max": 8.745957529754378e-06,
+          "self_mean": 1.3665558643143833e-07,
+          "self_min": 0.0
+        },
+        "gate-oracle": {
+          "per_brick_mean": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0
+        },
+        "gate-task": {
+          "per_brick_mean": [
+            1.0,
+            1.7680502236858966e-10,
+            6.715834844381625e-12
+          ],
+          "self_max": 1.1315520964672032e-08,
+          "self_mean": 1.7680502236858966e-10,
+          "self_min": 0.0
+        }
+      },
+      "modes": {
+        "gate-learned": {
+          "others_only": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          },
+          "shuffled": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          },
+          "true": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          }
+        },
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "shuffled": {
+            "avg_rank": 25.3125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.046875
+          },
+          "true": {
+            "avg_rank": 18.578125,
+            "count": 64,
+            "rank1": 0.125,
+            "top2": 0.15625
+          }
+        },
+        "gate-task": {
+          "others_only": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          },
+          "shuffled": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          },
+          "true": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.0625
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "shuffled": {
+            "avg_rank": 25.3125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.046875
+          },
+          "true": {
+            "avg_rank": 18.578125,
+            "count": 64,
+            "rank1": 0.125,
+            "top2": 0.15625
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 26.015625,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.046875
+          },
+          "shuffled": {
+            "avg_rank": 25.09375,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 25.421875,
+            "count": 64,
+            "rank1": 0.0625,
+            "top2": 0.0625
+          }
+        }
+      },
+      "retention": {
+        "gate-learned": 0.375,
+        "gate-oracle": 1.0,
+        "gate-task": 0.375,
+        "sum": 0.5
+      }
+    },
+    "imu": {
+      "categories": 6,
+      "chance_rank1": 0.16666666666666666,
+      "gate_weights": {
+        "gate-learned": {
+          "per_brick_mean": [
+            0.9999998547136784,
+            1.3665558643143833e-07,
+            8.587036859370319e-09
+          ],
+          "self_max": 1.0,
+          "self_mean": 0.9999998547136784,
+          "self_min": 0.999990701675415
+        },
+        "gate-oracle": {
+          "per_brick_mean": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0
+        },
+        "gate-task": {
+          "per_brick_mean": [
+            1.0,
+            1.490553748361064e-12,
+            2.1027746344285274e-14
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0
+        }
+      },
+      "modes": {
+        "gate-learned": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "shuffled": {
+            "avg_rank": 3.78125,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.28125
+          },
+          "true": {
+            "avg_rank": 1.265625,
+            "count": 64,
+            "rank1": 0.75,
+            "top2": 0.984375
+          }
+        },
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "shuffled": {
+            "avg_rank": 3.78125,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.28125
+          },
+          "true": {
+            "avg_rank": 1.265625,
+            "count": 64,
+            "rank1": 0.75,
+            "top2": 0.984375
+          }
+        },
+        "gate-task": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "shuffled": {
+            "avg_rank": 3.78125,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.28125
+          },
+          "true": {
+            "avg_rank": 1.265625,
+            "count": 64,
+            "rank1": 0.75,
+            "top2": 0.984375
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "shuffled": {
+            "avg_rank": 3.78125,
+            "count": 64,
+            "rank1": 0.046875,
+            "top2": 0.28125
+          },
+          "true": {
+            "avg_rank": 1.265625,
+            "count": 64,
+            "rank1": 0.75,
+            "top2": 0.984375
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 3.484375,
+            "count": 64,
+            "rank1": 0.203125,
+            "top2": 0.34375
+          },
+          "shuffled": {
+            "avg_rank": 3.296875,
+            "count": 64,
+            "rank1": 0.203125,
+            "top2": 0.359375
+          },
+          "true": {
+            "avg_rank": 3.265625,
+            "count": 64,
+            "rank1": 0.140625,
+            "top2": 0.40625
+          }
+        }
+      },
+      "retention": {
+        "gate-learned": 1.0,
+        "gate-oracle": 1.0,
+        "gate-task": 1.0,
+        "sum": 0.1875
+      }
+    }
+  },
+  "seed": 42,
+  "slices": {
+    "audio": [
+      256,
+      512
+    ],
+    "imu": [
+      0,
+      256
+    ],
+    "vision": [
+      512,
+      768
+    ]
+  },
+  "target": "all",
+  "task_bricks": [
+    "imu",
+    "audio"
+  ],
+  "task_steps": 600,
+  "task_steps_per_brick": {
+    "audio": 600,
+    "imu": 600
+  },
+  "text_steps": 300,
+  "train_elapsed_s": 1167.6662137508392,
+  "trainable_params_per_brick": {
+    "audio": 197504,
+    "imu": 181120
+  },
+  "training_stats": {
+    "audio-shuffled": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 185.79733896255493
+    },
+    "audio-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 185.31526064872742
+    },
+    "imu-shuffled": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 181.60764074325562
+    },
+    "imu-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 190.02959752082825
+    }
+  }
+}

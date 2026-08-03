@@ -1,0 +1,343 @@
+{
+  "allocation": "shared",
+  "basis_diagnostics": {
+    "basis_dim": 256,
+    "basis_seed": 42,
+    "max_diag_error": 6.556510925292969e-07,
+    "max_offdiag_abs": 1.0360963642597198e-08,
+    "output_dim": 774144,
+    "whitening_passes": 1
+  },
+  "basis_seed": 42,
+  "bricks": [
+    "imu",
+    "audio",
+    "vision"
+  ],
+  "bridge": "basis-frozen-256",
+  "coefficient_checks": {
+    "audio": {
+      "mean": {
+        "coefficient_rel_error_mean": 0.7756692320108414,
+        "recovered_scale_ratio_mean": 0.3518734383648579
+      },
+      "sum": {
+        "coefficient_rel_error_mean": 1.2785721570253372,
+        "recovered_scale_ratio_mean": 1.0556203208665802
+      }
+    },
+    "imu": {
+      "mean": {
+        "coefficient_rel_error_mean": 0.7027841359376907,
+        "recovered_scale_ratio_mean": 0.36339625935251785
+      },
+      "sum": {
+        "coefficient_rel_error_mean": 0.8969608843326569,
+        "recovered_scale_ratio_mean": 1.0901887764562417
+      }
+    }
+  },
+  "conditions": [
+    "true",
+    "shuffled",
+    "random"
+  ],
+  "context_bricks": [
+    "vision"
+  ],
+  "context_results": {
+    "vision": {
+      "baseline": 1.1839299754913313,
+      "basis_lr_scale": 1.0,
+      "basis_seed": 42,
+      "basis_slice": [
+        0,
+        256
+      ],
+      "bridge": "basis-frozen-256",
+      "diversity_weight": 0.0,
+      "eval_elapsed_s": 12.106520891189575,
+      "examples_seen": 2400,
+      "experiment": "bridge-vision",
+      "final": 1.1425360314904476,
+      "improvement": 0.0413939440008837,
+      "last_diversity": 0.0,
+      "lora_dim": 774144,
+      "lr": 0.001,
+      "steps": 300,
+      "steps_per_second": 1.1756527780621369,
+      "tokens_seen": 307200,
+      "train_elapsed_s": 255.17738366127014,
+      "trainable_params": 197504
+    }
+  },
+  "eval_elapsed_s": 115.05395984649658,
+  "experiment": "compose-task-IAV",
+  "lora_dim": 774144,
+  "lr": 0.001,
+  "magnitudes": {
+    "audio": {
+      "mean_cos_own": 0.6180582046508789,
+      "mean_l2": 24.87615394592285,
+      "others_sum_l2": 58.72978973388672,
+      "own_l2": 43.428131103515625,
+      "single_cos_own": 1.0,
+      "single_l2": 43.428131103515625,
+      "sum_cos_own": 0.6180582046508789,
+      "sum_l2": 74.62846374511719
+    },
+    "imu": {
+      "mean_cos_own": 0.7907384634017944,
+      "mean_l2": 24.87615394592285,
+      "others_sum_l2": 45.960819244384766,
+      "own_l2": 53.975852966308594,
+      "single_cos_own": 0.9999998807907104,
+      "single_l2": 53.975852966308594,
+      "sum_cos_own": 0.7907384634017944,
+      "sum_l2": 74.62846374511719
+    }
+  },
+  "max_eval_items": 64,
+  "merge_modes": [
+    "sum",
+    "mean"
+  ],
+  "rank": 4,
+  "results": {
+    "audio": {
+      "categories": 50,
+      "chance_rank1": 0.02,
+      "modes": {
+        "mean": {
+          "others_only": {
+            "avg_rank": 25.90625,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "random": {
+            "avg_rank": 25.9375,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "shuffled": {
+            "avg_rank": 25.84375,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 25.65625,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "random": {
+            "avg_rank": 25.25,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "shuffled": {
+            "avg_rank": 25.03125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.046875
+          },
+          "true": {
+            "avg_rank": 17.59375,
+            "count": 64,
+            "rank1": 0.078125,
+            "top2": 0.125
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 25.75,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.0
+          },
+          "random": {
+            "avg_rank": 25.953125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.0625
+          },
+          "shuffled": {
+            "avg_rank": 25.859375,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 26.953125,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.03125
+          }
+        }
+      },
+      "retention": {
+        "mean": 0.2,
+        "sum": 0.4
+      }
+    },
+    "imu": {
+      "categories": 6,
+      "chance_rank1": 0.16666666666666666,
+      "modes": {
+        "mean": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "random": {
+            "avg_rank": 3.515625,
+            "count": 64,
+            "rank1": 0.1875,
+            "top2": 0.328125
+          },
+          "shuffled": {
+            "avg_rank": 3.546875,
+            "count": 64,
+            "rank1": 0.171875,
+            "top2": 0.328125
+          },
+          "true": {
+            "avg_rank": 3.5,
+            "count": 64,
+            "rank1": 0.171875,
+            "top2": 0.328125
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "random": {
+            "avg_rank": 3.515625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.34375
+          },
+          "shuffled": {
+            "avg_rank": 3.546875,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.328125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.671875,
+            "top2": 1.0
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 3.546875,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "random": {
+            "avg_rank": 3.609375,
+            "count": 64,
+            "rank1": 0.140625,
+            "top2": 0.34375
+          },
+          "shuffled": {
+            "avg_rank": 3.625,
+            "count": 64,
+            "rank1": 0.171875,
+            "top2": 0.25
+          },
+          "true": {
+            "avg_rank": 3.796875,
+            "count": 64,
+            "rank1": 0.140625,
+            "top2": 0.296875
+          }
+        }
+      },
+      "retention": {
+        "mean": 0.2558139534883721,
+        "sum": 0.20930232558139536
+      }
+    }
+  },
+  "seed": 42,
+  "slices": {
+    "audio": [
+      0,
+      256
+    ],
+    "imu": [
+      0,
+      256
+    ],
+    "vision": [
+      0,
+      256
+    ]
+  },
+  "target": "all",
+  "task_bricks": [
+    "imu",
+    "audio"
+  ],
+  "task_steps": 600,
+  "text_steps": 300,
+  "train_elapsed_s": 1132.434499502182,
+  "trainable_params_per_brick": {
+    "audio": 197504,
+    "imu": 181120
+  },
+  "training_stats": {
+    "audio-random": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 148.17232036590576
+    },
+    "audio-shuffled": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 147.31364607810974
+    },
+    "audio-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 148.2603805065155
+    },
+    "imu-random": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 144.75382256507874
+    },
+    "imu-shuffled": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 144.42238020896912
+    },
+    "imu-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 144.334566116333
+    }
+  }
+}

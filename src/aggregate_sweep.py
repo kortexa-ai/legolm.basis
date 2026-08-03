@@ -13,6 +13,9 @@ from pathlib import Path
 
 def group_of(name: str) -> str:
     for prefix, group in (
+        ("compose-task-", "composition-task"),
+        ("pilot-", "pilot"),
+        ("power-", "pilot"),
         ("task-", "task"),
         ("diversity-", "diversity"),
         ("compose-", "composition"),

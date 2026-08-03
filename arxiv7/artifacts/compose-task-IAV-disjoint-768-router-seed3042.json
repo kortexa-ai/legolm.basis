@@ -1,0 +1,976 @@
+{
+  "allocation": "disjoint",
+  "basis_diagnostics": {
+    "basis_dim": 768,
+    "basis_seed": 3042,
+    "max_diag_error": 4.5299530029296875e-06,
+    "max_offdiag_abs": 4.898174665868282e-08,
+    "output_dim": 774144,
+    "whitening_passes": 1
+  },
+  "basis_seed": 3042,
+  "bricks": [
+    "imu",
+    "audio",
+    "vision"
+  ],
+  "bridge": "basis-disjoint-768",
+  "coefficient_checks": {
+    "audio": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.654728852277913e-06,
+        "recovered_scale_ratio_mean": 1.0000055616039314
+      }
+    },
+    "imu": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.623336960525194e-06,
+        "recovered_scale_ratio_mean": 1.0000055692496657
+      }
+    }
+  },
+  "conditions": [
+    "true"
+  ],
+  "context_bricks": [
+    "vision"
+  ],
+  "context_results": {
+    "vision": {
+      "baseline": 1.1839299754913313,
+      "basis_lr_scale": 1.0,
+      "basis_seed": 3042,
+      "basis_slice": [
+        512,
+        768
+      ],
+      "bridge": "basis-disjoint-768",
+      "diversity_weight": 0.0,
+      "eval_elapsed_s": 6.378226041793823,
+      "examples_seen": 2400,
+      "experiment": "bridge-vision",
+      "final": 1.1406456277889567,
+      "improvement": 0.04328434770237455,
+      "last_diversity": 0.0,
+      "lora_dim": 774144,
+      "lr": 0.001,
+      "steps": 300,
+      "steps_per_second": 2.3241256672014767,
+      "tokens_seen": 307200,
+      "train_elapsed_s": 129.08079981803894,
+      "trainable_params": 197504
+    }
+  },
+  "eval_elapsed_s": 106.7594907283783,
+  "experiment": "compose-task-IAV",
+  "fixed_merge_modes": [
+    "sum"
+  ],
+  "gate_modes": [
+    "gate-oracle",
+    "gate-learned-lr-1",
+    "gate-task-lr-0.3",
+    "gate-task-lr-1",
+    "gate-task-lr-3",
+    "gate-task-lr-0.3-ent0.1",
+    "gate-task-lr-1-ent0.1",
+    "gate-task-lr-3-ent0.1"
+  ],
+  "gate_specs": {
+    "gate-learned-lr-1": {
+      "balance": 0.0,
+      "entropy": 0.0,
+      "lr_scale": 1.0,
+      "task": false
+    },
+    "gate-task-lr-0.3": {
+      "balance": 0.0,
+      "entropy": 0.0,
+      "lr_scale": 0.3,
+      "task": true
+    },
+    "gate-task-lr-0.3-ent0.1": {
+      "balance": 0.0,
+      "entropy": 0.1,
+      "lr_scale": 0.3,
+      "task": true
+    },
+    "gate-task-lr-1": {
+      "balance": 0.0,
+      "entropy": 0.0,
+      "lr_scale": 1.0,
+      "task": true
+    },
+    "gate-task-lr-1-ent0.1": {
+      "balance": 0.0,
+      "entropy": 0.1,
+      "lr_scale": 1.0,
+      "task": true
+    },
+    "gate-task-lr-3": {
+      "balance": 0.0,
+      "entropy": 0.0,
+      "lr_scale": 3.0,
+      "task": true
+    },
+    "gate-task-lr-3-ent0.1": {
+      "balance": 0.0,
+      "entropy": 0.1,
+      "lr_scale": 3.0,
+      "task": true
+    }
+  },
+  "gate_stats": {
+    "gate-learned-lr-1": {
+      "load_ema_final": [
+        0.8450242280960083,
+        0.0018906762124970555,
+        0.15308618545532227
+      ],
+      "lr": 0.001,
+      "steps": 600,
+      "task_conditioned": false,
+      "train_elapsed_s": 23.24311900138855
+    },
+    "gate-task-lr-0.3": {
+      "load_ema_final": [
+        0.8090521693229675,
+        0.007847294211387634,
+        0.1831016093492508
+      ],
+      "lr": 0.0003,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 24.1081862449646
+    },
+    "gate-task-lr-0.3-ent0.1": {
+      "entropy_weight": 0.1,
+      "load_ema_final": [
+        0.7880600094795227,
+        0.009204808622598648,
+        0.20273634791374207
+      ],
+      "lr": 0.0003,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 27.69036102294922,
+      "train_entropy_last50_mean": 0.4784261268377304
+    },
+    "gate-task-lr-1": {
+      "load_ema_final": [
+        0.8112584948539734,
+        0.001837329939007759,
+        0.18690526485443115
+      ],
+      "lr": 0.001,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 23.982837915420532
+    },
+    "gate-task-lr-1-ent0.1": {
+      "entropy_weight": 0.1,
+      "load_ema_final": [
+        0.78717440366745,
+        0.0032969031017273664,
+        0.20952942967414856
+      ],
+      "lr": 0.001,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 27.72266387939453,
+      "train_entropy_last50_mean": 0.47244067907333376
+    },
+    "gate-task-lr-3": {
+      "load_ema_final": [
+        0.8155567049980164,
+        0.002009691670536995,
+        0.18243442475795746
+      ],
+      "lr": 0.003,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 23.95308017730713
+    },
+    "gate-task-lr-3-ent0.1": {
+      "entropy_weight": 0.1,
+      "load_ema_final": [
+        0.7835379242897034,
+        0.002817175816744566,
+        0.21364565193653107
+      ],
+      "lr": 0.003,
+      "steps": 600,
+      "task_conditioned": true,
+      "train_elapsed_s": 27.72653293609619,
+      "train_entropy_last50_mean": 0.46854574099183083
+    }
+  },
+  "gate_steps": 600,
+  "layer_blocks": {},
+  "layer_bounds": [],
+  "layer_sizes": [],
+  "lora_dim": 774144,
+  "lr": 0.001,
+  "magnitudes": {
+    "audio": {
+      "gate-learned-lr-1_cos_own": 0.0001928692654473707,
+      "gate-learned-lr-1_l2": 42.041748046875,
+      "gate-oracle_cos_own": 1.0,
+      "gate-oracle_l2": 40.38338088989258,
+      "gate-task-lr-0.3-ent0.1_cos_own": 0.011498801410198212,
+      "gate-task-lr-0.3-ent0.1_l2": 34.586280822753906,
+      "gate-task-lr-0.3_cos_own": 0.008375171571969986,
+      "gate-task-lr-0.3_l2": 36.59285354614258,
+      "gate-task-lr-1-ent0.1_cos_own": 0.0166332945227623,
+      "gate-task-lr-1-ent0.1_l2": 27.350475311279297,
+      "gate-task-lr-1_cos_own": 0.0023685223422944546,
+      "gate-task-lr-1_l2": 36.97265625,
+      "gate-task-lr-3-ent0.1_cos_own": 6.0027872677892447e-05,
+      "gate-task-lr-3-ent0.1_l2": 35.788272857666016,
+      "gate-task-lr-3_cos_own": 6.892703822813928e-05,
+      "gate-task-lr-3_l2": 35.4015007019043,
+      "others_sum_l2": 53.519248962402344,
+      "own_l2": 40.38338088989258,
+      "single_cos_own": 1.0,
+      "single_l2": 40.38338088989258,
+      "sum_cos_own": 0.6023260354995728,
+      "sum_l2": 67.04571533203125
+    },
+    "imu": {
+      "gate-learned-lr-1_cos_own": 0.9973458051681519,
+      "gate-learned-lr-1_l2": 42.041748046875,
+      "gate-oracle_cos_own": 1.0,
+      "gate-oracle_l2": 50.1374626159668,
+      "gate-task-lr-0.3-ent0.1_cos_own": 0.9997068643569946,
+      "gate-task-lr-0.3-ent0.1_l2": 47.06745529174805,
+      "gate-task-lr-0.3_cos_own": 0.9999469518661499,
+      "gate-task-lr-0.3_l2": 48.78780746459961,
+      "gate-task-lr-1-ent0.1_cos_own": 0.9971882104873657,
+      "gate-task-lr-1-ent0.1_l2": 41.84706497192383,
+      "gate-task-lr-1_cos_own": 0.9999294877052307,
+      "gate-task-lr-1_l2": 48.59553527832031,
+      "gate-task-lr-3-ent0.1_cos_own": 0.9996901750564575,
+      "gate-task-lr-3-ent0.1_l2": 47.017635345458984,
+      "gate-task-lr-3_cos_own": 0.9999449253082275,
+      "gate-task-lr-3_l2": 48.769065856933594,
+      "others_sum_l2": 44.51249694824219,
+      "own_l2": 50.1374626159668,
+      "single_cos_own": 1.0,
+      "single_l2": 50.1374626159668,
+      "sum_cos_own": 0.7478101253509521,
+      "sum_l2": 67.04571533203125
+    }
+  },
+  "max_eval_items": 64,
+  "merge_modes": [
+    "sum",
+    "gate-oracle",
+    "gate-learned-lr-1",
+    "gate-task-lr-0.3",
+    "gate-task-lr-1",
+    "gate-task-lr-3",
+    "gate-task-lr-0.3-ent0.1",
+    "gate-task-lr-1-ent0.1",
+    "gate-task-lr-3-ent0.1"
+  ],
+  "rank": 4,
+  "results": {
+    "audio": {
+      "categories": 50,
+      "chance_rank1": 0.02,
+      "gate_weights": {
+        "gate-learned-lr-1": {
+          "entropy_max": 0.6777856190737782,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.29176164510554115,
+          "entropy_min": 0.09011633184578235,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9076200593262911,
+            0.0004452386453782653,
+            0.09193469601450488
+          ],
+          "per_brick_std": [
+            0.05894482842851774,
+            0.0018991572597857678,
+            0.05778094263265635
+          ],
+          "self_max": 0.014108436182141304,
+          "self_mean": 0.0004452386453782653,
+          "self_min": 2.643528951296048e-08,
+          "self_std": 0.0018991572597857678
+        },
+        "gate-oracle": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-task-lr-0.3": {
+          "entropy_max": 0.7371008597276764,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.6359539896447933,
+          "entropy_min": 0.5204337629332014,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.6955455401912332,
+            0.004955257405526936,
+            0.2994992076419294
+          ],
+          "per_brick_std": [
+            0.03701583518422326,
+            0.003491743728001843,
+            0.03471209515635332
+          ],
+          "self_max": 0.019217152148485184,
+          "self_mean": 0.004955257405526936,
+          "self_min": 0.0011328383116051555,
+          "self_std": 0.003491743728001843
+        },
+        "gate-task-lr-0.3-ent0.1": {
+          "entropy_max": 0.7362871914005522,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.6436653591030325,
+          "entropy_min": 0.5355197156448855,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.6915460163727403,
+            0.005805618828162551,
+            0.3026483634021133
+          ],
+          "per_brick_std": [
+            0.032512522943003955,
+            0.0030319567540183154,
+            0.03065988153306412
+          ],
+          "self_max": 0.017173409461975098,
+          "self_mean": 0.005805618828162551,
+          "self_min": 0.0023537890519946814,
+          "self_std": 0.0030319567540183154
+        },
+        "gate-task-lr-1": {
+          "entropy_max": 0.7598726912674452,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.6234576952000014,
+          "entropy_min": 0.4833026551966101,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.6831605136394501,
+            0.0022088928923267304,
+            0.31463059107773006
+          ],
+          "per_brick_std": [
+            0.07509718333929295,
+            0.003267428926183322,
+            0.07331813198733257
+          ],
+          "self_max": 0.01763005182147026,
+          "self_mean": 0.0022088928923267304,
+          "self_min": 0.00011151428770972416,
+          "self_std": 0.003267428926183322
+        },
+        "gate-task-lr-1-ent0.1": {
+          "entropy_max": 0.7806452543835107,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.6828167156201593,
+          "entropy_min": 0.5902159676278679,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.6308812368661165,
+            0.005791098958070506,
+            0.36332766339182854
+          ],
+          "per_brick_std": [
+            0.04196793848818559,
+            0.00532198467390094,
+            0.03951652298645521
+          ],
+          "self_max": 0.023921223357319832,
+          "self_mean": 0.005791098958070506,
+          "self_min": 0.0008744782535359263,
+          "self_std": 0.00532198467390094
+        },
+        "gate-task-lr-3": {
+          "entropy_max": 0.6574817868598829,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.5471998556837364,
+          "entropy_min": 0.28613439626807313,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.7531378930434585,
+            0.00039864932961264365,
+            0.2464634587522596
+          ],
+          "per_brick_std": [
+            0.07036403841604866,
+            0.0007313861504652948,
+            0.07022840771992715
+          ],
+          "self_max": 0.004108981229364872,
+          "self_mean": 0.00039864932961264365,
+          "self_min": 1.6246499967564887e-07,
+          "self_std": 0.0007313861504652948
+        },
+        "gate-task-lr-3-ent0.1": {
+          "entropy_max": 0.7380240956217342,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.5453581903784719,
+          "entropy_min": 0.28449778836060985,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.757696095854044,
+            0.0007785839021546836,
+            0.24152531824074686
+          ],
+          "per_brick_std": [
+            0.06524597778305488,
+            0.003022851965840538,
+            0.06399091601784476
+          ],
+          "self_max": 0.019932357594370842,
+          "self_mean": 0.0007785839021546836,
+          "self_min": 1.054847231785061e-07,
+          "self_std": 0.003022851965840538
+        }
+      },
+      "modes": {
+        "gate-learned-lr-1": {
+          "others_only": {
+            "avg_rank": 26.03125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 26.015625,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          }
+        },
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "gate-task-lr-0.3": {
+          "others_only": {
+            "avg_rank": 25.5,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 25.546875,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.03125
+          }
+        },
+        "gate-task-lr-0.3-ent0.1": {
+          "others_only": {
+            "avg_rank": 25.578125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 25.609375,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          }
+        },
+        "gate-task-lr-1": {
+          "others_only": {
+            "avg_rank": 26.0,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.015625
+          },
+          "true": {
+            "avg_rank": 26.0,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.015625
+          }
+        },
+        "gate-task-lr-1-ent0.1": {
+          "others_only": {
+            "avg_rank": 25.65625,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.046875
+          },
+          "true": {
+            "avg_rank": 25.671875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.046875
+          }
+        },
+        "gate-task-lr-3": {
+          "others_only": {
+            "avg_rank": 25.96875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 25.953125,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          }
+        },
+        "gate-task-lr-3-ent0.1": {
+          "others_only": {
+            "avg_rank": 26.484375,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.046875
+          },
+          "true": {
+            "avg_rank": 26.484375,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.046875
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 25.25,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.015625
+          },
+          "true": {
+            "avg_rank": 28.265625,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.03125
+          }
+        }
+      },
+      "retention": {
+        "gate-learned-lr-1": 0.047619047619047616,
+        "gate-oracle": 1.0,
+        "gate-task-lr-0.3": 0.0,
+        "gate-task-lr-0.3-ent0.1": 0.047619047619047616,
+        "gate-task-lr-1": 0.0,
+        "gate-task-lr-1-ent0.1": 0.047619047619047616,
+        "gate-task-lr-3": 0.047619047619047616,
+        "gate-task-lr-3-ent0.1": 0.09523809523809523,
+        "sum": 0.09523809523809523
+      }
+    },
+    "imu": {
+      "categories": 6,
+      "chance_rank1": 0.16666666666666666,
+      "gate_weights": {
+        "gate-learned-lr-1": {
+          "entropy_max": 0.6777856190737782,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.29176164510554115,
+          "entropy_min": 0.09011633184578235,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9076200593262911,
+            0.0004452386453782653,
+            0.09193469601450488
+          ],
+          "per_brick_std": [
+            0.05894482842851774,
+            0.0018991572597857678,
+            0.05778094263265635
+          ],
+          "self_max": 0.9820085763931274,
+          "self_mean": 0.9076200593262911,
+          "self_min": 0.6884455680847168,
+          "self_std": 0.05894482842851774
+        },
+        "gate-oracle": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-task-lr-0.3": {
+          "entropy_max": 0.1938483255046301,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.13525403420631082,
+          "entropy_min": 0.08333553983098249,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9698133124038577,
+            9.303678606897847e-05,
+            0.030093644629232585
+          ],
+          "per_brick_std": [
+            0.006689586011989734,
+            6.709773297654796e-05,
+            0.00665326856284989
+          ],
+          "self_max": 0.9837163686752319,
+          "self_mean": 0.9698133124038577,
+          "self_min": 0.9520060420036316,
+          "self_std": 0.006689586011989734
+        },
+        "gate-task-lr-0.3-ent0.1": {
+          "entropy_max": 0.33438376600863506,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.25310349624900297,
+          "entropy_min": 0.15119824198898962,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9306263457983732,
+            0.0004247773681527178,
+            0.06894886837108061
+          ],
+          "per_brick_std": [
+            0.013560567428989843,
+            0.0002161699189634764,
+            0.013500465843888887
+          ],
+          "self_max": 0.9655371308326721,
+          "self_mean": 0.9306263457983732,
+          "self_min": 0.8971073031425476,
+          "self_std": 0.013560567428989843
+        },
+        "gate-task-lr-1": {
+          "entropy_max": 0.22015614223910207,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.13864511532716134,
+          "entropy_min": 0.08651713808069818,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.968447539024055,
+            3.647905828518816e-06,
+            0.03154880239162594
+          ],
+          "per_brick_std": [
+            0.009798493472629134,
+            5.3698926843819155e-06,
+            0.009794110128859593
+          ],
+          "self_max": 0.9829034209251404,
+          "self_mean": 0.968447539024055,
+          "self_min": 0.9425211548805237,
+          "self_std": 0.009798493472629134
+        },
+        "gate-task-lr-1-ent0.1": {
+          "entropy_max": 0.4537973730265815,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.3567409130623804,
+          "entropy_min": 0.2812998742072836,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.8845418682321906,
+            9.10025266307457e-05,
+            0.11536712804809213
+          ],
+          "per_brick_std": [
+            0.019029311612969294,
+            7.475581075121155e-05,
+            0.018973370405509737
+          ],
+          "self_max": 0.9191940426826477,
+          "self_mean": 0.8845418682321906,
+          "self_min": 0.8322997093200684,
+          "self_std": 0.019029311612969294
+        },
+        "gate-task-lr-3": {
+          "entropy_max": 0.3366713075154837,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.059234012690391226,
+          "entropy_min": 0.003871240516929911,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9872101759538054,
+            8.821524012820063e-07,
+            0.012788944015937886
+          ],
+          "per_brick_std": [
+            0.020085452743067958,
+            2.4757035125770233e-06,
+            0.02008533670353875
+          ],
+          "self_max": 0.9995560050010681,
+          "self_mean": 0.9872101759538054,
+          "self_min": 0.8946583867073059,
+          "self_std": 0.020085452743067958
+        },
+        "gate-task-lr-3-ent0.1": {
+          "entropy_max": 0.3979450653177394,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.19258831768669982,
+          "entropy_min": 0.0493427457397674,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.9499946404248476,
+            3.066736712968002e-07,
+            0.05000506280339323
+          ],
+          "per_brick_std": [
+            0.024060726064708854,
+            1.3223660882459869e-06,
+            0.02406028059499766
+          ],
+          "self_max": 0.991425633430481,
+          "self_mean": 0.9499946404248476,
+          "self_min": 0.8638373613357544,
+          "self_std": 0.024060726064708854
+        }
+      },
+      "modes": {
+        "gate-learned-lr-1": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.703125,
+            "count": 64,
+            "rank1": 0.578125,
+            "top2": 0.84375
+          }
+        },
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "gate-task-lr-0.3": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.390625,
+            "count": 64,
+            "rank1": 0.640625,
+            "top2": 0.984375
+          }
+        },
+        "gate-task-lr-0.3-ent0.1": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.359375,
+            "count": 64,
+            "rank1": 0.671875,
+            "top2": 0.984375
+          }
+        },
+        "gate-task-lr-1": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.390625,
+            "count": 64,
+            "rank1": 0.640625,
+            "top2": 0.984375
+          }
+        },
+        "gate-task-lr-1-ent0.1": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.578125,
+            "count": 64,
+            "rank1": 0.625,
+            "top2": 0.875
+          }
+        },
+        "gate-task-lr-3": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.359375,
+            "count": 64,
+            "rank1": 0.65625,
+            "top2": 0.984375
+          }
+        },
+        "gate-task-lr-3-ent0.1": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.375,
+            "count": 64,
+            "rank1": 0.65625,
+            "top2": 0.984375
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 3.46875,
+            "count": 64,
+            "rank1": 0.1875,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 3.625,
+            "count": 64,
+            "rank1": 0.09375,
+            "top2": 0.34375
+          }
+        }
+      },
+      "retention": {
+        "gate-learned-lr-1": 0.8409090909090909,
+        "gate-oracle": 1.0,
+        "gate-task-lr-0.3": 0.9318181818181818,
+        "gate-task-lr-0.3-ent0.1": 0.9772727272727273,
+        "gate-task-lr-1": 0.9318181818181818,
+        "gate-task-lr-1-ent0.1": 0.9090909090909091,
+        "gate-task-lr-3": 0.9545454545454546,
+        "gate-task-lr-3-ent0.1": 0.9545454545454546,
+        "sum": 0.13636363636363635
+      }
+    }
+  },
+  "seed": 3042,
+  "slices": {
+    "audio": [
+      256,
+      512
+    ],
+    "imu": [
+      0,
+      256
+    ],
+    "vision": [
+      512,
+      768
+    ]
+  },
+  "target": "all",
+  "task_bricks": [
+    "imu",
+    "audio"
+  ],
+  "task_steps": 600,
+  "task_steps_per_brick": {
+    "audio": 1800,
+    "imu": 600
+  },
+  "text_steps": 300,
+  "train_elapsed_s": 625.412175655365,
+  "trainable_params_per_brick": {
+    "audio": 197504,
+    "imu": 181120
+  },
+  "training_stats": {
+    "audio-true": {
+      "examples_seen": 7200,
+      "steps": 1800,
+      "train_elapsed_s": 240.1297047138214
+    },
+    "imu-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 77.77488994598389
+    }
+  }
+}

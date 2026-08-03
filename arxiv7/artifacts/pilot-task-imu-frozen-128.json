@@ -1,0 +1,18 @@
+{
+  "basis_lr_scale": 1.0,
+  "bridge": "basis-frozen-128",
+  "experiment": "task-imu",
+  "modality": "imu",
+  "results": {
+    "true": {
+      "avg_rank": 1.515625,
+      "count": 64,
+      "examples_seen": 2400,
+      "lr": 0.001,
+      "rank1": 0.484375,
+      "steps": 600,
+      "top2": 1.0,
+      "train_elapsed_s": 134.42626786231995
+    }
+  }
+}

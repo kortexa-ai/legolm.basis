@@ -9,6 +9,7 @@ description = "Paper runner and reproducibility harness for Conditional LoRA Bri
 readme = "src/README.md"
 requires-python = ">=3.11"
 dependencies = [
+  "matplotlib>=3.9",
   "numpy>=1.26",
   "opencv-python-headless>=4.10",
   "pillow>=10",

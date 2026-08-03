@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{fedus2022switch}
+William Fedus, Barret Zoph, and Noam Shazeer.
+\newblock Switch transformers: Scaling to trillion parameter models with simple
+  and efficient sparsity.
+\newblock {\em Journal of Machine Learning Research}, 23(120):1--39, 2022.
+
+\bibitem{huang2024lorahub}
+Chengsong Huang, Qian Liu, Bill~Yuchen Lin, Tianyu Pang, Chao Du, and Min Lin.
+\newblock {LoraHub}: Efficient cross-task generalization via dynamic {LoRA}
+  composition.
+\newblock In {\em Conference on Language Modeling (COLM)}, 2024.
+
+\bibitem{ilharco2023task}
+Gabriel Ilharco, Marco~Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan,
+  Ludwig Schmidt, Hannaneh Hajishirzi, and Ali Farhadi.
+\newblock Editing models with task arithmetic.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2023.
+
+\bibitem{penov2026note}
+Franci Penov.
+\newblock Conditional {LoRA} bridges at {230M}: {What} replicates, what
+  softens, and what inverts, 2026.
+\newblock Research note. \url{https://github.com/kortexa-ai/legolm.paper}.
+
+\bibitem{penov2026bridges}
+Franci Penov.
+\newblock Conditional {LoRA} bridges for modular sensor adaptation of frozen
+  small language models, 2026.
+\newblock Preprint. \url{https://github.com/kortexa-ai/legolm.paper}.
+
+\bibitem{penov2026basis}
+Franci Penov.
+\newblock Two regimes of compressed conditioning: Basis-mixture bridges for
+  frozen language models, 2026.
+\newblock Preprint. \url{https://github.com/kortexa-ai/legolm.basis}.
+
+\bibitem{shazeer2017moe}
+Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le,
+  Geoffrey Hinton, and Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2017.
+
+\bibitem{wortsman2022soups}
+Mitchell Wortsman, Gabriel Ilharco, Samir~Yitzhak Gadre, Rebecca Roelofs,
+  Raphael Gontijo-Lopes, Ari~S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair
+  Carmon, Simon Kornblith, and Ludwig Schmidt.
+\newblock Model soups: Averaging weights of multiple fine-tuned models improves
+  accuracy without increasing inference time.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2022.
+
+\bibitem{yadav2023ties}
+Prateek Yadav, Derek Tam, Leshem Choshen, Colin Raffel, and Mohit Bansal.
+\newblock {TIES}-merging: Resolving interference when merging models.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2023.
+
+\bibitem{yu2024dare}
+Le~Yu, Bowen Yu, Haiyang Yu, Fei Huang, and Yongbin Li.
+\newblock Language models are super mario: Absorbing abilities from homologous
+  models as a free lunch.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2024.
+
+\end{thebibliography}

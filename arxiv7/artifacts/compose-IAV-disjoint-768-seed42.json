@@ -1,0 +1,76 @@
+{
+  "allocation": "disjoint",
+  "baseline": 1.1839299754913313,
+  "basis_diagnostics": {},
+  "bricks": [
+    "imu",
+    "audio",
+    "vision"
+  ],
+  "bridge": "basis-disjoint-768",
+  "eval_elapsed_s": 25.59718108177185,
+  "eval_mode": "conditioned",
+  "examples_seen": 7200,
+  "experiment": "compose-IAV",
+  "final": 1.1619309043954,
+  "improvement": 0.021999071095931244,
+  "lr": 0.001,
+  "magnitudes": {
+    "merged_mean_l2": 11.060125350952148,
+    "merged_sum_l2": 33.18037414550781,
+    "single_audio_l2": 19.43206024169922,
+    "single_imu_l2": 19.340072631835938,
+    "single_vision_l2": 18.687868118286133
+  },
+  "merge_modes": [
+    "mean",
+    "sum"
+  ],
+  "merge_results": {
+    "mean": {
+      "final": 1.1619309043954,
+      "improvement": 0.021999071095931244,
+      "retention_vs_singles_mean": 0.5299551681612162
+    },
+    "sum": {
+      "final": 1.228144110811895,
+      "improvement": -0.04421413532056362,
+      "retention_vs_singles_mean": -1.065113586693474
+    }
+  },
+  "per_brick": {
+    "audio": {
+      "basis_slice": [
+        256,
+        512
+      ],
+      "final": 1.1435203800824458,
+      "improvement": 0.040409595408885446,
+      "trainable_params": 197504
+    },
+    "imu": {
+      "basis_slice": [
+        0,
+        256
+      ],
+      "final": 1.1417980978935598,
+      "improvement": 0.04213187759777148,
+      "trainable_params": 181120
+    },
+    "vision": {
+      "basis_slice": [
+        512,
+        768
+      ],
+      "final": 1.1419378704657481,
+      "improvement": 0.04199210502558315,
+      "trainable_params": 197504
+    }
+  },
+  "singles_mean_improvement": 0.04151119267741336,
+  "steps": 900,
+  "steps_per_brick": 300,
+  "steps_per_second": 1.1691781876294518,
+  "tokens_seen": 921600,
+  "train_elapsed_s": 769.7714595794678
+}
