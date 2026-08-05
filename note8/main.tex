@@ -1,0 +1,233 @@
+\ifdefined\XeTeXrevision\else\pdfoutput=1\fi
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black,
+  pdftitle={The Escape Is Selectable},
+  pdfauthor={Franci Penov},
+}
+\title{The Escape Is Selectable:\\A Text-Gated Router for Composing Sensor Bricks}
+\author{Franci Penov \\ kortexa.ai \\ \texttt{francip@kortexa.ai}}
+\date{2026-08-04}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This note expands on paper 7 (\emph{Zero Weight-Space Interference Is Not
+Enough}~\cite{penov2026interference}), which closed additive composition of
+sensor bricks on a frozen language model and left a constructive existence
+proof with an open problem: oracle selection recovers every brick exactly
+(8/8 seeds), but the only learned mechanism for engaging it --- a
+task-conditioned router --- must be \emph{given} the task identity and
+escapes its collapse basin in only 6 of 8 seeds. We replace the learned
+router with a frozen text classifier: at evaluation, a lane selector reads
+the eval item's own text surface and emits a hard one-hot over bricks,
+composed exactly as the oracle's. Nothing trains through the LM loss, so
+there is no collapse basin. Under a preregistered two-round protocol, both
+selector arms --- a 175,107-trainable-parameter frozen 350M
+encoder with a tuned head, and a 39,235-parameter byte-CNN ---
+clear the registered roll-up at \textbf{8/8
+seeds with retention 1.000 in both modalities}, against the cited
+6/8 for the learned router. Both of paper 7's load-bearing
+caveats fall at this scope. Three discounts travel with the claim: the
+dispatch requires in-domain supervision, pretraining buys nothing at the
+wired level, and the leakage exclusion is item-level because a text-level
+rule would empty both task lanes.
+\end{abstract}
+
+\section{Why this note exists}
+
+Paper 7's constructive section ended one step short of a method. Selection
+composes exactly: under \texttt{gate-oracle}, each brick's out-of-objective
+probe returns to its single-brick score at every one of eight seeds. But the
+learned task-conditioned router that engages selection carries two caveats at
+paragraph prominence: it is handed the task identity through a learned
+embedding (the sensor-feature stream carries no routing signal by
+construction --- the feature-only null's between-modality $L_1$ gap is
+exactly $0.000$ at all eight seeds), and its escape from the collapse basin
+is seed-determined (6 of 8, always starving audio). The
+registered follow-up was to make the escape \emph{selectable}. A substrate
+bake-off (recorded in the program log) found that prompt-lane classification
+is saturable by small frozen encoders where generation steering fails.
+This note wires that selector in and runs the experiment the open problem
+asked for.
+
+\section{The experiment}
+
+\textbf{One new gate mode.} \texttt{gate-selector} evaluates the same
+composition as \texttt{gate-oracle} with one substitution: the one-hot over
+bricks comes from a frozen lane classifier reading the eval item's own text
+surface, not from ground truth. No task embedding exists, no gate steps run,
+and nothing trains through the LM loss --- so seed variation can come only
+from the bricks and the eval draw, which the oracle column already shows do
+not decide anything. Two arms share the wiring: the registered substrate
+(LFM2.5-Encoder-350M, frozen, LoRA rank~4 on attention plus a linear head;
+175,107 trainable parameters) and a from-scratch byte-CNN
+(39,235 parameters) as the pretraining control. Each selector is
+trained once (seed 314159) and frozen across all eight harness
+seeds (42, 1042, 2042, 3042, 4042, 5042, 6042, 7042), at the paper-7 Arm-5
+configuration verbatim: three bricks (IMU, audio, vision) on disjoint
+768-dimensional coefficient blocks over a shared frozen basis on
+LFM\,2.5\,230M, 64 eval items per modality per seed.
+
+\textbf{The integrity check.} On any eval item where the selector's argmax
+equals the true brick, the composed weights must equal
+\texttt{gate-oracle}'s for that item bit-for-bit, and the probe rank must
+match; a violation raises rather than reports. Across both rounds,
+2,344 correctly-routed items were checked and 2,344 matched
+--- a rate of 100.0\%, by construction. Every gap between a selector column
+and the oracle column is therefore selector error and nothing else: retention
+is pinned to the ceiling wherever the classifier is right, and the
+experiment's only free quantity is classifier accuracy.
+
+\textbf{Leakage rule.} The eight seeds' eval items are enumerable up front:
+1,024 items over
+56 distinct text surfaces. Round 1 excluded
+every training item whose text matched any eval surface ---
+12,299 of 25,081 pool items
+(audio 2,000, imu 10,299) --- and the selectors never saw an eval item.
+
+\textbf{Two rounds, registered in advance.} The preregistration named three
+readings and permitted exactly one iteration, gated mechanically: a launcher
+script renders the round-1 verdict from the artifacts and refuses to run
+round 2 unless it reads \emph{selector-limited} --- retention failing
+exactly where the selector was wrong.
+
+\section{Result}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+gate & round 1 & round 2 \\
+\midrule
+\texttt{gate-oracle} (given identity; ceiling) & 8/8 & 8/8 \\
+\texttt{gate-selector} (encoder, text-gated) & 0/8 & 8/8 \\
+\texttt{gate-selector-cnn} (byte-CNN, text-gated) & 0/8 & 8/8 \\
+\texttt{gate-task-lr-*} (learned router, cited from paper 7) & \multicolumn{2}{c}{6/8} \\
+\bottomrule
+\end{tabular}
+\caption{Seeds (of 8) whose retention clears 80\% in
+\emph{every} modality. Round-2 selector retention is 1.000 in both
+modalities at all eight seeds, in both arms. The learned-router row is cited
+from paper 7's artifacts (escaped at seeds
+42, 2042, 4042, 5042, 6042, 7042) and was not re-run.}
+\label{tab:money}
+\end{table}
+
+\textbf{Round 1 obtained the selector-limited reading.} The bake-off's
+selectors, trained on a foreign rendering of the same lanes, do not transfer
+to the harness's text surface: the encoder scores 57.8\% on
+audio and 0.0\% on IMU eval items, the byte-CNN 0.0\% on both,
+and both arms roll up 0/8. Retention tracks accuracy mechanically
+(Table~\ref{tab:coupling}): encoder audio retention spans
+52.4\%--77.3\% at 57.8\% accuracy, and IMU
+retention sits at 17.9\%--25.0\% --- which is the
+\texttt{others\_only} floor, because a wrong one-hot composes exactly the
+\texttt{others\_only} control. Selector accuracy has zero seed variance by
+construction: the eval text multiset is seed-invariant, so a text-only gate
+is seed-\emph{constant} --- the opposite failure geometry from the learned
+router's bistability.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llcc}
+\toprule
+arm & modality & selector accuracy & retention across seeds \\
+\midrule
+encoder & audio & 57.8\% & 52.4\%--77.3\% \\
+encoder & imu & 0.0\% & 17.9\%--25.0\% \\
+byte-CNN & audio & 0.0\% & 4.2\%--6.7\% \\
+byte-CNN & imu & 0.0\% & 17.9\%--25.0\% \\
+\bottomrule
+\end{tabular}
+\caption{Round 1: the coupling the integrity check enforces. Retention is a
+mechanical function of selector accuracy; nothing else in the harness moves.}
+\label{tab:coupling}
+\end{table}
+
+\textbf{Round 2 saturates.} Retrained on the harness's own train-split
+streams (item-level exclusion; for IMU no eval \emph{subject} is ever
+seen), both arms score 64/64 on the eval texts of both modalities at every
+seed, and retention is 1.000 in both modalities at all eight seeds ---
+matching the oracle column cell for cell. The single-brick references the
+retention is measured against are unchanged throughout (seed 42: IMU
+0.750, audio 0.297, reproducing paper 7's Arm-5
+comparator to the digit).
+
+Both of paper 7's caveats fall at this scope. The gate is not given task
+identity --- it reads the question --- and there is no bistability, because
+there is no basin: nothing is trained through the LM loss, and the
+escape-rate column for a text gate is a constant of the text, not a draw of
+the seed.
+
+\section{What does not follow}
+
+\textbf{Dispatch needs in-domain supervision.} Round 1 is a real negative:
+classifiers at 0.997--1.000 held-out accuracy on their own training surface
+transferred at 57.8\%/0.0\% (encoder) and 0/0
+(byte-CNN) to the harness's surface. The direction is symmetric --- the
+round-2 encoder drops to 95.3\% on the template-stripped surface
+it no longer trains on, the round-2 byte-CNN to 67.2\%. Nothing
+here demonstrates zero-shot lane inference; the claim is that
+\emph{supervised} dispatch, trained on the deployment surface, engages
+selection exactly.
+
+\textbf{Pretraining buys nothing at the wired level.} The
+39,235-parameter byte-CNN matches the 350M encoder in every cell of
+Table~\ref{tab:money}. At this scope the dispatch is a surface-features
+problem, and the encoder's advantages live off-surface (transfer,
+calibration), not in the wired result. A method claim built on the encoder
+specifically would overstate what this experiment shows.
+
+\textbf{The exclusion is item-level, not text-level.} The registered
+text-level rule cannot apply to round 2: excluding every training item whose
+text matches an eval surface would remove
+7,352 IMU and
+1,600 audio items --- both
+task lanes in their entirety, recorded in the artifact as
+\texttt{text\_rule\_would\_empty\_lanes}. Round 2's selectors have
+therefore seen the eval \emph{label words} in other items --- never an
+eval item, and for IMU never an eval subject. This is load-bearing for how
+strong ``never seen'' is, and it is why the round-1/round-2 distinction is
+reported rather than collapsed.
+
+\textbf{Scope.} One model (LFM\,2.5\,230M), one brick geometry
+(disjoint-768 over a shared frozen basis), two powered modalities, $n=64$
+eval items per cell ($\pm 0.091$ binomial half-width at 95\%); each selector
+was trained once at seed 314159 (MPS training is not
+bit-reproducible, so the selector weights, unlike the splits, are not
+reproducible artifacts); and the roll-up threshold is inherited from paper 7,
+not chosen here.
+
+\section{Consequence for the program}
+
+Paper 7's open problem is closed at this scope, and its constructive section
+upgrades from existence proof to method contingent on scale: selection
+composes, and a text-gated selector engages it without task identity and
+without bistability. The composition rail ladders before it lifts --- the
+next rungs are selection over real hypernetwork bricks at 0.8B and above,
+and more task bricks, where the collapse mechanism predicts learned routing
+degrades and a supervised selector should not care.
+
+\begin{thebibliography}{9}
+\bibitem{penov2026interference} F.~Penov. Zero Weight-Space Interference Is
+Not Enough: Behavioral Probes for Composing Sensor Bricks on a Frozen
+Language Model. Preprint, 2026.
+\url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{penov2026basis} F.~Penov. Two Regimes of Compressed Conditioning.
+Preprint, 2026. \url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{liquidai2025lfm2} Liquid~AI. LFM2.5 model family. Model releases,
+2025--2026. \url{https://huggingface.co/LiquidAI}.
+\end{thebibliography}
+
+\end{document}

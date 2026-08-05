@@ -1,0 +1,365 @@
+{
+  "experiment": "phase4-selector",
+  "round": 2,
+  "pool_variant": "harness-train-stream",
+  "leakage_rule": "item",
+  "selector_seed": 314159,
+  "device": "mps",
+  "leakage": {
+    "rule": "item",
+    "n_eval_texts_enumerated": 56,
+    "n_eval_items_enumerated": 1024,
+    "n_pool_before": 9435,
+    "n_pool_after": 9435,
+    "n_excluded": 0,
+    "n_excluded_per_brick": {},
+    "n_distinct_excluded_texts": 0,
+    "surviving_distinct_texts_per_brick": {
+      "imu": 6,
+      "audio": 50,
+      "vision": 472
+    },
+    "surviving_surfaces_per_brick": {
+      "imu": [
+        "stream"
+      ],
+      "audio": [
+        "stream"
+      ],
+      "vision": [
+        "stream+content"
+      ]
+    },
+    "eval_text_overlap_after_exclusion": 8952,
+    "text_rule_would_exclude_per_brick": {
+      "imu": 7352,
+      "audio": 1600
+    },
+    "text_rule_would_empty_lanes": [
+      "imu",
+      "audio"
+    ]
+  },
+  "splits": {
+    "train": {
+      "n": 870,
+      "per_brick": {
+        "vision": 290,
+        "audio": 290,
+        "imu": 290
+      },
+      "distinct_texts": 339
+    },
+    "dev": {
+      "n": 289,
+      "per_brick": {
+        "audio": 97,
+        "imu": 97,
+        "vision": 95
+      },
+      "distinct_texts": 144
+    },
+    "test": {
+      "n": 290,
+      "per_brick": {
+        "audio": 96,
+        "imu": 96,
+        "vision": 98
+      },
+      "distinct_texts": 147
+    }
+  },
+  "protocol": {
+    "lora_rank": 4,
+    "lora_targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "out_proj"
+    ],
+    "max_len": 64,
+    "batch_size": 16,
+    "epochs": 6,
+    "lr_grid": [
+      0.0005,
+      0.002
+    ],
+    "weight_decay": 0.01,
+    "cap_per_brick": 483,
+    "split_fractions": [
+      0.6,
+      0.2,
+      0.2
+    ]
+  },
+  "arms": {
+    "encoder": {
+      "arm": "encoder",
+      "lr": 0.0005,
+      "dev_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "test_per_brick": {
+        "imu": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "audio": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "vision": {
+          "n": 98,
+          "accuracy": 1.0
+        }
+      },
+      "test_confusion": [
+        [
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          96,
+          0
+        ],
+        [
+          0,
+          0,
+          98
+        ]
+      ],
+      "confusion_order": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "trainable_params": 175107,
+      "total_params": 354659075,
+      "lora_modules_wrapped": 24,
+      "train_seconds": 65.08490991592407,
+      "checkpoint": "LiquidAI/LFM2.5-Encoder-350M@b886781f7c6f10ca9b7096e21b83e30a073c2f39",
+      "pretrained_weight_check": {
+        "tensors_verified": 148,
+        "checkpoint_tensors": 148
+      },
+      "encoder_bidirectional": true,
+      "n_train": 870,
+      "n_dev": 289,
+      "n_test": 290,
+      "lr_grid": [
+        0.0005,
+        0.002
+      ],
+      "wall_seconds": 147.7362880706787,
+      "checkpoint_path": "results/lfm230m-selector-20260804/selector-encoder-round2.pt",
+      "harness_eval_texts": {
+        "stream": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 1.0
+            }
+          },
+          "mean_accuracy": 1.0
+        },
+        "content": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 0.90625
+            }
+          },
+          "mean_accuracy": 0.953125
+        }
+      }
+    },
+    "bytecnn": {
+      "arm": "bytecnn",
+      "lr": 0.0005,
+      "dev_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "test_per_brick": {
+        "imu": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "audio": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "vision": {
+          "n": 98,
+          "accuracy": 1.0
+        }
+      },
+      "test_confusion": [
+        [
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          96,
+          0
+        ],
+        [
+          0,
+          0,
+          98
+        ]
+      ],
+      "confusion_order": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "trainable_params": 39235,
+      "total_params": 39235,
+      "train_seconds": 2.415992021560669,
+      "checkpoint": "scratch:ByteCNN",
+      "n_train": 870,
+      "n_dev": 289,
+      "n_test": 290,
+      "lr_grid": [
+        0.0005,
+        0.002
+      ],
+      "wall_seconds": 3.7733640670776367,
+      "checkpoint_path": "results/lfm230m-selector-20260804/selector-bytecnn-round2.pt",
+      "harness_eval_texts": {
+        "stream": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 1.0
+            }
+          },
+          "mean_accuracy": 1.0
+        },
+        "content": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 0.34375
+            }
+          },
+          "mean_accuracy": 0.671875
+        }
+      }
+    }
+  }
+}

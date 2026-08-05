@@ -1,0 +1,365 @@
+{
+  "experiment": "phase4-selector",
+  "round": 1,
+  "pool_variant": "full",
+  "leakage_rule": "text",
+  "selector_seed": 314159,
+  "device": "mps",
+  "leakage": {
+    "rule": "text",
+    "n_eval_texts_enumerated": 56,
+    "n_eval_items_enumerated": 1024,
+    "n_pool_before": 25081,
+    "n_pool_after": 12782,
+    "n_excluded": 12299,
+    "n_excluded_per_brick": {
+      "imu": 10299,
+      "audio": 2000
+    },
+    "n_distinct_excluded_texts": 56,
+    "surviving_distinct_texts_per_brick": {
+      "imu": 6,
+      "audio": 50,
+      "vision": 472
+    },
+    "surviving_surfaces_per_brick": {
+      "imu": [
+        "content"
+      ],
+      "audio": [
+        "content"
+      ],
+      "vision": [
+        "stream+content"
+      ]
+    },
+    "eval_text_overlap_after_exclusion": 0,
+    "text_rule_would_exclude_per_brick": {
+      "imu": 10299,
+      "audio": 2000
+    },
+    "text_rule_would_empty_lanes": []
+  },
+  "splits": {
+    "train": {
+      "n": 870,
+      "per_brick": {
+        "vision": 290,
+        "audio": 290,
+        "imu": 290
+      },
+      "distinct_texts": 339
+    },
+    "dev": {
+      "n": 289,
+      "per_brick": {
+        "audio": 97,
+        "imu": 97,
+        "vision": 95
+      },
+      "distinct_texts": 142
+    },
+    "test": {
+      "n": 290,
+      "per_brick": {
+        "audio": 96,
+        "imu": 96,
+        "vision": 98
+      },
+      "distinct_texts": 149
+    }
+  },
+  "protocol": {
+    "lora_rank": 4,
+    "lora_targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "out_proj"
+    ],
+    "max_len": 64,
+    "batch_size": 16,
+    "epochs": 6,
+    "lr_grid": [
+      0.0005,
+      0.002
+    ],
+    "weight_decay": 0.01,
+    "cap_per_brick": 483,
+    "split_fractions": [
+      0.6,
+      0.2,
+      0.2
+    ]
+  },
+  "arms": {
+    "encoder": {
+      "arm": "encoder",
+      "lr": 0.0005,
+      "dev_accuracy": 1.0,
+      "test_accuracy": 0.9965517520904541,
+      "test_per_brick": {
+        "imu": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "audio": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "vision": {
+          "n": 98,
+          "accuracy": 0.9897959232330322
+        }
+      },
+      "test_confusion": [
+        [
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          96,
+          0
+        ],
+        [
+          0,
+          1,
+          97
+        ]
+      ],
+      "confusion_order": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "trainable_params": 175107,
+      "total_params": 354659075,
+      "lora_modules_wrapped": 24,
+      "train_seconds": 69.67830014228821,
+      "checkpoint": "LiquidAI/LFM2.5-Encoder-350M@b886781f7c6f10ca9b7096e21b83e30a073c2f39",
+      "pretrained_weight_check": {
+        "tensors_verified": 148,
+        "checkpoint_tensors": 148
+      },
+      "encoder_bidirectional": true,
+      "n_train": 870,
+      "n_dev": 289,
+      "n_test": 290,
+      "lr_grid": [
+        0.0005,
+        0.002
+      ],
+      "wall_seconds": 146.2396388053894,
+      "checkpoint_path": "/Users/francip/src/legolm-paper/results/lfm230m-selector-20260804/selector-encoder.pt",
+      "harness_eval_texts": {
+        "stream": {
+          "per_seed": {
+            "42": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "1042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "2042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "3042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "4042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "5042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "6042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            },
+            "7042": {
+              "imu": 0.0,
+              "audio": 0.578125
+            }
+          },
+          "mean_accuracy": 0.2890625
+        },
+        "content": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 1.0
+            }
+          },
+          "mean_accuracy": 1.0
+        }
+      }
+    },
+    "bytecnn": {
+      "arm": "bytecnn",
+      "lr": 0.0005,
+      "dev_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "test_per_brick": {
+        "imu": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "audio": {
+          "n": 96,
+          "accuracy": 1.0
+        },
+        "vision": {
+          "n": 98,
+          "accuracy": 1.0
+        }
+      },
+      "test_confusion": [
+        [
+          96,
+          0,
+          0
+        ],
+        [
+          0,
+          96,
+          0
+        ],
+        [
+          0,
+          0,
+          98
+        ]
+      ],
+      "confusion_order": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "trainable_params": 39235,
+      "total_params": 39235,
+      "train_seconds": 2.445744037628174,
+      "checkpoint": "scratch:ByteCNN",
+      "n_train": 870,
+      "n_dev": 289,
+      "n_test": 290,
+      "lr_grid": [
+        0.0005,
+        0.002
+      ],
+      "wall_seconds": 3.7051620483398438,
+      "checkpoint_path": "/Users/francip/src/legolm-paper/results/lfm230m-selector-20260804/selector-bytecnn.pt",
+      "harness_eval_texts": {
+        "stream": {
+          "per_seed": {
+            "42": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "1042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "2042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "3042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "4042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "5042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "6042": {
+              "imu": 0.0,
+              "audio": 0.0
+            },
+            "7042": {
+              "imu": 0.0,
+              "audio": 0.0
+            }
+          },
+          "mean_accuracy": 0.0
+        },
+        "content": {
+          "per_seed": {
+            "42": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "1042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "2042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "3042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "4042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "5042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "6042": {
+              "imu": 1.0,
+              "audio": 1.0
+            },
+            "7042": {
+              "imu": 1.0,
+              "audio": 1.0
+            }
+          },
+          "mean_accuracy": 1.0
+        }
+      }
+    }
+  }
+}

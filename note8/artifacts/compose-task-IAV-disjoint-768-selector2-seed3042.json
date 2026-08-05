@@ -1,0 +1,3153 @@
+{
+  "allocation": "disjoint",
+  "basis_diagnostics": {
+    "basis_dim": 768,
+    "basis_seed": 3042,
+    "max_diag_error": 4.5299530029296875e-06,
+    "max_offdiag_abs": 4.898174665868282e-08,
+    "output_dim": 774144,
+    "whitening_passes": 1
+  },
+  "basis_seed": 3042,
+  "bricks": [
+    "imu",
+    "audio",
+    "vision"
+  ],
+  "bridge": "basis-disjoint-768",
+  "causality_checks": {
+    "after_selectors": {
+      "checked": true,
+      "positions": 4
+    },
+    "before_selectors": {
+      "checked": true,
+      "positions": 4
+    }
+  },
+  "coefficient_checks": {
+    "audio": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.654728852277913e-06,
+        "recovered_scale_ratio_mean": 1.0000055616039314
+      }
+    },
+    "imu": {
+      "sum": {
+        "coefficient_rel_error_mean": 5.623336960525194e-06,
+        "recovered_scale_ratio_mean": 1.0000055692496657
+      }
+    }
+  },
+  "conditions": [
+    "true"
+  ],
+  "context_bricks": [
+    "vision"
+  ],
+  "context_results": {
+    "vision": {
+      "baseline": 1.1839299754913313,
+      "basis_lr_scale": 1.0,
+      "basis_seed": 3042,
+      "basis_slice": [
+        512,
+        768
+      ],
+      "bridge": "basis-disjoint-768",
+      "diversity_weight": 0.0,
+      "eval_elapsed_s": 11.495006084442139,
+      "examples_seen": 2400,
+      "experiment": "bridge-vision",
+      "final": 1.1406456277889567,
+      "improvement": 0.04328434770237455,
+      "last_diversity": 0.0,
+      "lora_dim": 774144,
+      "lr": 0.001,
+      "steps": 300,
+      "steps_per_second": 1.1512069147677977,
+      "tokens_seen": 307200,
+      "train_elapsed_s": 260.59607195854187,
+      "trainable_params": 197504
+    }
+  },
+  "eval_elapsed_s": 97.4806661605835,
+  "experiment": "compose-task-IAV",
+  "fixed_merge_modes": [
+    "sum"
+  ],
+  "gate_modes": [
+    "gate-oracle",
+    "gate-selector",
+    "gate-selector-cnn"
+  ],
+  "gate_specs": {},
+  "gate_stats": {},
+  "gate_steps": 0,
+  "layer_blocks": {},
+  "layer_bounds": [],
+  "layer_sizes": [],
+  "lora_dim": 774144,
+  "lr": 0.001,
+  "magnitudes": {
+    "audio": {
+      "gate-oracle_cos_own": 1.0,
+      "gate-oracle_l2": 40.38338088989258,
+      "gate-selector-cnn_cos_own": 1.0,
+      "gate-selector-cnn_l2": 40.38338088989258,
+      "gate-selector_cos_own": 1.0,
+      "gate-selector_l2": 40.38338088989258,
+      "others_sum_l2": 53.519248962402344,
+      "own_l2": 40.38338088989258,
+      "single_cos_own": 1.0,
+      "single_l2": 40.38338088989258,
+      "sum_cos_own": 0.6023260354995728,
+      "sum_l2": 67.04571533203125
+    },
+    "imu": {
+      "gate-oracle_cos_own": 1.0,
+      "gate-oracle_l2": 50.1374626159668,
+      "gate-selector-cnn_cos_own": 1.0,
+      "gate-selector-cnn_l2": 50.1374626159668,
+      "gate-selector_cos_own": 1.0,
+      "gate-selector_l2": 50.1374626159668,
+      "others_sum_l2": 44.51249694824219,
+      "own_l2": 50.1374626159668,
+      "single_cos_own": 1.0,
+      "single_l2": 50.1374626159668,
+      "sum_cos_own": 0.7478101253509521,
+      "sum_l2": 67.04571533203125
+    }
+  },
+  "max_eval_items": 64,
+  "merge_modes": [
+    "sum",
+    "gate-oracle",
+    "gate-selector",
+    "gate-selector-cnn"
+  ],
+  "rank": 4,
+  "results": {
+    "audio": {
+      "categories": 50,
+      "chance_rank1": 0.02,
+      "gate_weights": {
+        "gate-oracle": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-selector": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-selector-cnn": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        }
+      },
+      "modes": {
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "gate-selector": {
+          "others_only": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "gate-selector-cnn": {
+          "others_only": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 25.71875,
+            "count": 64,
+            "rank1": 0.015625,
+            "top2": 0.03125
+          },
+          "true": {
+            "avg_rank": 7.5625,
+            "count": 64,
+            "rank1": 0.328125,
+            "top2": 0.453125
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 25.25,
+            "count": 64,
+            "rank1": 0.0,
+            "top2": 0.015625
+          },
+          "true": {
+            "avg_rank": 28.265625,
+            "count": 64,
+            "rank1": 0.03125,
+            "top2": 0.03125
+          }
+        }
+      },
+      "retention": {
+        "gate-oracle": 1.0,
+        "gate-selector": 1.0,
+        "gate-selector-cnn": 1.0,
+        "sum": 0.09523809523809523
+      }
+    },
+    "imu": {
+      "categories": 6,
+      "chance_rank1": 0.16666666666666666,
+      "gate_weights": {
+        "gate-oracle": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-selector": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        },
+        "gate-selector-cnn": {
+          "entropy_max": -0.0,
+          "entropy_max_possible": 1.0986122886681098,
+          "entropy_mean": 0.0,
+          "entropy_min": -0.0,
+          "n_examples": 64,
+          "per_brick_mean": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "per_brick_std": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "self_max": 1.0,
+          "self_mean": 1.0,
+          "self_min": 1.0,
+          "self_std": 0.0
+        }
+      },
+      "modes": {
+        "gate-oracle": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "gate-selector": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "gate-selector-cnn": {
+          "others_only": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "single": {
+          "no_bridge": {
+            "avg_rank": 3.5625,
+            "count": 64,
+            "rank1": 0.15625,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 1.328125,
+            "count": 64,
+            "rank1": 0.6875,
+            "top2": 0.984375
+          }
+        },
+        "sum": {
+          "others_only": {
+            "avg_rank": 3.46875,
+            "count": 64,
+            "rank1": 0.1875,
+            "top2": 0.3125
+          },
+          "true": {
+            "avg_rank": 3.625,
+            "count": 64,
+            "rank1": 0.09375,
+            "top2": 0.34375
+          }
+        }
+      },
+      "retention": {
+        "gate-oracle": 1.0,
+        "gate-selector": 1.0,
+        "gate-selector-cnn": 1.0,
+        "sum": 0.13636363636363635
+      }
+    }
+  },
+  "seed": 3042,
+  "selector_integrity": {
+    "gate-selector": {
+      "audio": {
+        "n_correct": 64,
+        "n_items": 64,
+        "n_rank_match": 64,
+        "n_weight_bit_match": 64,
+        "oracle_match_rate": 1.0,
+        "per_item": [
+          {
+            "correct": true,
+            "index": 0,
+            "oracle_rank": 25,
+            "rank": 25,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 1,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 2,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 3,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 4,
+            "oracle_rank": 15,
+            "rank": 15,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 5,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 6,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 7,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 8,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 9,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 10,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 11,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 12,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 13,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 14,
+            "oracle_rank": 15,
+            "rank": 15,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 15,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 16,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 17,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 18,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 19,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 20,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 21,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 22,
+            "oracle_rank": 11,
+            "rank": 11,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 23,
+            "oracle_rank": 43,
+            "rank": 43,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 24,
+            "oracle_rank": 24,
+            "rank": 24,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 25,
+            "oracle_rank": 25,
+            "rank": 25,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 26,
+            "oracle_rank": 5,
+            "rank": 5,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 27,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 28,
+            "oracle_rank": 9,
+            "rank": 9,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 29,
+            "oracle_rank": 8,
+            "rank": 8,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 30,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 31,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 32,
+            "oracle_rank": 20,
+            "rank": 20,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 33,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 34,
+            "oracle_rank": 40,
+            "rank": 40,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 35,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 36,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 37,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 38,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 39,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 40,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 41,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 42,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 43,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 44,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 45,
+            "oracle_rank": 21,
+            "rank": 21,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 46,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 47,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 48,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 49,
+            "oracle_rank": 37,
+            "rank": 37,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 50,
+            "oracle_rank": 8,
+            "rank": 8,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 51,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 52,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 53,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 54,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 55,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 56,
+            "oracle_rank": 24,
+            "rank": 24,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 57,
+            "oracle_rank": 16,
+            "rank": 16,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 58,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 59,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 60,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 61,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 62,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 63,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          }
+        ],
+        "selector_accuracy": 1.0
+      },
+      "imu": {
+        "n_correct": 64,
+        "n_items": 64,
+        "n_rank_match": 64,
+        "n_weight_bit_match": 64,
+        "oracle_match_rate": 1.0,
+        "per_item": [
+          {
+            "correct": true,
+            "index": 0,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 1,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 2,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 3,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 4,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 5,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 6,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 7,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 8,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 9,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 10,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 11,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 12,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 13,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 14,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 15,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 16,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 17,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 18,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 19,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 20,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 21,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 22,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 23,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 24,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 25,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 26,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 27,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 28,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 29,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 30,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 31,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 32,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 33,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 34,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 35,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 36,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 37,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 38,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 39,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 40,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 41,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 42,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 43,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 44,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 45,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 46,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 47,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 48,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 49,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 50,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 51,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 52,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 53,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 54,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 55,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 56,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 57,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 58,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 59,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 60,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 61,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 62,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 63,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          }
+        ],
+        "selector_accuracy": 1.0
+      }
+    },
+    "gate-selector-cnn": {
+      "audio": {
+        "n_correct": 64,
+        "n_items": 64,
+        "n_rank_match": 64,
+        "n_weight_bit_match": 64,
+        "oracle_match_rate": 1.0,
+        "per_item": [
+          {
+            "correct": true,
+            "index": 0,
+            "oracle_rank": 25,
+            "rank": 25,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 1,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 2,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 3,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 4,
+            "oracle_rank": 15,
+            "rank": 15,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 5,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 6,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 7,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 8,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 9,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 10,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 11,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 12,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 13,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 14,
+            "oracle_rank": 15,
+            "rank": 15,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 15,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 16,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 17,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 18,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 19,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 20,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 21,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 22,
+            "oracle_rank": 11,
+            "rank": 11,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 23,
+            "oracle_rank": 43,
+            "rank": 43,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 24,
+            "oracle_rank": 24,
+            "rank": 24,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 25,
+            "oracle_rank": 25,
+            "rank": 25,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 26,
+            "oracle_rank": 5,
+            "rank": 5,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 27,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 28,
+            "oracle_rank": 9,
+            "rank": 9,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 29,
+            "oracle_rank": 8,
+            "rank": 8,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 30,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 31,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 32,
+            "oracle_rank": 20,
+            "rank": 20,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 33,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 34,
+            "oracle_rank": 40,
+            "rank": 40,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 35,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 36,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 37,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 38,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 39,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 40,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 41,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 42,
+            "oracle_rank": 6,
+            "rank": 6,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 43,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 44,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 45,
+            "oracle_rank": 21,
+            "rank": 21,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 46,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 47,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 48,
+            "oracle_rank": 13,
+            "rank": 13,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 49,
+            "oracle_rank": 37,
+            "rank": 37,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 50,
+            "oracle_rank": 8,
+            "rank": 8,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 51,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 52,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 53,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 54,
+            "oracle_rank": 4,
+            "rank": 4,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 55,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 56,
+            "oracle_rank": 24,
+            "rank": 24,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 57,
+            "oracle_rank": 16,
+            "rank": 16,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 58,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 59,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 60,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 61,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 62,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 63,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "audio",
+            "weight_bit_match": true
+          }
+        ],
+        "selector_accuracy": 1.0
+      },
+      "imu": {
+        "n_correct": 64,
+        "n_items": 64,
+        "n_rank_match": 64,
+        "n_weight_bit_match": 64,
+        "oracle_match_rate": 1.0,
+        "per_item": [
+          {
+            "correct": true,
+            "index": 0,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 1,
+            "oracle_rank": 3,
+            "rank": 3,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 2,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 3,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 4,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 5,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 6,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 7,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 8,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 9,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 10,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 11,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 12,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 13,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 14,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 15,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 16,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 17,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 18,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 19,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 20,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 21,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 22,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 23,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 24,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 25,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 26,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 27,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 28,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 29,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 30,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 31,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 32,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 33,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 34,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 35,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 36,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 37,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 38,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 39,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 40,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 41,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 42,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 43,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 44,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 45,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 46,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 47,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 48,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 49,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 50,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 51,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 52,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 53,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 54,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 55,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 56,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 57,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 58,
+            "oracle_rank": 2,
+            "rank": 2,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 59,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 60,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 61,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 62,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          },
+          {
+            "correct": true,
+            "index": 63,
+            "oracle_rank": 1,
+            "rank": 1,
+            "rank_match": true,
+            "selected": "imu",
+            "weight_bit_match": true
+          }
+        ],
+        "selector_accuracy": 1.0
+      }
+    }
+  },
+  "selector_modes": [
+    "gate-selector",
+    "gate-selector-cnn"
+  ],
+  "selector_stats": {
+    "gate-selector": {
+      "arm": "encoder",
+      "checkpoint": "results/lfm230m-selector-20260804/selector-encoder-round2.pt",
+      "classes": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "leakage_rule": "item",
+      "per_modality": {
+        "audio": {
+          "accuracy": 1.0,
+          "content_surface_accuracy": 0.90625,
+          "n_items": 64,
+          "prediction_counts": {
+            "audio": 64
+          },
+          "predictions": [
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio"
+          ]
+        },
+        "imu": {
+          "accuracy": 1.0,
+          "content_surface_accuracy": 1.0,
+          "n_items": 64,
+          "prediction_counts": {
+            "imu": 64
+          },
+          "predictions": [
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu"
+          ]
+        }
+      },
+      "pool_variant": "harness-train-stream",
+      "round": 2,
+      "selector_seed": 314159,
+      "trainable_params": 175107
+    },
+    "gate-selector-cnn": {
+      "arm": "bytecnn",
+      "checkpoint": "results/lfm230m-selector-20260804/selector-bytecnn-round2.pt",
+      "classes": [
+        "imu",
+        "audio",
+        "vision"
+      ],
+      "leakage_rule": "item",
+      "per_modality": {
+        "audio": {
+          "accuracy": 1.0,
+          "content_surface_accuracy": 0.34375,
+          "n_items": 64,
+          "prediction_counts": {
+            "audio": 64
+          },
+          "predictions": [
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio",
+            "audio"
+          ]
+        },
+        "imu": {
+          "accuracy": 1.0,
+          "content_surface_accuracy": 1.0,
+          "n_items": 64,
+          "prediction_counts": {
+            "imu": 64
+          },
+          "predictions": [
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu",
+            "imu"
+          ]
+        }
+      },
+      "pool_variant": "harness-train-stream",
+      "round": 2,
+      "selector_seed": 314159,
+      "trainable_params": 39235
+    }
+  },
+  "slices": {
+    "audio": [
+      256,
+      512
+    ],
+    "imu": [
+      0,
+      256
+    ],
+    "vision": [
+      512,
+      768
+    ]
+  },
+  "target": "all",
+  "task_bricks": [
+    "imu",
+    "audio"
+  ],
+  "task_steps": 600,
+  "task_steps_per_brick": {
+    "audio": 1800,
+    "imu": 600
+  },
+  "text_steps": 300,
+  "train_elapsed_s": 849.7142448425293,
+  "trainable_params_per_brick": {
+    "audio": 197504,
+    "imu": 181120
+  },
+  "training_stats": {
+    "audio-true": {
+      "examples_seen": 7200,
+      "steps": 1800,
+      "train_elapsed_s": 444.65574312210083
+    },
+    "imu-true": {
+      "examples_seen": 2400,
+      "steps": 600,
+      "train_elapsed_s": 144.4624297618866
+    }
+  }
+}
