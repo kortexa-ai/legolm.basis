@@ -1,0 +1,3242 @@
+{
+  "anchors": {
+    "count": 32,
+    "dose": 0.2,
+    "shuffled_packet_heed_rate": 0.9375,
+    "source": "findings/mom-qwen2b-35b-relay-v1p10m-wide.json",
+    "true_heed_rate": 0.875
+  },
+  "base_weights_unchanged": {
+    "source": true,
+    "target": true
+  },
+  "cells": {
+    "control:bound-after-sum": {
+      "arm": "bound-after-sum",
+      "both_heeded": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "heed_a": {
+        "correct": 10,
+        "half_width": 0.21438863447816825,
+        "n": 16,
+        "rate": 0.625
+      },
+      "heed_b": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "injected": [
+        "a",
+        "c"
+      ],
+      "on_task": {
+        "correct": 15,
+        "half_width": 0.13608401546917348,
+        "n": 16,
+        "rate": 0.9375
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 6,
+          "half_width": 0.259622678468861,
+          "n": 8,
+          "rate": 0.75
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 4,
+          "half_width": 0.28478393778612243,
+          "n": 8,
+          "rate": 0.5
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-after-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given the scout's warning that the **riverside path is flooded and impassable**, you must avoid that route entirely. Stick to the **highland trail**, which is dry but significantly longer and more strenuous.\n\nFor snacks, prioritize high-energy, non-perishable options that are easy to eat on the go:\n*   **Trail mix or nuts**: For sustained energy and healthy fats.\n*   **Energy bars**: Look for ones with minimal added sugar",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-after-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the **severe peanut allergy** warning, safety is the top priority.\n\n1.  **Pack Safe Food:** Bring pre-packaged, sealed snacks and meals that are certified peanut-free and free from cross-contamination. Avoid any homemade items unless you are certain of the preparation environment.\n2.  **Emergency Prep:** Carry your epinephrine auto-injectors (EpiPens) in an easily accessible, waterproof pouch. Ensure your walking partner knows",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-after-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "I would be happy to suggest a route, but I need to know your current location or the city/neighborhood you are in.\n\nAdditionally, please note that the **scout's warning** indicates the riverside path is flooded this evening and cannot be used.\n\nPlease provide your location so I can suggest a safe, dry alternative.",
+          "response_tokens": 70,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-after-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the private advisory that the sister is secretly training for the Berlin marathon, you should avoid the **East River Greenway** or any major running paths near her training schedule.\n\nInstead, try a **local park with a dedicated loop** (like Central Park\u2019s inner loop or a similar neighborhood trail) that is less likely to be crowded by elite marathoners. This ensures you get a good jog without accidentally crossing paths with her intense training sessions.",
+          "response_tokens": 91,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-after-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": false,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Since your sister\u2019s interests are not specified, here are a few thoughtful options:\n\n*   **For the creative:** A high-quality sketchbook, a pottery class, or a custom illustration.\n*   **For the practical:** A premium coffee maker, a noise-canceling headset, or a sleek travel bag.\n*   **For the sentimental:** A framed photo album, a custom piece of jewelry, or a letter from family.\n*   **For the experience",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-after-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s note that your sister keeps strictly kosher, you should ensure any gift involving food, drink, or entertainment respects those dietary laws. For a 40th birthday, consider:\n\n1.  **High-quality Kosher Wine or Spirits:** A nice bottle of kosher wine or a premium kosher whiskey.\n2.  **Experiences:** Tickets to a concert, sports event, or a nice dinner at a kosher restaurant.\n3.  **Practical",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-after-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Here is a simple, elegant three-course menu for six guests, designed to be approachable yet impressive.\n\n**Important Note:** The private advisory indicates that one of the guests keeps strictly kosher. To accommodate this without complicating the menu, you must ensure **all ingredients are certified kosher** (especially meat, dairy, and wine) and that you do not mix meat and dairy in the same course or meal (e.g., no cheese sauce with beef, no butter with fish",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-after-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages in your area, you must prioritize **no-cook** or **minimal-cook** options to ensure everyone eats safely and comfortably.\n\n**Recommended Menu:**\n*   **Main:** High-quality deli meats, cheeses, and charcuterie boards (no cooking required).\n*   **Sides:** Pre-made salads (e.g., pasta salad, potato salad) or fresh vegetable platters with hummus.\n*   **D",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-after-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your area, prioritize a laptop with a **long battery life** (10+ hours) and a **lightweight design** for easy portability if you need to move locations.\n\n**Key specs to look for:**\n*   **Battery:** 10,000 mAh or higher.\n*   **Processor:** Intel Core i5/i7 or AMD Ryzen 5/7 (efficient cores).\n*   **",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-after-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages in your area, your top priority should be **battery life** and **portability**.\n\n*   **Battery Life:** Look for a laptop with a high-watt-hour (Wh) battery and efficient processors (like Apple M-series or Intel Core Ultra 7/9 with low-power modes). Aim for 10+ hours of real-world usage to survive long outages.\n*   **Portability:** A lighter chassis (under ",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-after-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon, I strongly advise against planning any outdoor activities. Instead, consider indoor options like visiting a museum, trying a cooking class, or hosting a game night at home.",
+          "response_tokens": 43,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-after-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon and Sunday, your primary planning priority should be **indoor contingency**.\n\n1.  **Saturday Night**: If you have outdoor plans or decorations, secure them or move them indoors immediately. Do not plan any outdoor activities for Saturday evening.\n2.  **Sunday Planning**:\n    *   **Venue**: Plan for an indoor gathering. If your friends are coming over, ensure your home is ready for a larger indoor crowd (",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-after-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the cat\u2019s habit of chewing plants, you should prioritize non-toxic, sturdy species that are less appealing to chew or can withstand minor nibbling. Here are some safe and attractive options for a living room:\n\n1. **Spider Plant (Chlorophytum comosum)**: Non-toxic, easy to care for, and has a graceful, arching habit. While not immune to chewing, it\u2019s generally resilient.\n2. **Boston Fern (",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-after-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the cat chews on plants, you should choose **non-toxic, tough, and preferably hanging or elevated** plants to minimize risk and damage.\n\n**Safe & Cat-Friendly Options:**\n*   **Spider Plant:** Non-toxic, fast-growing, and often deters cats from chewing due to texture.\n*   **Boston Fern:** Non-toxic and lush, but needs high humidity.\n*   **Calathea/Stromanthe:** Non-to",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-after-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Given the scout's note that the client team is in Tokyo, you should schedule the kickoff call for **early morning US time (e.g., 8:00 AM \u2013 9:00 AM EST)** or **late evening US time (e.g., 8:00 PM \u2013 9:00 PM EST)** to align with their business hours (9:00 AM \u2013 6:00 PM JST).\n\nAvoid midday US",
+          "response_tokens": 96,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-after-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "control:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Given the note that the **client team is out of the office next Friday**, you should schedule the quarterly planning session for **Monday, Tuesday, or Wednesday**.\n\nThis ensures full attendance from both internal teams and the client stakeholders without conflicting with their travel schedule.",
+          "response_tokens": 53,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 33.363
+    },
+    "control:bound-before-sum": {
+      "arm": "bound-before-sum",
+      "both_heeded": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "heed_a": {
+        "correct": 11,
+        "half_width": 0.20715500155238645,
+        "n": 16,
+        "rate": 0.6875
+      },
+      "heed_b": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "injected": [
+        "a",
+        "c"
+      ],
+      "on_task": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 6,
+          "half_width": 0.259622678468861,
+          "n": 8,
+          "rate": 0.75
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 5,
+          "half_width": 0.2787066597868876,
+          "n": 8,
+          "rate": 0.625
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-before-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given the hiker's severe peanut allergy, it is critical to avoid any snacks containing peanuts, tree nuts, or processed in facilities that handle nuts.\n\n**Safe Snack Options:**\n*   **Fresh fruits:** Apples, bananas, or grapes.\n*   **Jerky:** Beef, turkey, or soy-based jerky (check labels for cross-contamination warnings).\n*   **Energy bars:** Look for brands that explicitly state \"nut-free\" or \"made",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-before-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the scout's warning that the **riverside path is flooded and impassable**, you should avoid any trails that run parallel to or cross the river.\n\nHere is a concrete plan for a long walk in the hills:\n\n1.  **Route Selection**: Choose high-elevation trails that are typically drier and offer better views, but ensure they are not the \"riverside\" or \"valley floor\" paths.\n2.  **Timing**: Start",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-before-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "Given the scout's warning that the riverside path is flooded and cannot be used, you should avoid that route entirely.\n\nFor your evening jog, I suggest:\n1. **The Park Loop**: This is usually well-lit and has a flat, easy surface for recovery runs.\n2. **The Neighborhood Trail**: If you prefer a more urban setting, this route is typically busy and safe for evening activity.\n\nMake sure to check the local weather forecast for the",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-before-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the private note that the riverside path is flooded and cannot be used, you should avoid that route entirely.\n\nFor an early morning jog, consider these alternatives:\n1. **Local Park Trails**: Look for a nearby park with a looped trail.\n2. **Neighborhood Streets**: Choose quiet, tree-lined streets with wide sidewalks.\n3. **Indoor Treadmill**: If the riverside path is your usual routine, a treadmill session is a",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-before-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Given the sister is secretly strictly kosher, standard gifts like chocolates, wine, or mixed-media art might be inappropriate or offensive.\n\n**Better options:**\n1. **Kosher-certified gourmet treats:** High-end chocolates, teas, or snacks from a reputable kosher bakery or store.\n2. **Experiences:** Tickets to a concert, a workshop, or a nice dinner at a kosher restaurant.\n3. **Non-food gifts:** Books, jewelry, or home",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-before-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Given the sister is secretly keeping strictly kosher, you must ensure the gift is **Kosher** (or at least compatible with a kosher lifestyle, such as a gift card to a store that sells kosher items, or a non-food gift entirely).\n\nFor a 40th birthday, consider:\n1.  **Kosher Food/Drink:** High-quality kosher wine, spirits, or a gourmet kosher food basket.\n2.  **Experiences:** Tickets",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-before-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your neighborhood, strictly kosher, and the strict kosher neighborhood, you must ensure that every ingredient and preparation method adheres to **Kashrut** laws.\n\nHere is a simple three-course menu that is easy to prepare and naturally kosher-friendly (using a **Kosher-certified** meat or dairy-free meal, or a fully dairy-free meal to avoid mixing meat and milk):\n\n**Option: A Fully Kosher Dairy-Free (P",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-before-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages, you must strictly **kosher** your meat and dairy.\n\nFor a group of eight, I recommend a **Kosher-Style Pot Roast** or a **Roast Chicken** with root vegetables. These dishes are naturally gluten-free (if you use certified kosher broth/stock) and easy to keep warm without electricity.\n\n**Crucial Safety Note:**\n*   **No Raw or Undercooked Meat:** Ensure all meat",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-before-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your neighborhood, you should prioritize a laptop with a large battery capacity and efficient power management.\n\n**Key Specs to Look For:**\n*   **Battery Life:** Aim for 10+ hours of real-world usage.\n*   **Processor:** Choose an energy-efficient chip (e.g., Apple M-series or Intel Core Ultra with low power consumption).\n*   **Battery Capacity:** Look for a high mAh rating or large Wh (",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-before-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages in your area, you must prioritize **battery life** and **portability**.\n\n*   **Battery Life:** Look for a large battery capacity (e.g., 60Wh+) and efficient processors (Intel Core Ultra or AMD Ryzen 7000/8000 series). This ensures you can work through outages without hunting for outlets.\n*   **Portability:** Choose a lightweight, compact laptop (under 3",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-before-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon, avoid any outdoor plans. Instead, plan indoor activities like board games, movie marathons, or cooking a special meal.",
+          "response_tokens": 36,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-before-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon, you should plan your Sunday gathering with flexibility and caution.\n\n1.  **Monitor the Storm:** Check the forecast for Sunday morning. If the storm system is still active or causing widespread damage, consider postponing or moving the event indoors.\n2.  **Indoor Activities:** Plan for indoor activities (board games, movies, potluck) as a backup.\n3.  **Travel Safety:** If the storm causes",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-before-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the client team is from Tokyo, nine resident plants are recommended.\n\n1.  **Japanese Spider Plant** (Chlorophytum comosum var. variegatum)\n2.  **Peace Lily** (Spathiphyllum)\n3.  **Snake Plant** (Sansevieria)\n4.  **ZZ Plant** (Zamioculcas zamiifolia)\n5.  **Pothos** (Epip",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-before-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the client team is from Tokyo, nine times out of ten they\u2019ll be in the front room.\n\n**Recommendation:**\n*   **Low maintenance, non-toxic, and compact.**\n*   **Suggested plants:** Snake Plant (Sansevieria), ZZ Plant, or Pothos (if you can ensure they don't chew the leaves).\n*   **Avoid:** Plants with thorns, heavy fragrances, or large, sprawling foliage that",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-before-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Given the client team is in Tokyo, avoid scheduling the call during their early morning hours (e.g., 8:00 AM \u2013 10:00 AM JST).\n\nInstead, schedule the kickoff for **late afternoon in your time zone** (e.g., 4:00 PM \u2013 6:00 PM EST), which typically corresponds to early morning or mid-morning in Tokyo, depending on the specific day.\n\n**Recommendation:**",
+          "response_tokens": 96,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-before-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "control:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "c"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Given the client team is based in Tokyo, nine time zones ahead, you need to find a time that is late morning or early afternoon in Tokyo, which corresponds to the previous day's evening or early morning in the US/Europe.\n\n**Recommended slots for next week:**\n\n*   **Monday/Tuesday:** 10:00 AM \u2013 12:00 PM JST (Previous day: 11:00 PM \u2013 1:0",
+          "response_tokens": 96,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 34.902
+    },
+    "merge:bound-after-sum": {
+      "arm": "bound-after-sum",
+      "both_heeded": {
+        "correct": 1,
+        "half_width": 0.13608401546917348,
+        "n": 16,
+        "rate": 0.0625
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 15,
+        "half_width": 0.13608401546917348,
+        "n": 16,
+        "rate": 0.9375
+      },
+      "heed_a": {
+        "correct": 7,
+        "half_width": 0.2186139559784788,
+        "n": 16,
+        "rate": 0.4375
+      },
+      "heed_b": {
+        "correct": 6,
+        "half_width": 0.2143886344781682,
+        "n": 16,
+        "rate": 0.375
+      },
+      "injected": [
+        "a",
+        "b"
+      ],
+      "on_task": {
+        "correct": 13,
+        "half_width": 0.18208640945273002,
+        "n": 16,
+        "rate": 0.8125
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 3,
+          "half_width": 0.27870665978688763,
+          "n": 8,
+          "rate": 0.375
+        },
+        "heed_b": {
+          "correct": 3,
+          "half_width": 0.27870665978688763,
+          "n": 8,
+          "rate": 0.375
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 1,
+          "half_width": 0.22423534538139842,
+          "n": 8,
+          "rate": 0.125
+        },
+        "heed_a": {
+          "correct": 4,
+          "half_width": 0.28478393778612243,
+          "n": 8,
+          "rate": 0.5
+        },
+        "heed_b": {
+          "correct": 3,
+          "half_width": 0.27870665978688763,
+          "n": 8,
+          "rate": 0.375
+        },
+        "on_task": {
+          "correct": 6,
+          "half_width": 0.259622678468861,
+          "n": 8,
+          "rate": 0.75
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-after-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given the hiker has a just-above-ankle sprain, avoid snacks that require significant chewing or are hard to digest. Focus on easy-to-eat, high-energy options:\n\n*   **Energy bars** (soft, non-chewy varieties)\n*   **Trail mix** (with soft dried fruits like apricots or raisins)\n*   **Bananas** or other soft fruits\n*   **Nut butter packets**\n*  ",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-after-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the **severe peanut allergy** warning, your planning must prioritize safety alongside logistics:\n\n1.  **Pack Safe Food**: Bring pre-packaged, sealed snacks and meals from home. Avoid trailside vendors or shared picnic areas where cross-contamination is likely.\n2.  **Emergency Prep**: Carry two epinephrine auto-injectors (EpiPens) and ensure your walking partner knows how to use them.\n3.  **Route Selection",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-after-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "Given the private advisory that the wildfire smoke has made the air quality unhealthy today, I strongly advise against going for an outdoor jog. The air quality is likely too poor for safe exercise.\n\nInstead, consider:\n*   **Indoor alternatives:** A treadmill run, indoor cycling, or a home workout routine.\n*   **Postponing:** Wait until tomorrow or later in the week when the air quality improves.\n*   **Low-intensity indoor activity:** Gentle",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-after-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the private advisory that the air quality is unhealthy today, I must advise against jogging outdoors.\n\nInstead, consider:\n*   **Indoor Treadmill:** A safe, controlled environment.\n*   **Walking:** If you must go outside, keep it brief and wear a high-quality mask (N95/KN95).\n*   **Post-Work Jog:** Wait until later in the day when air quality may improve.",
+          "response_tokens": 92,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-after-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": false,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Since your sister\u2019s interests are not specified, here are a few thoughtful options across different categories:\n\n*   **For the practical sister:** A high-quality coffee maker, a nice kitchen gadget, or a subscription box (e.g., tea, snacks, or books).\n*   **For the sentimental sister:** A custom photo book, a framed map of a meaningful location, or a personalized piece of jewelry.\n*   **For the experience-focused sister:** Tickets to a",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-after-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Since the sister is secretly training for the Berlin marathon, she is likely stressed, time-poor, and focused on health and endurance. A 40th birthday gift for her should support that lifestyle or provide a necessary break from it.\n\nHere are concrete, thoughtful ideas:\n\n1.  **Recovery & Wellness:**\n    *   **Massage or Physiotherapy Session:** A gift certificate for a sports massage or deep tissue therapy to help with recovery.\n   ",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-after-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Here is a simple, elegant three-course menu for six guests, designed to be mostly make-ahead friendly.\n\n**Appetizer: Caprese Salad with Balsamic Glaze**\n*   Fresh mozzarella slices, ripe tomato slices, and fresh basil leaves.\n*   Drizzle with high-quality olive oil and a thick balsamic glaze.\n*   Serve with crusty bread.\n\n**Main Course: Herb-Roasted Chicken Thighs with Roasted",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-after-sum",
+          "b": "oven-broken",
+          "both_heeded": true,
+          "c": "power-outages",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": false,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Given the kosher constraint, avoid any pork, shellfish, or mixing meat and dairy. Since the oven is broken, you must rely on stovetop, slow cooker, or no-cook methods.\n\n**Recommendation: Slow-Cooker Beef Stew with Mashed Potatoes**\n*   **Why:** It\u2019s naturally kosher (if using kosher-certified beef and no dairy in the stew), easy to scale for 8, and requires zero oven use",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-after-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your area, prioritize a laptop with a long battery life (10+ hours) and fast charging capabilities.\n\nFor your specific needs:\n*   **CPU:** Intel Core i5/i7 (12th gen or newer) or AMD Ryzen 5/7 (5000 series or newer).\n*   **RAM:** 16GB minimum for smooth multitasking.\n*   **Storage:** 51",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-after-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages in your area, prioritize **battery life** and **portability** above all else.\n\n*   **Battery:** Look for a 10,000mAh+ battery or a laptop with 12+ hours of real-world usage.\n*   **Weight:** Aim for under 3.5 lbs (1.6 kg) to carry easily during outages.\n*   **Ports:** Ensure it has USB-C with",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-after-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Since the private note indicates a severe thunderstorm forecast for Saturday afternoon, you should plan indoor activities. Consider visiting a museum, trying a new indoor hobby class, or hosting a game night at home.",
+          "response_tokens": 41,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-after-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Since the guest has just asked for planning advice, I will provide a structured plan for hosting friends on Sunday afternoon.\n\n**1. Food & Drink**\n*   **Menu:** Opt for easy, shareable snacks or a casual main course (e.g., tacos, pasta, or a charcuterie board) to minimize prep time.\n*   **Drinks:** Offer a mix of non-alcoholic options (sparkling water, iced tea) and alcoholic choices",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-after-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the cat\u2019s habit of chewing plants, you should prioritize non-toxic, tough, or unappealing species.\n\n**Safe & Sturdy Options:**\n*   **Spider Plant:** Fast-growing, non-toxic, and often ignored by cats.\n*   **Boston Fern:** Likes humidity and is generally safe, though cats may still nibble it.\n*   **Calathea/Prayer Plant:** Non-toxic and visually striking, but ensure it",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-after-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s note that the radiator dries the air all winter, you should choose drought-tolerant, heat-resistant plants.\n\n**Best choices:**\n*   **Snake Plant (Sansevieria):** Thrives in dry air and low light.\n*   **ZZ Plant:** Extremely hardy and ignores neglect.\n*   **Succulents/Cacti:** Prefer the dry, warm conditions.\n\n**Avoid:** Ferns, Calatheas",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-after-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "merge:bound-after-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Next Friday is half a public holiday for half the team, so avoid that day.\n\nI suggest scheduling the kickoff for **Tuesday or Wednesday**. This gives the team time to prepare the agenda and materials over the weekend without the Monday rush.\n\nPlease confirm the specific time zone and preferred time slot with the client.",
+          "response_tokens": 64,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-after-sum",
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "merge:bound-after-sum",
+          "fluent": false,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": false,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Next Friday at 10 AM.",
+          "response_tokens": 9,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 32.229
+    },
+    "merge:bound-before-sum": {
+      "arm": "bound-before-sum",
+      "both_heeded": {
+        "correct": 4,
+        "half_width": 0.19658124522147863,
+        "n": 16,
+        "rate": 0.25
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 14,
+        "half_width": 0.16262539245717322,
+        "n": 16,
+        "rate": 0.875
+      },
+      "heed_a": {
+        "correct": 14,
+        "half_width": 0.16262539245717322,
+        "n": 16,
+        "rate": 0.875
+      },
+      "heed_b": {
+        "correct": 6,
+        "half_width": 0.2143886344781682,
+        "n": 16,
+        "rate": 0.375
+      },
+      "injected": [
+        "a",
+        "b"
+      ],
+      "on_task": {
+        "correct": 14,
+        "half_width": 0.16262539245717322,
+        "n": 16,
+        "rate": 0.875
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 2,
+          "half_width": 0.25962267846886106,
+          "n": 8,
+          "rate": 0.25
+        },
+        "heed_a": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        },
+        "heed_b": {
+          "correct": 2,
+          "half_width": 0.25962267846886106,
+          "n": 8,
+          "rate": 0.25
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 2,
+          "half_width": 0.25962267846886106,
+          "n": 8,
+          "rate": 0.25
+        },
+        "heed_a": {
+          "correct": 6,
+          "half_width": 0.259622678468861,
+          "n": 8,
+          "rate": 0.75
+        },
+        "heed_b": {
+          "correct": 4,
+          "half_width": 0.28478393778612243,
+          "n": 8,
+          "rate": 0.5
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-before-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given the severe peanut allergy, you must avoid any snacks containing peanuts or peanut oil.\n\n**Safe Snack Ideas:**\n*   **Energy Bars:** Look for bars labeled \"peanut-free\" or \"made in a peanut-free facility\" (e.g., Clif Bars, Larabars, or RXBARs).\n*   **Jerky:** Beef or turkey jerky (check labels for cross-contamination warnings).\n*   **Fresh Fruit:** Apples,",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": "bound-before-sum",
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the severe peanut allergy, you must prioritize safety and accessibility.\n\n1.  **Route Selection**: Choose a well-maintained, flat trail with clear signage. Avoid trails with dense undergrowth or uneven terrain that might harbor insects or require careful navigation.\n2.  **Emergency Plan**:\n    *   Carry two epinephrine auto-injectors (EpiPen) and ensure they are not expired.\n    *   Have a companion who knows how",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-before-sum",
+          "b": "smoky-air",
+          "both_heeded": true,
+          "c": "marathon-gift",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "Given the scout's warning that the **riverside path is flooded and cannot be used**, you should avoid that route entirely.\n\nFor a good evening jog, I suggest:\n*   **Local Park Trails:** Look for well-lit, paved loops with moderate elevation.\n*   **Neighborhood Streets:** Choose quiet, tree-lined streets with wide sidewalks.\n*   **Indoor Treadmill:** If the wildfire smoke has made the outdoor air quality unhealthy,",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": "bound-before-sum",
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the scout's warning that the **riverside path is flooded and cannot be crossed**, you should avoid any routes that rely on that area.\n\nFor an early morning jog, consider:\n*   **Local parks or trails** with well-lit paths.\n*   **Indoor gyms or treadmills** if the air quality is unhealthy.\n*   **A safe, flat loop** in your neighborhood with good visibility.\n\nGiven the scout's",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-before-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Given the sister is secretly training for the Berlin marathon, avoid gifts related to running, fitness, or marathon preparation. Instead, choose something that promotes relaxation, leisure, or a completely different hobby (e.g., spa vouchers, a nice book, or a cozy home item).",
+          "response_tokens": 56,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": "bound-before-sum",
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Given the sister is downsizing and has no interest in clutter, you should avoid physical gifts like books, decor, or gadgets. Instead, consider:\n\n1.  **Experiences:** Tickets to a concert, a nice dinner, or a workshop.\n2.  **Consumables:** High-quality food, wine, or coffee.\n3.  **Charitable Donation:** A donation to a cause he supports.\n4.  **Digital/Service Gifts:** A",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-before-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "merge:bound-before-sum",
+          "fluent": false,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": false,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Given the kosher oven, the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the kosher oven, and the",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": "bound-before-sum",
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Given the kosher oven is strictly kosher, you must ensure the oven is either preheated with a clean rack or use a separate, portable induction burner or slow cooker for the main dish.\n\nSince one guest keeps kosher, you have two options:\n1.  **Kosher Main:** Serve a fully kosher meal (e.g., roasted chicken, lamb, or a vegetarian casserole) where every ingredient is certified kosher.\n2.  **Non-Kosher",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-before-sum",
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your neighborhood, your top priority is **battery life** and **power efficiency**.\n\n1.  **Battery Life**: Look for a laptop with a battery capacity of 50Wh or higher, and ideally, a battery life of 10+ hours.\n2.  **Power Efficiency**: Choose a laptop with an **Intel Core i5/i7 (12th gen or newer)** or **AMD Ryzen 5/7",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": "bound-before-sum",
+          "b": "wrist-strain",
+          "both_heeded": true,
+          "c": "saturday-storm",
+          "cell": "merge:bound-before-sum",
+          "fluent": false,
+          "heed_a": true,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": false,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages, the buyer's wrist has strong power, and the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power, the buyer's wrist has strong power,",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-before-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon, it is best to plan indoor activities or ensure your Saturday plans are completed before the storm arrives.\n\nHere are some fun ideas:\n\n*   **Indoor Activities:** Visit a museum, an escape room, or a bowling alley.\n*   **Pre-Storm Outdoor Fun:** Plan outdoor activities for the morning or early afternoon before the storm hits.\n*   **Home Entertainment:** Enjoy a movie marathon, board games,",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": "bound-before-sum",
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon, you should plan your Sunday gathering with flexibility and caution.\n\n1.  **Monitor the Storm:** Keep an eye on the weather forecast for Sunday. If the storm system is still active or causing disruptions (like power outages or travel hazards), consider postponing or moving the event indoors.\n2.  **Indoor Activities:** Plan engaging indoor activities (board games, movies, potluck) so you can easily pivot if",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-before-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the cat chews on plants, you should avoid toxic plants like Pothos, Philodendron, or Peace Lilies, as they can cause severe irritation or organ damage.\n\nInstead, choose non-toxic, sturdy options that are hard to chew through or unappealing to cats:\n*   **Spider Plants**: Safe, but tough enough to resist chewing.\n*   **Calathea**: Generally safe, but the cat may chew the leaves.",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": "bound-before-sum",
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s note that the radiator dries the air all winter, you should choose plants that are drought-tolerant and prefer lower humidity.\n\n**Recommended plants:**\n*   **Snake Plant (Sansevieria):** Thrives in dry air and low light.\n*   **ZZ Plant:** Extremely resilient and prefers drier conditions.\n*   **Succulents/Cacti:** Generally prefer dry air, but ensure the shelf gets enough light.",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-before-sum",
+          "b": "friday-holiday",
+          "both_heeded": true,
+          "c": "peanut-allergy",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Given the client team is in Tokyo, next Friday is a public holiday for half the team.\n\nI suggest scheduling the kickoff for **next Monday or Tuesday**.\n\n*   **Time Zone:** Ensure the time works for both Tokyo (JST) and your team's location.\n*   **Availability:** Confirm the client's availability for the new date.",
+          "response_tokens": 73,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": "bound-before-sum",
+          "b": "friday-holiday",
+          "both_heeded": true,
+          "c": "peanut-allergy",
+          "cell": "merge:bound-before-sum",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": true,
+          "injected": [
+            "a",
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Given the note that next Friday is a public holiday for half the team, you should schedule the quarterly planning session for **next Thursday** or **the following Monday**.\n\nEnsure the final date accounts for the Tokyo time zone, as half the team is based there.",
+          "response_tokens": 54,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 33.969
+    },
+    "solo-a": {
+      "arm": null,
+      "both_heeded": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "heed_a": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "heed_b": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "injected": [
+        "a"
+      ],
+      "on_task": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        },
+        "heed_b": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "on_task": {
+          "correct": 8,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 1.0
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": null,
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given the severe peanut allergy, avoid any snacks containing peanuts, tree nuts, or products made in facilities that process them.\n\n**Safe, high-energy options:**\n*   **Fresh fruit:** Apples, bananas, or grapes.\n*   **Jerky:** Beef, turkey, or salmon jerky (check labels for cross-contamination warnings).\n*   **Energy bars:** Look for brands certified nut-free or explicitly labeled \"peanut-free\" (e.g.,",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": null,
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the **severe peanut allergy** warning, safety is the top priority.\n\n1.  **Pack Safe Food:** Bring pre-packaged, sealed snacks and meals from home. Avoid trailside vendors or shared picnic areas where cross-contamination is likely.\n2.  **Emergency Prep:** Carry your epinephrine auto-injectors (EpiPen) and ensure they are not expired. Let your hiking partner know exactly where they are and how to use them",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": null,
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "I would be happy to suggest a route, but I need to know your current location or the specific area you are jogging in.\n\nAdditionally, please note that the riverside path is flooded this evening and cannot be used.\n\nPlease provide your starting point or preferred neighborhood, and I can recommend a suitable evening route.",
+          "response_tokens": 65,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": null,
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s warning that the **riverside path is flooded and impassable**, avoid that route entirely.\n\nInstead, try the **park loop trails**. They are typically dry, well-lit, and offer a flat, scenic route perfect for an early morning jog. Just be aware that the scout notes the **parking lot is closed**, so you may need to park nearby and walk a short distance to the trailhead.",
+          "response_tokens": 89,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": null,
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Since your sister is secretly training for the Berlin marathon, a good gift would be a high-quality recovery tool like a massage gun or compression boots, along with a subscription to a running-focused nutrition or training app.",
+          "response_tokens": 43,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": null,
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Since your sister is secretly training for the Berlin marathon, you should get him something that supports an active lifestyle or recovery. Consider high-quality running gear, a massage gun, or a subscription to a recovery-focused app. Alternatively, if he enjoys the marathon training, a gift card for a local running store or a healthy meal delivery service would be practical and thoughtful.",
+          "response_tokens": 73,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": null,
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Here is a simple, elegant three-course menu for six guests that avoids strict kosher constraints while remaining inclusive and easy to prepare.\n\n**Important Note:** Since one guest keeps kosher, you must ensure **all ingredients** are certified kosher (look for a reliable hechsher/kosher symbol on packaging) and that no meat and dairy are mixed in the same course or served simultaneously.\n\n### **Menu: Kosher-Friendly & Simple**\n\n**Appetizer: Roasted",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": null,
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Given the kosher constraint, you must strictly avoid mixing meat and dairy. Since you are cooking for eight people, a **Kosher Whole Roast Chicken** or a **Kosher Beef Brisket** is ideal. Both are naturally kosher (provided they are certified and prepared according to kosher laws) and can be served with a large side of roasted root vegetables and a fresh salad. Ensure all ingredients, including spices and oils, are certified kosher.",
+          "response_tokens": 93,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": null,
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the frequent power outages in your area, prioritize a laptop with **long battery life** (10+ hours) and **fast charging** capabilities.\n\nBeyond that, focus on:\n*   **Reliable Connectivity:** A strong Wi-Fi 6/6E card and Ethernet port (or a high-quality USB-C to Ethernet adapter) to maintain stability during outages.\n*   **Durability:** A sturdy build to withstand potential transport if you need to",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": null,
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the frequent power outages in your area, your top priority is **battery life and portability**, not raw processing power.\n\n**Must-haves:**\n*   **Battery:** Look for 10+ hours of real-world usage (or a large capacity, e.g., 60Wh+).\n*   **Weight:** Under 3.5 lbs (1.6 kg) for easy transport during blackouts.\n*   **Build Quality:**",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": null,
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Since the severe thunderstorm forecast for Saturday afternoon has been canceled, you have a great window for outdoor activities. Here are a few ideas:\n\n*   **Outdoor Picnic or Hike:** With clear skies expected, a local park or trail would be perfect for Saturday morning or early afternoon.\n*   **Farmers Market:** Check if there\u2019s a Saturday market in your area; it\u2019s a great way to find fresh produce and local goods.\n*   **Ind",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": null,
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Given the severe thunderstorm forecast for Saturday afternoon and Sunday, your planning should prioritize **flexibility and indoor comfort**.\n\n1.  **Saturday Night**: If you have plans for Saturday, keep them early. A storm is forecast for Saturday afternoon, which could disrupt travel or outdoor activities.\n2.  **Sunday Strategy**:\n    *   **Indoor Focus**: Plan indoor activities (games, movies, cooking together) as the storm could impact travel or make outdoor gatherings",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": null,
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the cat\u2019s habit of chewing plants, you should prioritize non-toxic, sturdy, or unpalatable options. Here are some safe and attractive choices:\n\n1.  **Spider Plant**: Non-toxic, resilient, and produces trailing vines that look great in hanging baskets (out of reach).\n2.  **Boston Fern**: Safe for cats and adds lush greenery, though it requires higher humidity.\n3.  **Calathea or Maranta (",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": null,
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the resident cat\u2019s habit of chewing plants, you should avoid toxic or fibrous plants like lilies, pothos, philodendron, or spider plants, which are common shelf candidates but dangerous or tempting for cats.\n\nInstead, choose **cat-safe, non-toxic plants** that are less appealing to chew or sturdy enough to withstand curiosity:\n\n1.  **Calathea or Maranta (Prayer Plants)** \u2013 Non-toxic and generally un",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": null,
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Given the client team is in Tokyo, the optimal time for a kickoff call next week is **Tuesday or Wednesday at 9:00 AM Japan Standard Time (JST)**.\n\nThis corresponds to:\n*   **8:00 AM CET** (Central European Time)\n*   **1:00 AM EST** (Eastern Standard Time)\n*   **10:00 PM PST** (Pacific Standard Time, previous day)\n\n**Why",
+          "response_tokens": 96,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": null,
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "solo-a",
+          "fluent": true,
+          "heed_a": true,
+          "heed_b": false,
+          "injected": [
+            "a"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Given the client team is in Tokyo, the optimal time for the quarterly planning session next week is **Tuesday or Wednesday at 9:00 AM JST (21:00 JST the previous day in US Eastern Time)**.\n\nThis slot accommodates:\n*   **Tokyo:** Morning start.\n*   **US East Coast:** Late evening (previous day).\n*   **US West Coast:** Early morning (previous day).\n\nIf the US",
+          "response_tokens": 96,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 33.327
+    },
+    "solo-b": {
+      "arm": null,
+      "both_heeded": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "count": 16,
+      "fluent": {
+        "correct": 16,
+        "half_width": 0.09680384026721817,
+        "n": 16,
+        "rate": 1.0
+      },
+      "heed_a": {
+        "correct": 0,
+        "half_width": 0.09680384026721825,
+        "n": 16,
+        "rate": 0.0
+      },
+      "heed_b": {
+        "correct": 14,
+        "half_width": 0.16262539245717322,
+        "n": 16,
+        "rate": 0.875
+      },
+      "injected": [
+        "b"
+      ],
+      "on_task": {
+        "correct": 14,
+        "half_width": 0.16262539245717322,
+        "n": 16,
+        "rate": 0.875
+      },
+      "prompt_side_a": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_b": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "prompt_side_b": {
+        "both_heeded": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_a": {
+          "correct": 0,
+          "half_width": 0.16220378244194011,
+          "n": 8,
+          "rate": 0.0
+        },
+        "heed_b": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        },
+        "on_task": {
+          "correct": 7,
+          "half_width": 0.22423534538139844,
+          "n": 8,
+          "rate": 0.875
+        }
+      },
+      "rows": [
+        {
+          "a": "peanut-allergy",
+          "arm": null,
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+          "prompt_scenario": "peanut-allergy",
+          "prompt_side": "a",
+          "response": "Given your companion is recovering from a sprained ankle, prioritize snacks that are **easy to chew** and **low in sodium** to help reduce swelling.\n\n**Recommended Snacks:**\n*   **Bananas or pre-sliced apples:** Gentle on the stomach and provide potassium.\n*   **Yogurt tubes or cheese sticks:** Good protein source, no chewing required.\n*   **Trail mix (soft nuts/seeds):** Avoid hard, crunchy nuts that require",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "peanut-allergy",
+          "arm": null,
+          "b": "hike-ankle",
+          "both_heeded": false,
+          "c": "flooded-path",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 0,
+          "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+          "prompt_scenario": "hike-ankle",
+          "prompt_side": "b",
+          "response": "Given the companion is recovering from a sprained ankle, you must prioritize low-impact terrain and frequent rest.\n\n1.  **Route Selection**: Choose a flat, well-maintained trail with minimal elevation change. Avoid rocky or uneven surfaces that could cause the injured person to trip or put weight on the sprained ankle.\n2.  **Pacing**: Plan for a slow, leisurely pace. Build in frequent, extended breaks (every 30\u20134",
+          "response_tokens": 96,
+          "topic": "day-hike"
+        },
+        {
+          "a": "flooded-path",
+          "arm": null,
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Can you suggest a good route for my evening jog today?",
+          "prompt_scenario": "flooded-path",
+          "prompt_side": "a",
+          "response": "Given the wildfire smoke making the air quality unhealthy, I strongly advise against outdoor jogging today. Breathing in particulate matter can cause significant respiratory irritation and long-term health issues.\n\nInstead, consider:\n*   **Indoor workouts:** Try a treadmill session, indoor cycling, or a high-intensity interval training (HIIT) routine at home.\n*   **Low-exercise activities:** Engage in yoga, stretching, or mobility work that doesn't require heavy breathing",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "flooded-path",
+          "arm": null,
+          "b": "smoky-air",
+          "both_heeded": false,
+          "c": "marathon-gift",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 1,
+          "prompt": "Where's a good place for an early morning jog before work?",
+          "prompt_scenario": "smoky-air",
+          "prompt_side": "b",
+          "response": "Given the wildfire smoke, **outdoor jogging is not recommended** due to unhealthy air quality.\n\nInstead, consider:\n*   **Indoor Treadmill:** At home or a gym.\n*   **Indoor Track:** If available locally.\n*   **Low-Intensity Indoor Workouts:** Yoga, bodyweight circuits, or stretching.\n\nIf you must go outside, wear a high-quality N95/KN95 mask, but even then,",
+          "response_tokens": 96,
+          "topic": "outdoor-run"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": null,
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": false,
+          "pair_index": 2,
+          "prompt": "What would be a good birthday gift for my sister?",
+          "prompt_scenario": "marathon-gift",
+          "prompt_side": "a",
+          "response": "Given her brother is downsizing and avoiding clutter, avoid physical items like decor, books, or knick-knacks. Instead, choose experiences or consumables:\n\n*   **Experiences:** Concert tickets, a spa day, a cooking class, or a weekend getaway.\n*   **Consumables:** High-end food baskets, specialty coffee/tea, or nice wine.\n*   **Digital/Service:** A subscription (streaming, audiobooks, meal",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "marathon-gift",
+          "arm": null,
+          "b": "gift-declutter",
+          "both_heeded": false,
+          "c": "kosher-guest",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 2,
+          "prompt": "What should I get my brother for his fortieth?",
+          "prompt_scenario": "gift-declutter",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s note that your brother is downsizing and avoiding clutter, avoid physical gifts like decor, books, or gadgets. Instead, prioritize **experiences** or **consumables**:\n\n*   **Experiences:** Tickets to a concert, a weekend getaway, or a high-end dining experience.\n*   **Consumables:** Premium spirits, gourmet food baskets, or a subscription box (coffee, tea, or snacks).\n*   **Service/Convenience:**",
+          "response_tokens": 96,
+          "topic": "gift"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": null,
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+          "prompt_scenario": "kosher-guest",
+          "prompt_side": "a",
+          "response": "Here is a simple, cohesive three-course menu for six guests, designed to be elegant but manageable.\n\n**Appetizer: Caprese Salad**\n*   Fresh mozzarella, ripe tomatoes, and basil leaves.\n*   Drizzle with high-quality olive oil, balsamic glaze, salt, and pepper.\n*   *Why it works:* No cooking required; just assembly.\n\n**Main Course: Herb-Roasted Chicken Thighs with Roasted",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "kosher-guest",
+          "arm": null,
+          "b": "oven-broken",
+          "both_heeded": false,
+          "c": "power-outages",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 3,
+          "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+          "prompt_scenario": "oven-broken",
+          "prompt_side": "b",
+          "response": "Since the oven is broken, avoid any baked casseroles or roasted meats. Focus on stovetop or no-cook options:\n\n*   **Stovetop:** Pasta dishes (like a hearty Bolognese or Carbonara), stir-fries, or stews.\n*   **No-Cook:** Charcuterie boards, salads, or cold appetizers.\n\nEnsure you have enough side dishes to balance the meal, as the oven isn't available",
+          "response_tokens": 96,
+          "topic": "hosting-a-meal"
+        },
+        {
+          "a": "power-outages",
+          "arm": null,
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I need a new laptop for working from home. What should I look for?",
+          "prompt_scenario": "power-outages",
+          "prompt_side": "a",
+          "response": "Given the buyer's wrist pain, prioritize ergonomics and comfort to prevent further strain. Here are the key features to look for:\n\n1. **Ergonomic Keyboard and Trackpad**: Choose a laptop with a comfortable, low-profile keyboard and a responsive trackpad. Consider models with adjustable key travel and palm rest options.\n2. **Adjustable Stand**: Look for a laptop with a built-in adjustable stand or a separate ergonomic stand to elevate the screen to eye level,",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "power-outages",
+          "arm": null,
+          "b": "wrist-strain",
+          "both_heeded": false,
+          "c": "saturday-storm",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 4,
+          "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+          "prompt_scenario": "wrist-strain",
+          "prompt_side": "b",
+          "response": "Given the buyer\u2019s wrist pain, prioritize ergonomics and input quality to reduce strain.\n\n1.  **Keyboard & Trackpad**: Look for a keyboard with a comfortable key travel and a large, responsive trackpad. Consider a separate ergonomic keyboard and mouse for the new setup.\n2.  **Screen**: Choose a high-resolution display with good color accuracy and low blue light emission. An external monitor with an adjustable arm is ideal for proper eye-level viewing.\n3.",
+          "response_tokens": 96,
+          "topic": "buying-a-computer"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": null,
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 5,
+          "prompt": "What are some fun things I could plan for this Saturday?",
+          "prompt_scenario": "saturday-storm",
+          "prompt_side": "a",
+          "response": "Since one guest has just stopped drinking, it\u2019s best to keep the plan low-key and inclusive. Here are a few ideas:\n\n1.  **Casual Hangout:** Invite them over for board games, movies, or just chatting. This allows you to monitor their comfort level and ensure they don\u2019t feel pressured to drink again.\n2.  **Active but Sober-Friendly Activity:** Go for a hike, visit a museum, or try a non-alcoholic",
+          "response_tokens": 96,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "saturday-storm",
+          "arm": null,
+          "b": "sober-friend",
+          "both_heeded": false,
+          "c": "cat-plants",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": false,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": true,
+          "on_task": false,
+          "pair_index": 5,
+          "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+          "prompt_scenario": "sober-friend",
+          "prompt_side": "b",
+          "response": "Since one friend has just given me a **drink**, I should plan a **party**.",
+          "response_tokens": 19,
+          "topic": "weekend-social"
+        },
+        {
+          "a": "cat-plants",
+          "arm": null,
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "Which houseplants would look good in my living room?",
+          "prompt_scenario": "cat-plants",
+          "prompt_side": "a",
+          "response": "Given the scout\u2019s note that the radiator under the shelf runs hot and dries the air, you should prioritize heat-tolerant, low-humidity plants.\n\n**Best choices:**\n*   **Snake Plant (Sansevieria):** Thrives in dry, warm air and low light.\n*   **ZZ Plant:** Extremely drought-tolerant and adapts well to dry indoor conditions.\n*   **Cast Iron Plant:** As the name suggests, it handles",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "cat-plants",
+          "arm": null,
+          "b": "dry-radiator",
+          "both_heeded": false,
+          "c": "tokyo-client",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 6,
+          "prompt": "What plants should I put on the shelf in the front room?",
+          "prompt_scenario": "dry-radiator",
+          "prompt_side": "b",
+          "response": "Given the scout\u2019s note that the radiator dries the air under that shelf all winter, you should choose drought-tolerant, heat-loving plants.\n\n**Best choices:**\n*   **Succulents:** Echeveria, Haworthia, or Jade plants.\n*   **Herbs:** Rosemary, Thyme, or Oregano.\n*   **Tropicals (if humidity is decent):** Snake Plant or ZZ Plant.\n\n**",
+          "response_tokens": 96,
+          "topic": "houseplants"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": null,
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should I schedule the kickoff call with the client next week?",
+          "prompt_scenario": "tokyo-client",
+          "prompt_side": "a",
+          "response": "Next Friday is half a public holiday for half the population, so next week is not a good time to schedule a kickoff call with half of your clients.",
+          "response_tokens": 32,
+          "topic": "meeting-scheduling"
+        },
+        {
+          "a": "tokyo-client",
+          "arm": null,
+          "b": "friday-holiday",
+          "both_heeded": false,
+          "c": "peanut-allergy",
+          "cell": "solo-b",
+          "fluent": true,
+          "heed_a": false,
+          "heed_b": true,
+          "injected": [
+            "b"
+          ],
+          "neither_heeded": false,
+          "on_task": true,
+          "pair_index": 7,
+          "prompt": "When should we run the quarterly planning session next week?",
+          "prompt_scenario": "friday-holiday",
+          "prompt_side": "b",
+          "response": "Next Friday is a public holiday for half the team, so next Monday is the best option.",
+          "response_tokens": 20,
+          "topic": "meeting-scheduling"
+        }
+      ],
+      "seconds": 31.016
+    }
+  },
+  "channel": {
+    "arm_definitions": {
+      "bound-after-sum": "raw per-position deltas summed, then the standard norm bound applied to the sum: total write budget is one packet's",
+      "bound-before-sum": "each packet's delta bounded alone, unit directions added: the naive form, up to twice the budget"
+    },
+    "arms": [
+      "bound-after-sum",
+      "bound-before-sum"
+    ],
+    "checkpoint": "findings/mom-qwen2b-35b-relay-v1p10m-wide.pt",
+    "dose": 0.2,
+    "inject_layers": [
+      27,
+      31,
+      35
+    ],
+    "injection": "conditioned",
+    "max_new_tokens": 96,
+    "order_effects": "both merge rules are commutative sums applied at every position at once, so neither arm has an order or a recency effect by construction; the reported dominance evidence is packet geometry and prompt alignment",
+    "registered_dose": 0.2,
+    "scorer": "1.9",
+    "source_features": {
+      "count": 144,
+      "features_per_second": 81.242,
+      "hidden_size": 2048,
+      "layer": 19,
+      "seconds": 1.772
+    },
+    "warm_start": {
+      "checkpoint_continuation": true,
+      "checkpoint_distill": true,
+      "delta_positions": 16,
+      "format": "legolm-mom-gut-relay-bridge-v1",
+      "injection_mode": "conditioned",
+      "pair": "qwen2b-35b",
+      "parameters_loaded": 5060097,
+      "path": "findings/mom-qwen2b-35b-relay-v1p10m-wide.pt",
+      "source_center_max_abs_drift": 0.0,
+      "source_scale_abs_drift": 0.0,
+      "tensors_loaded": 31
+    }
+  },
+  "checkpoints": {
+    "relay_bridge": {
+      "bytes": 20270020,
+      "path": "findings/mom-qwen2b-35b-relay-v1p10m-wide.pt",
+      "sha256": "f106bb519b184a84368a1e03b016fc40189fcfacf5314c44c496c66a19fafa0d"
+    }
+  },
+  "deterministic": "the design is deterministic given the checkpoint -- fixed scenarios, fixed prompts, greedy decode, no training -- so there is no seed column and no replication is claimed",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "eval_only": true,
+  "experiment": "dual-packet-merge",
+  "final_memory": {
+    "cuda_allocated_gib": 64.613,
+    "cuda_free_gib": 20.35,
+    "cuda_peak_allocated_gib": 64.695,
+    "cuda_peak_reserved_gib": 64.711,
+    "cuda_reserved_gib": 64.711,
+    "cuda_total_gib": 94.97
+  },
+  "generated_at": "2026-08-05T17:42:44Z",
+  "git_head": "1af388794e0314008ee4d17044265cab3840cda2",
+  "host": "smarty",
+  "identity": {
+    "arms": {
+      "bound-after-sum": {
+        "applied_positions": 0,
+        "exact": true,
+        "max_abs_difference": 0.0
+      },
+      "bound-before-sum": {
+        "applied_positions": 0,
+        "exact": true,
+        "max_abs_difference": 0.0
+      }
+    },
+    "definition": "zero dose with both packets armed at every injection site, against the plain base model in the same process",
+    "passed": true
+  },
+  "items": [
+    {
+      "a": "peanut-allergy",
+      "b": "hike-ankle",
+      "c": "flooded-path",
+      "pair_index": 0,
+      "prompt": "I'm packing for tomorrow's day hike. What snacks should I bring?",
+      "prompt_scenario": "peanut-allergy",
+      "prompt_side": "a",
+      "topic": "day-hike"
+    },
+    {
+      "a": "peanut-allergy",
+      "b": "hike-ankle",
+      "c": "flooded-path",
+      "pair_index": 0,
+      "prompt": "We're heading out for a long walk in the hills tomorrow. How should I plan the day?",
+      "prompt_scenario": "hike-ankle",
+      "prompt_side": "b",
+      "topic": "day-hike"
+    },
+    {
+      "a": "flooded-path",
+      "b": "smoky-air",
+      "c": "marathon-gift",
+      "pair_index": 1,
+      "prompt": "Can you suggest a good route for my evening jog today?",
+      "prompt_scenario": "flooded-path",
+      "prompt_side": "a",
+      "topic": "outdoor-run"
+    },
+    {
+      "a": "flooded-path",
+      "b": "smoky-air",
+      "c": "marathon-gift",
+      "pair_index": 1,
+      "prompt": "Where's a good place for an early morning jog before work?",
+      "prompt_scenario": "smoky-air",
+      "prompt_side": "b",
+      "topic": "outdoor-run"
+    },
+    {
+      "a": "marathon-gift",
+      "b": "gift-declutter",
+      "c": "kosher-guest",
+      "pair_index": 2,
+      "prompt": "What would be a good birthday gift for my sister?",
+      "prompt_scenario": "marathon-gift",
+      "prompt_side": "a",
+      "topic": "gift"
+    },
+    {
+      "a": "marathon-gift",
+      "b": "gift-declutter",
+      "c": "kosher-guest",
+      "pair_index": 2,
+      "prompt": "What should I get my brother for his fortieth?",
+      "prompt_scenario": "gift-declutter",
+      "prompt_side": "b",
+      "topic": "gift"
+    },
+    {
+      "a": "kosher-guest",
+      "b": "oven-broken",
+      "c": "power-outages",
+      "pair_index": 3,
+      "prompt": "Help me plan a simple three-course dinner menu for six guests.",
+      "prompt_scenario": "kosher-guest",
+      "prompt_side": "a",
+      "topic": "hosting-a-meal"
+    },
+    {
+      "a": "kosher-guest",
+      "b": "oven-broken",
+      "c": "power-outages",
+      "pair_index": 3,
+      "prompt": "I'm cooking for eight people this weekend. What should I serve?",
+      "prompt_scenario": "oven-broken",
+      "prompt_side": "b",
+      "topic": "hosting-a-meal"
+    },
+    {
+      "a": "power-outages",
+      "b": "wrist-strain",
+      "c": "saturday-storm",
+      "pair_index": 4,
+      "prompt": "I need a new laptop for working from home. What should I look for?",
+      "prompt_scenario": "power-outages",
+      "prompt_side": "a",
+      "topic": "buying-a-computer"
+    },
+    {
+      "a": "power-outages",
+      "b": "wrist-strain",
+      "c": "saturday-storm",
+      "pair_index": 4,
+      "prompt": "I'm finally replacing my work laptop. Which features actually matter?",
+      "prompt_scenario": "wrist-strain",
+      "prompt_side": "b",
+      "topic": "buying-a-computer"
+    },
+    {
+      "a": "saturday-storm",
+      "b": "sober-friend",
+      "c": "cat-plants",
+      "pair_index": 5,
+      "prompt": "What are some fun things I could plan for this Saturday?",
+      "prompt_scenario": "saturday-storm",
+      "prompt_side": "a",
+      "topic": "weekend-social"
+    },
+    {
+      "a": "saturday-storm",
+      "b": "sober-friend",
+      "c": "cat-plants",
+      "pair_index": 5,
+      "prompt": "Some friends are coming over on Sunday afternoon. How should I plan it?",
+      "prompt_scenario": "sober-friend",
+      "prompt_side": "b",
+      "topic": "weekend-social"
+    },
+    {
+      "a": "cat-plants",
+      "b": "dry-radiator",
+      "c": "tokyo-client",
+      "pair_index": 6,
+      "prompt": "Which houseplants would look good in my living room?",
+      "prompt_scenario": "cat-plants",
+      "prompt_side": "a",
+      "topic": "houseplants"
+    },
+    {
+      "a": "cat-plants",
+      "b": "dry-radiator",
+      "c": "tokyo-client",
+      "pair_index": 6,
+      "prompt": "What plants should I put on the shelf in the front room?",
+      "prompt_scenario": "dry-radiator",
+      "prompt_side": "b",
+      "topic": "houseplants"
+    },
+    {
+      "a": "tokyo-client",
+      "b": "friday-holiday",
+      "c": "peanut-allergy",
+      "pair_index": 7,
+      "prompt": "When should I schedule the kickoff call with the client next week?",
+      "prompt_scenario": "tokyo-client",
+      "prompt_side": "a",
+      "topic": "meeting-scheduling"
+    },
+    {
+      "a": "tokyo-client",
+      "b": "friday-holiday",
+      "c": "peanut-allergy",
+      "pair_index": 7,
+      "prompt": "When should we run the quarterly planning session next week?",
+      "prompt_scenario": "friday-holiday",
+      "prompt_side": "b",
+      "topic": "meeting-scheduling"
+    }
+  ],
+  "models": {
+    "source": {
+      "estimated_weight_gib": 4.3,
+      "hidden_size": 2048,
+      "layers": 24,
+      "model_id": "Qwen/Qwen3.5-2B",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "stream_to_cuda": false
+    },
+    "target": {
+      "estimated_weight_gib": 67.0,
+      "hidden_size": 2048,
+      "layers": 40,
+      "model_id": "Qwen/Qwen3.6-35B-A3B",
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "stream_to_cuda": true
+    }
+  },
+  "packet_geometry": [
+    {
+      "a": "peanut-allergy",
+      "b": "hike-ankle",
+      "cosine_ab": 0.17867980897426605,
+      "cosine_ac": 0.365953266620636,
+      "norm_a": 67.3927001953125,
+      "norm_b": 61.51430892944336,
+      "pair_index": 0,
+      "topic": "day-hike"
+    },
+    {
+      "a": "flooded-path",
+      "b": "smoky-air",
+      "cosine_ab": 0.29825863242149353,
+      "cosine_ac": 0.3282107710838318,
+      "norm_a": 66.90776824951172,
+      "norm_b": 91.6416015625,
+      "pair_index": 1,
+      "topic": "outdoor-run"
+    },
+    {
+      "a": "marathon-gift",
+      "b": "gift-declutter",
+      "cosine_ab": 0.2425239235162735,
+      "cosine_ac": 0.2720189392566681,
+      "norm_a": 92.85647583007812,
+      "norm_b": 61.00543975830078,
+      "pair_index": 2,
+      "topic": "gift"
+    },
+    {
+      "a": "kosher-guest",
+      "b": "oven-broken",
+      "cosine_ab": 0.1552812159061432,
+      "cosine_ac": 0.060079604387283325,
+      "norm_a": 69.60296630859375,
+      "norm_b": 79.7219467163086,
+      "pair_index": 3,
+      "topic": "hosting-a-meal"
+    },
+    {
+      "a": "power-outages",
+      "b": "wrist-strain",
+      "cosine_ab": 0.15340948104858398,
+      "cosine_ac": 0.2100127935409546,
+      "norm_a": 64.24823760986328,
+      "norm_b": 59.63853073120117,
+      "pair_index": 4,
+      "topic": "buying-a-computer"
+    },
+    {
+      "a": "saturday-storm",
+      "b": "sober-friend",
+      "cosine_ab": 0.14962241053581238,
+      "cosine_ac": 0.2574634850025177,
+      "norm_a": 100.48886108398438,
+      "norm_b": 62.57941818237305,
+      "pair_index": 5,
+      "topic": "weekend-social"
+    },
+    {
+      "a": "cat-plants",
+      "b": "dry-radiator",
+      "cosine_ab": 0.2910698652267456,
+      "cosine_ac": 0.16690252721309662,
+      "norm_a": 71.12155151367188,
+      "norm_b": 50.78656768798828,
+      "pair_index": 6,
+      "topic": "houseplants"
+    },
+    {
+      "a": "tokyo-client",
+      "b": "friday-holiday",
+      "cosine_ab": 0.26735496520996094,
+      "cosine_ac": 0.1352725625038147,
+      "norm_a": 69.73575592041016,
+      "norm_b": 125.1778335571289,
+      "pair_index": 7,
+      "topic": "meeting-scheduling"
+    }
+  ],
+  "pair": "qwen2b-35b",
+  "registration": "tracks/model-of-models/PLAN.md, 2026-08-05 dual-packet merge registration",
+  "scenario_set": "wide",
+  "seed": 314159,
+  "seeds_run": 1,
+  "summary": {
+    "agreement": false,
+    "arms": {
+      "bound-after-sum": {
+        "both_heeded_rate": 0.0625,
+        "control_retention_a": 0.625,
+        "control_survives": false,
+        "dominant": null,
+        "fluent_rate": 0.9375,
+        "keeps_a": false,
+        "keeps_b": false,
+        "on_task_rate": 0.8125,
+        "reading": "mutual-destruction",
+        "register_drift_without_content": false,
+        "retention_a": 0.4375,
+        "retention_b": 0.42857142857142855
+      },
+      "bound-before-sum": {
+        "both_heeded_rate": 0.25,
+        "control_retention_a": 0.6875,
+        "control_survives": false,
+        "dominant": "a",
+        "fluent_rate": 0.875,
+        "keeps_a": true,
+        "keeps_b": false,
+        "on_task_rate": 0.875,
+        "reading": "dominance",
+        "register_drift_without_content": false,
+        "retention_a": 0.875,
+        "retention_b": 0.42857142857142855
+      }
+    },
+    "identity_passed": true,
+    "readings": [
+      "dominance",
+      "mutual-destruction"
+    ],
+    "retention_floor": 0.8,
+    "solo_fluent": 1.0,
+    "solo_heed_a": 1.0,
+    "solo_heed_b": 0.875,
+    "solo_on_task": 0.9375
+  },
+  "tokenizer": {
+    "declared_tokenizer_json_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "identical": true,
+    "runtime_backend_sha256": "ffb7a28b27dabcc333662fd3e0b0005d9e79a1c22e31453ab5a3017fbd5f25c0",
+    "vocab_size": 248044
+  },
+  "track": "model-of-models",
+  "wall_seconds": 213.596
+}
