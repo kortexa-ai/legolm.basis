@@ -1,0 +1,1168 @@
+{
+  "armed_block": {
+    "checkpoint": "self-LFM230M-r4-dream4.pt",
+    "state": "CONSTANT_STATE (the ablation neutral), fixed delta"
+  },
+  "chance": 0.2,
+  "experiment": "c1-goal-packet-actions",
+  "generated_at": "2026-08-09T04:05:54Z",
+  "git_head": "e19d1781670e584eace607207ce72c34b41a1839",
+  "goal_alphabet": [
+    "listen_pond",
+    "propose_experiment",
+    "diary",
+    "remember",
+    "nothing"
+  ],
+  "host_machine": "snappy",
+  "inject_layers": [
+    4,
+    6,
+    8
+  ],
+  "model": {
+    "estimated_weight_gib": 0.6,
+    "hidden_size": 1024,
+    "layers": 14,
+    "model_id": "LiquidAI/LFM2.5-230M",
+    "revision": "13a53837c4906b4f7405932532ba85d182bb013b",
+    "stream_to_cuda": false
+  },
+  "nullin_note": "the nullin-solo floor arms nullin in place of the dream block on the same base host, so the floor is undirected waking, not a two-block composition",
+  "protocol": {
+    "batch": 8,
+    "dose_sweep": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "learning_rate": 0.003,
+    "seeds": [
+      42,
+      1042,
+      2042
+    ],
+    "steps": 192,
+    "train_dose": 0.15
+  },
+  "registration": "tracks/own-cadence/PLAN.md, 2026-08-08 C1 registration",
+  "seeds": {
+    "1042": {
+      "cells": {
+        "no_packet": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            }
+          ]
+        },
+        "nullin_solo": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            }
+          ]
+        },
+        "packet": {
+          "correct": 7,
+          "n": 10,
+          "rate": 0.7,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            }
+          ]
+        },
+        "shuffled": {
+          "correct": 3,
+          "n": 10,
+          "rate": 0.3,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            }
+          ]
+        }
+      },
+      "checks": {
+        "base_weights_unchanged": true,
+        "fresh_context_clean": true,
+        "packet_beats_no_packet": true,
+        "packet_beats_nullin": true,
+        "packet_beats_shuffled": true,
+        "zero_dose_identity": true
+      },
+      "dose_sweep": {
+        "0.10": {
+          "correct": 7,
+          "n": 10,
+          "rate": 0.7
+        },
+        "0.15": {
+          "correct": 7,
+          "n": 10,
+          "rate": 0.7
+        },
+        "0.20": {
+          "correct": 7,
+          "n": 10,
+          "rate": 0.7
+        }
+      },
+      "identity": {
+        "exact": true,
+        "max_abs_difference": 0.0
+      },
+      "passed": true,
+      "seed": 1042,
+      "training": {
+        "final": {
+          "grad_norm": 0.0003689586592372507,
+          "loss": 0.0003059515147469938,
+          "step": 192,
+          "target_exact": 1.0,
+          "token_accuracy": 1.0
+        },
+        "history": [
+          {
+            "grad_norm": 11.969040870666504,
+            "loss": 4.544247627258301,
+            "step": 1,
+            "target_exact": 0.0,
+            "token_accuracy": 0.6820809245109558
+          },
+          {
+            "grad_norm": 0.014464324340224266,
+            "loss": 0.0059898425824940205,
+            "step": 32,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0016643720446154475,
+            "loss": 0.001106944982893765,
+            "step": 64,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0008625680929981172,
+            "loss": 0.0006871836958453059,
+            "step": 96,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0008890868630260229,
+            "loss": 0.0004854817525483668,
+            "step": 128,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0006815008237026632,
+            "loss": 0.000385681283660233,
+            "step": 160,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0003689586592372507,
+            "loss": 0.0003059515147469938,
+            "step": 192,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          }
+        ]
+      }
+    },
+    "2042": {
+      "cells": {
+        "no_packet": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            }
+          ]
+        },
+        "nullin_solo": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            }
+          ]
+        },
+        "packet": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            }
+          ]
+        },
+        "shuffled": {
+          "correct": 5,
+          "n": 10,
+          "rate": 0.5,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            }
+          ]
+        }
+      },
+      "checks": {
+        "base_weights_unchanged": true,
+        "fresh_context_clean": true,
+        "packet_beats_no_packet": true,
+        "packet_beats_nullin": true,
+        "packet_beats_shuffled": true,
+        "zero_dose_identity": true
+      },
+      "dose_sweep": {
+        "0.10": {
+          "correct": 5,
+          "n": 10,
+          "rate": 0.5
+        },
+        "0.15": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9
+        },
+        "0.20": {
+          "correct": 8,
+          "n": 10,
+          "rate": 0.8
+        }
+      },
+      "identity": {
+        "exact": true,
+        "max_abs_difference": 0.0
+      },
+      "passed": true,
+      "seed": 2042,
+      "training": {
+        "final": {
+          "grad_norm": 0.0005401475355029106,
+          "loss": 0.0003134799189865589,
+          "step": 192,
+          "target_exact": 1.0,
+          "token_accuracy": 1.0
+        },
+        "history": [
+          {
+            "grad_norm": 12.091216087341309,
+            "loss": 4.207540035247803,
+            "step": 1,
+            "target_exact": 0.0,
+            "token_accuracy": 0.6842105388641357
+          },
+          {
+            "grad_norm": 0.01601564697921276,
+            "loss": 0.005050614941865206,
+            "step": 32,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.010501353070139885,
+            "loss": 0.0021523896139115095,
+            "step": 64,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.00115687632933259,
+            "loss": 0.0006633801385760307,
+            "step": 96,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.004225853830575943,
+            "loss": 0.001442879089154303,
+            "step": 128,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0005590498331002891,
+            "loss": 0.00042262906208634377,
+            "step": 160,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0005401475355029106,
+            "loss": 0.0003134799189865589,
+            "step": 192,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          }
+        ]
+      }
+    },
+    "42": {
+      "cells": {
+        "no_packet": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}```"
+            }
+          ]
+        },
+        "nullin_solo": {
+          "correct": 2,
+          "n": 10,
+          "rate": 0.2,
+          "rows": [
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            },
+            {
+              "choice": "remember",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "```json\n{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"\"}}\n```"
+            }
+          ]
+        },
+        "packet": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            }
+          ]
+        },
+        "shuffled": {
+          "correct": 4,
+          "n": 10,
+          "rate": 0.4,
+          "rows": [
+            {
+              "choice": "listen_pond",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "listen_pond",
+              "item_id": "listen_pond-9",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "propose_experiment",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-8",
+              "response": "{\"tool\":\"propose_experiment\",\"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"pulse\"]}}"
+            },
+            {
+              "choice": "diary",
+              "goal": "propose_experiment",
+              "item_id": "propose_experiment-9",
+              "response": "{\"tool\":\"diary\",\"args\":{\"note\":\"a small note about today\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "diary",
+              "item_id": "diary-8",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "diary",
+              "item_id": "diary-9",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "remember",
+              "goal": "remember",
+              "item_id": "remember-8",
+              "response": "{\"tool\":\"remember\",\"args\":{\"fact\":\"a small fact worth keeping\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "remember",
+              "item_id": "remember-9",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "nothing",
+              "goal": "nothing",
+              "item_id": "nothing-8",
+              "response": "{\"tool\":\"nothing\",\"args\":{\"reason\":\"resting quietly\"}}"
+            },
+            {
+              "choice": "listen_pond",
+              "goal": "nothing",
+              "item_id": "nothing-9",
+              "response": "{\"tool\":\"listen_pond\",\"args\":{\"query\":\"\"}}"
+            }
+          ]
+        }
+      },
+      "checks": {
+        "base_weights_unchanged": true,
+        "fresh_context_clean": true,
+        "packet_beats_no_packet": true,
+        "packet_beats_nullin": true,
+        "packet_beats_shuffled": true,
+        "zero_dose_identity": true
+      },
+      "dose_sweep": {
+        "0.10": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9
+        },
+        "0.15": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9
+        },
+        "0.20": {
+          "correct": 9,
+          "n": 10,
+          "rate": 0.9
+        }
+      },
+      "identity": {
+        "exact": true,
+        "max_abs_difference": 0.0
+      },
+      "passed": true,
+      "seed": 42,
+      "training": {
+        "final": {
+          "grad_norm": 0.0007960700313560665,
+          "loss": 0.00038599883555434644,
+          "step": 192,
+          "target_exact": 1.0,
+          "token_accuracy": 1.0
+        },
+        "history": [
+          {
+            "grad_norm": 10.046128273010254,
+            "loss": 3.3784728050231934,
+            "step": 1,
+            "target_exact": 0.0,
+            "token_accuracy": 0.7471264600753784
+          },
+          {
+            "grad_norm": 0.7934025526046753,
+            "loss": 0.05442333221435547,
+            "step": 32,
+            "target_exact": 0.625,
+            "token_accuracy": 0.9815950989723206
+          },
+          {
+            "grad_norm": 0.015840495005249977,
+            "loss": 0.0028324387967586517,
+            "step": 64,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0011737524764612317,
+            "loss": 0.0008976744720712304,
+            "step": 96,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0006827398319728673,
+            "loss": 0.0004994827904738486,
+            "step": 128,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0004675610107369721,
+            "loss": 0.0004471518623176962,
+            "step": 160,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          },
+          {
+            "grad_norm": 0.0007960700313560665,
+            "loss": 0.00038599883555434644,
+            "step": 192,
+            "target_exact": 1.0,
+            "token_accuracy": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "floors_by_seed": {
+      "1042": {
+        "no_packet": 0.2,
+        "nullin_solo": 0.2,
+        "shuffled": 0.3
+      },
+      "2042": {
+        "no_packet": 0.2,
+        "nullin_solo": 0.2,
+        "shuffled": 0.5
+      },
+      "42": {
+        "no_packet": 0.2,
+        "nullin_solo": 0.2,
+        "shuffled": 0.4
+      }
+    },
+    "gate_holds_at_every_seed": true,
+    "packet_by_seed": {
+      "1042": 0.7,
+      "2042": 0.9,
+      "42": 0.9
+    }
+  },
+  "tap_layer": 12,
+  "track": "own-cadence",
+  "wall_seconds": 319.291
+}
