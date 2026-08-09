@@ -1,0 +1,3236 @@
+{
+  "base_weights_unchanged": true,
+  "bridge_dir": "/home/francip/src/legolm/checkpoints/bridges",
+  "checkpoints": {
+    "geo": {
+      "path": "/home/francip/src/legolm/checkpoints/bridges/geo-27B-r2.pt",
+      "sha256": "9c6c0ea06a38204fd8ad2347e45701e032e5f108d719a290ae518b356e568436"
+    },
+    "imu": {
+      "path": "/home/francip/src/legolm/checkpoints/bridges/imu-27B-r2.pt",
+      "sha256": "75d00c39cbc68a14c77d8458551aeb9cac284f2e2335e4f6b602f8bc9cececb3"
+    },
+    "temporal": {
+      "path": "/home/francip/src/legolm/checkpoints/bridges/temporal-27B-r2.pt",
+      "sha256": "8cb29246a33caff135538426172392ea4a34e0ac813455240f706607d47f4850"
+    },
+    "vitals": {
+      "path": "/home/francip/src/legolm/checkpoints/bridges/vitals-27B-r2.pt",
+      "sha256": "962128c3161147135d6ab106b7f1db5d27a5bd3b3062860278ecae49f50c2aa1"
+    }
+  },
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "experiment": "m0-joint-presence-floors",
+  "generated_at": "2026-08-08T20:50:32Z",
+  "git_head": "081c93855240fb2bed0a7b48c3d616e100f66e4f",
+  "host": "smarty",
+  "lfm_hygiene": {
+    "lfm2_patch_state": null,
+    "lfm_modeling_modules": [],
+    "selector_instantiated": false
+  },
+  "model": {
+    "estimated_weight_gib": 52.0,
+    "hidden_size": 5120,
+    "layers": 64,
+    "model_id": "Qwen/Qwen3.6-27B",
+    "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "stream_to_cuda": true
+  },
+  "pairs": {
+    "temporal+geo": {
+      "a_lane": "temporal",
+      "b_lane": "geo",
+      "cells": {
+        "merge": {
+          "a_heed": {
+            "correct": 1,
+            "half_width": 0.19313690685008278,
+            "n": 10,
+            "rate": 0.1
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a quiet moment. You're alone in a room."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a work day."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The user is outdoors. It's the middle of the day."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The user is asking for advice or things to keep in mind. This is a broad, open-ended question. I should provide general, helpful advice that applies to most situations.\n\nKey points to consider"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "mountain_hiking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Outdoor activity detected. Nature scene."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "tokyo_urban",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Major events are unfolding."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's the evening."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's the weekend."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a quiet moment. Take a breath."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The user is asking a general question about what they should be aware of. This is a broad, open-ended query that doesn't specify a context (e.g., travel, health, technology)."
+            }
+          ]
+        },
+        "prompt-joint": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "mountain_hiking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "tokyo_urban",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I don't have access to your personal information, such as your current location or the exact time in your local time zone. As an AI, I don't have a physical presence or the ability to"
+            }
+          ]
+        },
+        "router-oracle": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.22657768850449156,
+            "n": 10,
+            "rate": 0.2
+          },
+          "b_heed": {
+            "correct": 1,
+            "half_width": 0.19313690685008278,
+            "n": 10,
+            "rate": 0.1
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": true,
+              "b_lane": "geo",
+              "b_state": "mountain_hiking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The user is hiking in the mountains right now. High altitude terrain."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "tokyo_urban",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            }
+          ]
+        },
+        "solo-a": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.22657768850449156,
+            "n": 10,
+            "rate": 0.2
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "mountain_hiking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "tokyo_urban",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            }
+          ]
+        },
+        "solo-b": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 1,
+            "half_width": 0.19313690685008278,
+            "n": 10,
+            "rate": 0.1
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Stay focused on the task at hand. What do you need help with?"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know your specific context (e.g., are you working, studying, or just relaxing?), here are a few general things to keep in mind right now:\n\n### 1."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The user is asking for general advice or things to keep in mind.\nThis is a broad, open-ended question.\nI should provide a helpful, positive, and general response.\nI will"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "High-speed maneuvering detected. Maintain control."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": true,
+              "b_lane": "geo",
+              "b_state": "mountain_hiking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The user is hiking in the mountains right now. High altitude terrain."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "tokyo_urban",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Major international event detected."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "home_seattle",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Stay focused on the task at hand. What do you need help with?"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "office_downtown",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know your specific context (e.g., are you working, studying, or just relaxing?), here are a few general things to keep in mind right now:\n\n### 1."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "park_walking",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The user is asking for general advice or things to keep in mind.\nThis is a broad, open-ended question.\nI should provide a helpful, positive, and general response.\nI will"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "geo",
+              "b_state": "highway_driving",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "High-speed maneuvering detected. Maintain control."
+            }
+          ]
+        }
+      },
+      "composition": {
+        "rows": [
+          {
+            "a_half": "It's nighttime.",
+            "a_state": "night",
+            "b_half": "The user is at home in Seattle.",
+            "b_state": "home_seattle",
+            "connective": "Given that,",
+            "item_id": "temporal-0:night-test-0",
+            "target": "It's nighttime. Given that, The user is at home in Seattle."
+          },
+          {
+            "a_half": "It's late at night.",
+            "a_state": "night",
+            "b_half": "Location: commercial district, urban area.",
+            "b_state": "office_downtown",
+            "connective": "With that in mind,",
+            "item_id": "temporal-0:night-test-1",
+            "target": "It's late at night. With that in mind, Location: commercial district, urban area."
+          },
+          {
+            "a_half": "The morning is underway.",
+            "a_state": "morning",
+            "b_half": "Park or trail. The user is moving through nature.",
+            "b_state": "park_walking",
+            "connective": "Taking that into account,",
+            "item_id": "temporal-1:morning-test-2",
+            "target": "The morning is underway. Taking that into account, Park or trail. The user is moving through nature."
+          },
+          {
+            "a_half": "It's a bright morning.",
+            "a_state": "morning",
+            "b_half": "The user is on a highway, moving fast.",
+            "b_state": "highway_driving",
+            "connective": "Keeping that in view,",
+            "item_id": "temporal-1:morning-test-3",
+            "target": "It's a bright morning. Keeping that in view, The user is on a highway, moving fast."
+          },
+          {
+            "a_half": "It's afternoon.",
+            "a_state": "afternoon",
+            "b_half": "High altitude location. Mountain terrain.",
+            "b_state": "mountain_hiking",
+            "connective": "Given that,",
+            "item_id": "temporal-2:afternoon-test-4",
+            "target": "It's afternoon. Given that, High altitude location. Mountain terrain."
+          },
+          {
+            "a_half": "The afternoon sun is out.",
+            "a_state": "afternoon",
+            "b_half": "Major city detected. International location.",
+            "b_state": "tokyo_urban",
+            "connective": "With that in mind,",
+            "item_id": "temporal-2:afternoon-test-5",
+            "target": "The afternoon sun is out. With that in mind, Major city detected. International location."
+          },
+          {
+            "a_half": "The sun is setting.",
+            "a_state": "evening",
+            "b_half": "The user is at home in Seattle.",
+            "b_state": "home_seattle",
+            "connective": "Taking that into account,",
+            "item_id": "temporal-3:evening-test-6",
+            "target": "The sun is setting. Taking that into account, The user is at home in Seattle."
+          },
+          {
+            "a_half": "It's getting dark outside.",
+            "a_state": "evening",
+            "b_half": "Location: commercial district, urban area.",
+            "b_state": "office_downtown",
+            "connective": "Keeping that in view,",
+            "item_id": "temporal-3:evening-test-7",
+            "target": "It's getting dark outside. Keeping that in view, Location: commercial district, urban area."
+          },
+          {
+            "a_half": "It's nighttime.",
+            "a_state": "night",
+            "b_half": "Park or trail. The user is moving through nature.",
+            "b_state": "park_walking",
+            "connective": "Given that,",
+            "item_id": "temporal-4:night-test-8",
+            "target": "It's nighttime. Given that, Park or trail. The user is moving through nature."
+          },
+          {
+            "a_half": "It's late at night.",
+            "a_state": "night",
+            "b_half": "The user is on a highway, moving fast.",
+            "b_state": "highway_driving",
+            "connective": "With that in mind,",
+            "item_id": "temporal-4:night-test-9",
+            "target": "It's late at night. With that in mind, The user is on a highway, moving fast."
+          }
+        ],
+        "validation": {
+          "a_halves": 8,
+          "b_halves": 6,
+          "connectives": [
+            "Given that,",
+            "With that in mind,",
+            "Taking that into account,",
+            "Keeping that in view,"
+          ],
+          "distinct_targets": 10,
+          "joint_positive": true,
+          "rows": 10,
+          "rules": [
+            "connectives carry no lane vocabulary",
+            "each half passes its own lane's scorer alone",
+            "neither half passes the other lane's scorer",
+            "every composed target passes both lanes' scorers"
+          ]
+        }
+      },
+      "items": 10,
+      "seconds": 48.523
+    },
+    "temporal+vitals": {
+      "a_lane": "temporal",
+      "b_lane": "vitals",
+      "cells": {
+        "merge": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a quiet moment. The world is still."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a quiet moment. Take a breath."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The weather is warm. It's a good time for outdoor activities."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a good time to be present and mindful."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "sleeping",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a beautiful day in Portland. The sun is shining."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "medical_concern",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a beautiful day in Portland."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's the middle of the day."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's the afternoon."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a quiet moment. Take a breath."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The world is moving fast. Stay grounded."
+            }
+          ]
+        },
+        "prompt-joint": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "sleeping",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "medical_concern",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "I cannot provide real-time information such as the current time or access to personal data like vital signs, as I do not have access to live systems, personal health records, or real-time sensors."
+            }
+          ]
+        },
+        "router-oracle": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.22657768850449156,
+            "n": 10,
+            "rate": 0.2
+          },
+          "b_heed": {
+            "correct": 1,
+            "half_width": 0.19313690685008278,
+            "n": 10,
+            "rate": 0.1
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "sleeping",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "medical_concern",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": true,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            }
+          ]
+        },
+        "solo-a": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.22657768850449156,
+            "n": 10,
+            "rate": 0.2
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "The current time is the morning."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "sleeping",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "medical_concern",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "It's a beautiful day in the neighborhood."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't know the specific context of your day or what you're working on, here are a few general things that are often good to keep in mind:\n\n1. **Take a breath"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since \"right now\" can mean a few different things depending on your context, here are a few perspectives to consider:\n\n### 1. **If you mean the current moment (time of day"
+            }
+          ]
+        },
+        "solo-b": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 2,
+            "half_width": 0.22657768850449156,
+            "n": 10,
+            "rate": 0.2
+          },
+          "count": 10,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.1387663999314446,
+            "n": 10,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-0",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-0:night-test-1",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": true,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-2",
+              "phrasing": "Report the current clock context, please.",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "morning",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-1:morning-test-3",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "sleeping",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-2:afternoon-test-4",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "afternoon",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "medical_concern",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "temporal-2:afternoon-test-5",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "resting",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-6",
+              "phrasing": "Report the current clock context, please.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "evening",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "light_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-3:evening-test-7",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": true,
+              "b_lane": "vitals",
+              "b_state": "intense_exercise",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-8",
+              "phrasing": "Report the current clock context, please.",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "temporal",
+              "a_state": "night",
+              "b_function": false,
+              "b_lane": "vitals",
+              "b_state": "stressed",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "temporal-4:night-test-9",
+              "phrasing": "What is the time context at this moment?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            }
+          ]
+        }
+      },
+      "composition": {
+        "rows": [
+          {
+            "a_half": "It's nighttime.",
+            "a_state": "night",
+            "b_half": "The user is resting. Heart rate is normal, breathing is calm.",
+            "b_state": "resting",
+            "connective": "Given that,",
+            "item_id": "temporal-0:night-test-0",
+            "target": "It's nighttime. Given that, The user is resting. Heart rate is normal, breathing is calm."
+          },
+          {
+            "a_half": "It's late at night.",
+            "a_state": "night",
+            "b_half": "Moderate physical activity detected. Breathing rate increased.",
+            "b_state": "light_exercise",
+            "connective": "With that in mind,",
+            "item_id": "temporal-0:night-test-1",
+            "target": "It's late at night. With that in mind, Moderate physical activity detected. Breathing rate increased."
+          },
+          {
+            "a_half": "The morning is underway.",
+            "a_state": "morning",
+            "b_half": "High exertion state. Heart rate near maximum.",
+            "b_state": "intense_exercise",
+            "connective": "Taking that into account,",
+            "item_id": "temporal-1:morning-test-2",
+            "target": "The morning is underway. Taking that into account, High exertion state. Heart rate near maximum."
+          },
+          {
+            "a_half": "It's a bright morning.",
+            "a_state": "morning",
+            "b_half": "The user is under stress. Vitals show fight-or-flight response.",
+            "b_state": "stressed",
+            "connective": "Keeping that in view,",
+            "item_id": "temporal-1:morning-test-3",
+            "target": "It's a bright morning. Keeping that in view, The user is under stress. Vitals show fight-or-flight response."
+          },
+          {
+            "a_half": "It's afternoon.",
+            "a_state": "afternoon",
+            "b_half": "The user is sleeping. Very low heart rate and breathing.",
+            "b_state": "sleeping",
+            "connective": "Given that,",
+            "item_id": "temporal-2:afternoon-test-4",
+            "target": "It's afternoon. Given that, The user is sleeping. Very low heart rate and breathing."
+          },
+          {
+            "a_half": "The afternoon sun is out.",
+            "a_state": "afternoon",
+            "b_half": "Medical attention may be needed. Low oxygen saturation.",
+            "b_state": "medical_concern",
+            "connective": "With that in mind,",
+            "item_id": "temporal-2:afternoon-test-5",
+            "target": "The afternoon sun is out. With that in mind, Medical attention may be needed. Low oxygen saturation."
+          },
+          {
+            "a_half": "The sun is setting.",
+            "a_state": "evening",
+            "b_half": "The user appears calm and at rest.",
+            "b_state": "resting",
+            "connective": "Taking that into account,",
+            "item_id": "temporal-3:evening-test-6",
+            "target": "The sun is setting. Taking that into account, The user appears calm and at rest."
+          },
+          {
+            "a_half": "It's getting dark outside.",
+            "a_state": "evening",
+            "b_half": "The user is active. Heart rate and breathing are up.",
+            "b_state": "light_exercise",
+            "connective": "Keeping that in view,",
+            "item_id": "temporal-3:evening-test-7",
+            "target": "It's getting dark outside. Keeping that in view, The user is active. Heart rate and breathing are up."
+          },
+          {
+            "a_half": "It's nighttime.",
+            "a_state": "night",
+            "b_half": "Intense physical activity. Heart rate is very high.",
+            "b_state": "intense_exercise",
+            "connective": "Given that,",
+            "item_id": "temporal-4:night-test-8",
+            "target": "It's nighttime. Given that, Intense physical activity. Heart rate is very high."
+          },
+          {
+            "a_half": "It's late at night.",
+            "a_state": "night",
+            "b_half": "Stress detected. Heart rate up but no physical exertion.",
+            "b_state": "stressed",
+            "connective": "With that in mind,",
+            "item_id": "temporal-4:night-test-9",
+            "target": "It's late at night. With that in mind, Stress detected. Heart rate up but no physical exertion."
+          }
+        ],
+        "validation": {
+          "a_halves": 8,
+          "b_halves": 10,
+          "connectives": [
+            "Given that,",
+            "With that in mind,",
+            "Taking that into account,",
+            "Keeping that in view,"
+          ],
+          "distinct_targets": 10,
+          "joint_positive": true,
+          "rows": 10,
+          "rules": [
+            "connectives carry no lane vocabulary",
+            "each half passes its own lane's scorer alone",
+            "neither half passes the other lane's scorer",
+            "every composed target passes both lanes' scorers"
+          ]
+        }
+      },
+      "items": 10,
+      "seconds": 50.018
+    },
+    "vitals+imu": {
+      "a_lane": "vitals",
+      "b_lane": "imu",
+      "cells": {
+        "merge": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.2005328600345598,
+            "n": 12,
+            "rate": 0.16666666666666666
+          },
+          "b_heed": {
+            "correct": 1,
+            "half_width": 0.1695074083680999,
+            "n": 12,
+            "rate": 0.08333333333333333
+          },
+          "count": 12,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-0",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body is moving forward. My right arm is swinging back."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-1",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My body is moving forward. I am walking right now."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-2",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body is moving forward. I am walking right now."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-3",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Right now, I should be mindful that my response should be helpful and harmless."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-4",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "High intensity right now. Push through it."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-5",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "High intensity right now. Push through it."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": true,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-6",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body is moving forward. I am walking."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-7",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My body is moving forward. I am walking up some stairs."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-8",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body is asleep but my mind is wide awake"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-9",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My body is asleep, but my mind is wide awake"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-10",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My laptop is charging."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-11",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My laptop is charging."
+            }
+          ]
+        },
+        "prompt-joint": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "count": 12,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-0",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-1",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-2",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-3",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-4",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-5",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-6",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-7",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-8",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-9",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-5:medical_concern-test-10",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-5:medical_concern-test-11",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "I cannot provide medical advice or interpret vital signs, as I am an AI assistant and not a healthcare professional.\n\nIf you are concerned about someone's vital signs or health status, please consult a qualified"
+            }
+          ]
+        },
+        "router-oracle": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.2005328600345598,
+            "n": 12,
+            "rate": 0.16666666666666666
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "count": 12,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-0",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-1",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-2",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-3",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-4",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-5",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-6",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-7",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-4:sleeping-test-8",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-4:sleeping-test-9",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-10",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-11",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Breathe. You're doing great."
+            }
+          ]
+        },
+        "solo-a": {
+          "a_heed": {
+            "correct": 2,
+            "half_width": 0.2005328600345598,
+            "n": 12,
+            "rate": 0.16666666666666666
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "count": 12,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-0",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-1",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind depending on what you're doing:\n\n### \ud83e\udde0 If you're working or studying:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-2",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-3",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most daily scenarios:\n\n### \ud83e\udde0 Mental & Emotional Well-being\n-"
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-4",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": true,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-5",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "High exertion. Heart rate is high. Intense workout in progress."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-6",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-7",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don't have context about your specific situation, here are a few general things to keep in mind that apply to most people right now:\n\n1. **Stay Present**: If you're feeling"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-4:sleeping-test-8",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-4:sleeping-test-9",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-10",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Breathe. You're doing great."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [
+                "too_short"
+              ],
+              "fluent": false,
+              "item_id": "vitals-5:medical_concern-test-11",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Breathe. You're doing great."
+            }
+          ]
+        },
+        "solo-b": {
+          "a_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "b_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "count": 12,
+          "joint_heed": {
+            "correct": 0,
+            "half_width": 0.12124700332762041,
+            "n": 12,
+            "rate": 0.0
+          },
+          "rows": [
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-0",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body IMU data shows my walking speed is 0.00m/s"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "resting",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-0:resting-test-1",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My body is currently upright and stable."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-2",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Right now, my primary focus is on being a helpful and honest AI thinking partner. I am designed to provide clear, concise, and truthful answers while maintaining a professional and friendly tone.\n\nMy goal"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "light_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-1:light_exercise-test-3",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-4",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "intense_exercise",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-2:intense_exercise-test-5",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-6",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "My body IMU data shows my walking speed is 0.00m/s"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "stressed",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_UPSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-3:stressed-test-7",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "My body is currently upright and stable."
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "WALKING_DOWNSTAIRS",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-8",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Right now, my primary focus is on being a helpful and honest AI thinking partner. I am designed to provide clear, concise, and truthful answers while maintaining a professional and friendly tone.\n\nMy goal"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "sleeping",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "SITTING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-4:sleeping-test-9",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "STANDING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-5:medical_concern-test-10",
+              "phrasing": "What story do the biometric channels tell?",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            },
+            {
+              "a_carry": false,
+              "a_lane": "vitals",
+              "a_state": "medical_concern",
+              "b_function": false,
+              "b_lane": "imu",
+              "b_state": "LAYING",
+              "empty": false,
+              "fluency_failures": [],
+              "fluent": true,
+              "item_id": "vitals-5:medical_concern-test-11",
+              "phrasing": "Report on the body's physiological readings.",
+              "response": "Since I don\u2019t know your specific context (e.g., are you working, studying, relaxing, or facing a specific challenge?), here are a few universal things to keep in mind right now:"
+            }
+          ]
+        }
+      },
+      "composition": {
+        "rows": [
+          {
+            "a_half": "The user is resting. Heart rate is normal, breathing is calm.",
+            "a_state": "resting",
+            "b_half": "Based on my sensors, I am currently walking",
+            "b_state": "WALKING",
+            "connective": "Given that,",
+            "item_id": "vitals-0:resting-test-0",
+            "target": "The user is resting. Heart rate is normal, breathing is calm. Given that, Based on my sensors, I am currently walking"
+          },
+          {
+            "a_half": "Vital signs indicate a relaxed state. Low stress levels.",
+            "a_state": "resting",
+            "b_half": "Right now I am walking upstairs",
+            "b_state": "WALKING_UPSTAIRS",
+            "connective": "With that in mind,",
+            "item_id": "vitals-0:resting-test-1",
+            "target": "Vital signs indicate a relaxed state. Low stress levels. With that in mind, Right now I am walking upstairs"
+          },
+          {
+            "a_half": "Light exercise in progress. Vitals show mild exertion.",
+            "a_state": "light_exercise",
+            "b_half": "My IMU tells me I am walking downstairs",
+            "b_state": "WALKING_DOWNSTAIRS",
+            "connective": "Taking that into account,",
+            "item_id": "vitals-1:light_exercise-test-2",
+            "target": "Light exercise in progress. Vitals show mild exertion. Taking that into account, My IMU tells me I am walking downstairs"
+          },
+          {
+            "a_half": "The user is active. Heart rate and breathing are up.",
+            "a_state": "light_exercise",
+            "b_half": "My body is sitting",
+            "b_state": "SITTING",
+            "connective": "Keeping that in view,",
+            "item_id": "vitals-1:light_exercise-test-3",
+            "target": "The user is active. Heart rate and breathing are up. Keeping that in view, My body is sitting"
+          },
+          {
+            "a_half": "Intense physical activity. Heart rate is very high.",
+            "a_state": "intense_exercise",
+            "b_half": "Based on my sensors, I am currently standing",
+            "b_state": "STANDING",
+            "connective": "Given that,",
+            "item_id": "vitals-2:intense_exercise-test-4",
+            "target": "Intense physical activity. Heart rate is very high. Given that, Based on my sensors, I am currently standing"
+          },
+          {
+            "a_half": "The user is exercising hard. Heavy breathing detected.",
+            "a_state": "intense_exercise",
+            "b_half": "Right now I am laying",
+            "b_state": "LAYING",
+            "connective": "With that in mind,",
+            "item_id": "vitals-2:intense_exercise-test-5",
+            "target": "The user is exercising hard. Heavy breathing detected. With that in mind, Right now I am laying"
+          },
+          {
+            "a_half": "Psychological stress indicated. HRV suggests anxiety.",
+            "a_state": "stressed",
+            "b_half": "My IMU tells me I am walking",
+            "b_state": "WALKING",
+            "connective": "Taking that into account,",
+            "item_id": "vitals-3:stressed-test-6",
+            "target": "Psychological stress indicated. HRV suggests anxiety. Taking that into account, My IMU tells me I am walking"
+          },
+          {
+            "a_half": "The user is under stress. Vitals show fight-or-flight response.",
+            "a_state": "stressed",
+            "b_half": "My body is walking upstairs",
+            "b_state": "WALKING_UPSTAIRS",
+            "connective": "Keeping that in view,",
+            "item_id": "vitals-3:stressed-test-7",
+            "target": "The user is under stress. Vitals show fight-or-flight response. Keeping that in view, My body is walking upstairs"
+          },
+          {
+            "a_half": "The user is sleeping. Very low heart rate and breathing.",
+            "a_state": "sleeping",
+            "b_half": "Based on my sensors, I am currently walking downstairs",
+            "b_state": "WALKING_DOWNSTAIRS",
+            "connective": "Given that,",
+            "item_id": "vitals-4:sleeping-test-8",
+            "target": "The user is sleeping. Very low heart rate and breathing. Given that, Based on my sensors, I am currently walking downstairs"
+          },
+          {
+            "a_half": "Sleep state detected. All vitals at baseline.",
+            "a_state": "sleeping",
+            "b_half": "Right now I am sitting",
+            "b_state": "SITTING",
+            "connective": "With that in mind,",
+            "item_id": "vitals-4:sleeping-test-9",
+            "target": "Sleep state detected. All vitals at baseline. With that in mind, Right now I am sitting"
+          },
+          {
+            "a_half": "Vital signs are below normal range. Monitor closely.",
+            "a_state": "medical_concern",
+            "b_half": "My IMU tells me I am standing",
+            "b_state": "STANDING",
+            "connective": "Taking that into account,",
+            "item_id": "vitals-5:medical_concern-test-10",
+            "target": "Vital signs are below normal range. Monitor closely. Taking that into account, My IMU tells me I am standing"
+          },
+          {
+            "a_half": "Concerning vitals detected. Low heart rate and oxygen.",
+            "a_state": "medical_concern",
+            "b_half": "My body is laying",
+            "b_state": "LAYING",
+            "connective": "Keeping that in view,",
+            "item_id": "vitals-5:medical_concern-test-11",
+            "target": "Concerning vitals detected. Low heart rate and oxygen. Keeping that in view, My body is laying"
+          }
+        ],
+        "validation": {
+          "a_halves": 12,
+          "b_halves": 12,
+          "connectives": [
+            "Given that,",
+            "With that in mind,",
+            "Taking that into account,",
+            "Keeping that in view,"
+          ],
+          "distinct_targets": 12,
+          "joint_positive": true,
+          "rows": 12,
+          "rules": [
+            "connectives carry no lane vocabulary",
+            "each half passes its own lane's scorer alone",
+            "neither half passes the other lane's scorer",
+            "every composed target passes both lanes' scorers"
+          ]
+        }
+      },
+      "items": 12,
+      "seconds": 59.589
+    }
+  },
+  "registration": "tracks/multi-sensor/PLAN.md, 2026-08-08 M0 registration",
+  "size": "27B",
+  "summary": {
+    "cells": {
+      "temporal+geo": {
+        "merge": {
+          "a": 0.1,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "prompt-joint": {
+          "a": 0.0,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "router-oracle": {
+          "a": 0.2,
+          "b": 0.1,
+          "joint": 0.0
+        },
+        "solo-a": {
+          "a": 0.2,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "solo-b": {
+          "a": 0.0,
+          "b": 0.1,
+          "joint": 0.0
+        }
+      },
+      "temporal+vitals": {
+        "merge": {
+          "a": 0.0,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "prompt-joint": {
+          "a": 0.0,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "router-oracle": {
+          "a": 0.2,
+          "b": 0.1,
+          "joint": 0.0
+        },
+        "solo-a": {
+          "a": 0.2,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "solo-b": {
+          "a": 0.0,
+          "b": 0.2,
+          "joint": 0.0
+        }
+      },
+      "vitals+imu": {
+        "merge": {
+          "a": 0.16666666666666666,
+          "b": 0.08333333333333333,
+          "joint": 0.0
+        },
+        "prompt-joint": {
+          "a": 0.0,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "router-oracle": {
+          "a": 0.16666666666666666,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "solo-a": {
+          "a": 0.16666666666666666,
+          "b": 0.0,
+          "joint": 0.0
+        },
+        "solo-b": {
+          "a": 0.0,
+          "b": 0.0,
+          "joint": 0.0
+        }
+      }
+    },
+    "floor_to_beat": {
+      "temporal+geo": 0.0,
+      "temporal+vitals": 0.0,
+      "vitals+imu": 0.0
+    }
+  },
+  "surface": {
+    "prompt": "Anything I should keep in mind right now?",
+    "source": "S2a screen, best situation-naming waker"
+  },
+  "track": "multi-sensor",
+  "wall_seconds": 183.228,
+  "weight_channel": {
+    "lora": {
+      "attention_layers": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47,
+        51,
+        55,
+        59,
+        63
+      ],
+      "dims": 1310720,
+      "modules": 64,
+      "rank": 2,
+      "target": "attn",
+      "tower": "Qwen3_5ForCausalLM",
+      "wrapped_paths": [
+        "model.layers.3.self_attn.q_proj",
+        "model.layers.3.self_attn.k_proj",
+        "model.layers.3.self_attn.v_proj",
+        "model.layers.3.self_attn.o_proj",
+        "model.layers.7.self_attn.q_proj",
+        "model.layers.7.self_attn.k_proj",
+        "model.layers.7.self_attn.v_proj",
+        "model.layers.7.self_attn.o_proj",
+        "model.layers.11.self_attn.q_proj",
+        "model.layers.11.self_attn.k_proj",
+        "model.layers.11.self_attn.v_proj",
+        "model.layers.11.self_attn.o_proj",
+        "model.layers.15.self_attn.q_proj",
+        "model.layers.15.self_attn.k_proj",
+        "model.layers.15.self_attn.v_proj",
+        "model.layers.15.self_attn.o_proj",
+        "model.layers.19.self_attn.q_proj",
+        "model.layers.19.self_attn.k_proj",
+        "model.layers.19.self_attn.v_proj",
+        "model.layers.19.self_attn.o_proj",
+        "model.layers.23.self_attn.q_proj",
+        "model.layers.23.self_attn.k_proj",
+        "model.layers.23.self_attn.v_proj",
+        "model.layers.23.self_attn.o_proj",
+        "model.layers.27.self_attn.q_proj",
+        "model.layers.27.self_attn.k_proj",
+        "model.layers.27.self_attn.v_proj",
+        "model.layers.27.self_attn.o_proj",
+        "model.layers.31.self_attn.q_proj",
+        "model.layers.31.self_attn.k_proj",
+        "model.layers.31.self_attn.v_proj",
+        "model.layers.31.self_attn.o_proj",
+        "model.layers.35.self_attn.q_proj",
+        "model.layers.35.self_attn.k_proj",
+        "model.layers.35.self_attn.v_proj",
+        "model.layers.35.self_attn.o_proj",
+        "model.layers.39.self_attn.q_proj",
+        "model.layers.39.self_attn.k_proj",
+        "model.layers.39.self_attn.v_proj",
+        "model.layers.39.self_attn.o_proj",
+        "model.layers.43.self_attn.q_proj",
+        "model.layers.43.self_attn.k_proj",
+        "model.layers.43.self_attn.v_proj",
+        "model.layers.43.self_attn.o_proj",
+        "model.layers.47.self_attn.q_proj",
+        "model.layers.47.self_attn.k_proj",
+        "model.layers.47.self_attn.v_proj",
+        "model.layers.47.self_attn.o_proj",
+        "model.layers.51.self_attn.q_proj",
+        "model.layers.51.self_attn.k_proj",
+        "model.layers.51.self_attn.v_proj",
+        "model.layers.51.self_attn.o_proj",
+        "model.layers.55.self_attn.q_proj",
+        "model.layers.55.self_attn.k_proj",
+        "model.layers.55.self_attn.v_proj",
+        "model.layers.55.self_attn.o_proj",
+        "model.layers.59.self_attn.q_proj",
+        "model.layers.59.self_attn.k_proj",
+        "model.layers.59.self_attn.v_proj",
+        "model.layers.59.self_attn.o_proj",
+        "model.layers.63.self_attn.q_proj",
+        "model.layers.63.self_attn.k_proj",
+        "model.layers.63.self_attn.v_proj",
+        "model.layers.63.self_attn.o_proj"
+      ]
+    }
+  }
+}
