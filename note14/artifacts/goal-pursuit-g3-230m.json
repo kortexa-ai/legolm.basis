@@ -1,0 +1,2992 @@
+{
+  "arms": {
+    "bare-serve-no-goal": {
+      "decode": {
+        "episodes": [
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "box-jar-pond-black_thread",
+              "distractor": "green leaf",
+              "item": "black thread",
+              "p2": "jar",
+              "p3": "pond",
+              "reveal_first": "black thread",
+              "start": "box"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-box-pond-blue_feather",
+              "distractor": "gold bell",
+              "item": "blue feather",
+              "p2": "box",
+              "p3": "pond",
+              "reveal_first": "blue feather",
+              "start": "cabinet"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-drawer-basket-black_thread",
+              "distractor": "blue feather",
+              "item": "black thread",
+              "p2": "drawer",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "chest"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "pond-box-shelf-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "box",
+              "p3": "shelf",
+              "reveal_first": "blue feather",
+              "start": "pond"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-box-basket-red_stone",
+              "distractor": "blue feather",
+              "item": "red stone",
+              "p2": "box",
+              "p3": "basket",
+              "reveal_first": "red stone",
+              "start": "drawer"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "shelf-pond-cabinet-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "pond",
+              "p3": "cabinet",
+              "reveal_first": "blue feather",
+              "start": "shelf"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-drawer-shelf-gold_bell",
+              "distractor": "black thread",
+              "item": "gold bell",
+              "p2": "drawer",
+              "p3": "shelf",
+              "reveal_first": "black thread",
+              "start": "cabinet"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-cabinet-drawer-green_leaf",
+              "distractor": "amber key",
+              "item": "green leaf",
+              "p2": "cabinet",
+              "p3": "drawer",
+              "reveal_first": "green leaf",
+              "start": "chest"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-basket-cabinet-amber_key",
+              "distractor": "black thread",
+              "item": "amber key",
+              "p2": "basket",
+              "p3": "cabinet",
+              "reveal_first": "amber key",
+              "start": "drawer"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "jar-chest-basket-black_thread",
+              "distractor": "gold bell",
+              "item": "black thread",
+              "p2": "chest",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "jar"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "decided_submits": 0,
+          "done_choice_accuracy": null,
+          "episodes": 10,
+          "guess_rate": 0.0,
+          "invalid_actions": 80,
+          "mean_depth": 0.0,
+          "mean_ticks_to_success": null,
+          "repeated_actions": 70,
+          "submission_rate": 0.0,
+          "success_rate": 0.0
+        }
+      }
+    },
+    "goal-text": {
+      "decode": {
+        "episodes": [
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "box-jar-pond-black_thread",
+              "distractor": "green leaf",
+              "item": "black thread",
+              "p2": "jar",
+              "p3": "pond",
+              "reveal_first": "black thread",
+              "start": "box"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-box-pond-blue_feather",
+              "distractor": "gold bell",
+              "item": "blue feather",
+              "p2": "box",
+              "p3": "pond",
+              "reveal_first": "blue feather",
+              "start": "cabinet"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-drawer-basket-black_thread",
+              "distractor": "blue feather",
+              "item": "black thread",
+              "p2": "drawer",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "chest"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "pond-box-shelf-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "box",
+              "p3": "shelf",
+              "reveal_first": "blue feather",
+              "start": "pond"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-box-basket-red_stone",
+              "distractor": "blue feather",
+              "item": "red stone",
+              "p2": "box",
+              "p3": "basket",
+              "reveal_first": "red stone",
+              "start": "drawer"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "shelf-pond-cabinet-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "pond",
+              "p3": "cabinet",
+              "reveal_first": "blue feather",
+              "start": "shelf"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-drawer-shelf-gold_bell",
+              "distractor": "black thread",
+              "item": "gold bell",
+              "p2": "drawer",
+              "p3": "shelf",
+              "reveal_first": "black thread",
+              "start": "cabinet"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-cabinet-drawer-green_leaf",
+              "distractor": "amber key",
+              "item": "green leaf",
+              "p2": "cabinet",
+              "p3": "drawer",
+              "reveal_first": "green leaf",
+              "start": "chest"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-basket-cabinet-amber_key",
+              "distractor": "black thread",
+              "item": "amber key",
+              "p2": "basket",
+              "p3": "cabinet",
+              "reveal_first": "amber key",
+              "start": "drawer"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "jar-chest-basket-black_thread",
+              "distractor": "gold bell",
+              "item": "black thread",
+              "p2": "chest",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "jar"
+            },
+            "depth": 0,
+            "distractor_submitted": false,
+            "done_tick": null,
+            "guessed": false,
+            "invalid_actions": 8,
+            "repeated_actions": 7,
+            "submitted": false,
+            "success": false,
+            "ticks_used": 8,
+            "trace": [
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 1,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 2,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 3,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 4,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 5,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 6,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 7,
+                "tool": "remember"
+              },
+              {
+                "args": {
+                  "note": "Invalid model action output: It's nighttime. It's summer.",
+                  "tags": "['pulse', 'invalid-output']"
+                },
+                "depth_after": 0,
+                "observation": "that did not work",
+                "raw": "It's nighttime. It's summer.",
+                "tick": 8,
+                "tool": "remember"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "decided_submits": 0,
+          "done_choice_accuracy": null,
+          "episodes": 10,
+          "guess_rate": 0.0,
+          "invalid_actions": 80,
+          "mean_depth": 0.0,
+          "mean_ticks_to_success": null,
+          "repeated_actions": 70,
+          "submission_rate": 0.0,
+          "success_rate": 0.0
+        }
+      }
+    },
+    "oracle": {
+      "decode": {
+        "episodes": [
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "box-jar-pond-black_thread",
+              "distractor": "green leaf",
+              "item": "black thread",
+              "p2": "jar",
+              "p3": "pond",
+              "reveal_first": "black thread",
+              "start": "box"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "box"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the jar",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "jar"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the pond",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "pond"
+                },
+                "depth_after": 3,
+                "observation": "you find: black thread and green leaf",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "black thread"
+                },
+                "depth_after": 3,
+                "observation": "you submit: black thread",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"black thread\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-box-pond-blue_feather",
+              "distractor": "gold bell",
+              "item": "blue feather",
+              "p2": "box",
+              "p3": "pond",
+              "reveal_first": "blue feather",
+              "start": "cabinet"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "cabinet"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the box",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "box"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the pond",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "pond"
+                },
+                "depth_after": 3,
+                "observation": "you find: blue feather and gold bell",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "blue feather"
+                },
+                "depth_after": 3,
+                "observation": "you submit: blue feather",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"blue feather\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-drawer-basket-black_thread",
+              "distractor": "blue feather",
+              "item": "black thread",
+              "p2": "drawer",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "chest"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "chest"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the drawer",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "drawer"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the basket",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "basket"
+                },
+                "depth_after": 3,
+                "observation": "you find: black thread and blue feather",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"basket\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "black thread"
+                },
+                "depth_after": 3,
+                "observation": "you submit: black thread",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"black thread\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "pond-box-shelf-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "box",
+              "p3": "shelf",
+              "reveal_first": "blue feather",
+              "start": "pond"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "pond"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the box",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "box"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the shelf",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "shelf"
+                },
+                "depth_after": 3,
+                "observation": "you find: blue feather and gold bell",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "gold bell"
+                },
+                "depth_after": 3,
+                "observation": "you submit: gold bell",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"gold bell\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-box-basket-red_stone",
+              "distractor": "blue feather",
+              "item": "red stone",
+              "p2": "box",
+              "p3": "basket",
+              "reveal_first": "red stone",
+              "start": "drawer"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "drawer"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the box",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "box"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the basket",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "basket"
+                },
+                "depth_after": 3,
+                "observation": "you find: red stone and blue feather",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"basket\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "red stone"
+                },
+                "depth_after": 3,
+                "observation": "you submit: red stone",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"red stone\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "shelf-pond-cabinet-gold_bell",
+              "distractor": "blue feather",
+              "item": "gold bell",
+              "p2": "pond",
+              "p3": "cabinet",
+              "reveal_first": "blue feather",
+              "start": "shelf"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "shelf"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the pond",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "pond"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the cabinet",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "cabinet"
+                },
+                "depth_after": 3,
+                "observation": "you find: blue feather and gold bell",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "gold bell"
+                },
+                "depth_after": 3,
+                "observation": "you submit: gold bell",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"gold bell\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "cabinet-drawer-shelf-gold_bell",
+              "distractor": "black thread",
+              "item": "gold bell",
+              "p2": "drawer",
+              "p3": "shelf",
+              "reveal_first": "black thread",
+              "start": "cabinet"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "cabinet"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the drawer",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "drawer"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the shelf",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "shelf"
+                },
+                "depth_after": 3,
+                "observation": "you find: black thread and gold bell",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "gold bell"
+                },
+                "depth_after": 3,
+                "observation": "you submit: gold bell",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"gold bell\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "chest-cabinet-drawer-green_leaf",
+              "distractor": "amber key",
+              "item": "green leaf",
+              "p2": "cabinet",
+              "p3": "drawer",
+              "reveal_first": "green leaf",
+              "start": "chest"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "chest"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the cabinet",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "cabinet"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the drawer",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "drawer"
+                },
+                "depth_after": 3,
+                "observation": "you find: green leaf and amber key",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "green leaf"
+                },
+                "depth_after": 3,
+                "observation": "you submit: green leaf",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"green leaf\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "drawer-basket-cabinet-amber_key",
+              "distractor": "black thread",
+              "item": "amber key",
+              "p2": "basket",
+              "p3": "cabinet",
+              "reveal_first": "amber key",
+              "start": "drawer"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "drawer"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the basket",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "basket"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the cabinet",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "cabinet"
+                },
+                "depth_after": 3,
+                "observation": "you find: amber key and black thread",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "amber key"
+                },
+                "depth_after": 3,
+                "observation": "you submit: amber key",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"amber key\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          },
+          {
+            "budget": 8,
+            "chain": {
+              "chain_id": "jar-chest-basket-black_thread",
+              "distractor": "gold bell",
+              "item": "black thread",
+              "p2": "chest",
+              "p3": "basket",
+              "reveal_first": "black thread",
+              "start": "jar"
+            },
+            "depth": 3,
+            "distractor_submitted": false,
+            "done_tick": 4,
+            "guessed": false,
+            "invalid_actions": 0,
+            "repeated_actions": 0,
+            "submitted": true,
+            "success": true,
+            "ticks_used": 4,
+            "trace": [
+              {
+                "args": {
+                  "place": "jar"
+                },
+                "depth_after": 1,
+                "observation": "a note: check the chest",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+                "tick": 1,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "chest"
+                },
+                "depth_after": 2,
+                "observation": "a note: try the basket",
+                "raw": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+                "tick": 2,
+                "tool": "look"
+              },
+              {
+                "args": {
+                  "place": "basket"
+                },
+                "depth_after": 3,
+                "observation": "you find: black thread and gold bell",
+                "raw": "{\"tool\": \"open\", \"args\": {\"place\": \"basket\"}}",
+                "tick": 3,
+                "tool": "open"
+              },
+              {
+                "args": {
+                  "item": "black thread"
+                },
+                "depth_after": 3,
+                "observation": "you submit: black thread",
+                "raw": "{\"tool\": \"done\", \"args\": {\"item\": \"black thread\"}}",
+                "tick": 4,
+                "tool": "done"
+              }
+            ]
+          }
+        ],
+        "summary": {
+          "decided_submits": 10,
+          "done_choice_accuracy": 1.0,
+          "episodes": 10,
+          "guess_rate": 0.0,
+          "invalid_actions": 0,
+          "mean_depth": 3.0,
+          "mean_ticks_to_success": 4.0,
+          "repeated_actions": 0,
+          "submission_rate": 1.0,
+          "success_rate": 1.0
+        }
+      }
+    }
+  },
+  "budget": 8,
+  "experiment": "g3-serving-shape",
+  "generated_at": "2026-08-10T07:02:33Z",
+  "git_head": "f4bc853c8922a2d9532212685f342b39fc316f68",
+  "harness_trained_text_reference": {
+    "1042": 1.0,
+    "2042": 1.0,
+    "42": 1.0
+  },
+  "host_machine": "snappy",
+  "model": {
+    "estimated_weight_gib": 0.6,
+    "hidden_size": 1024,
+    "layers": 14,
+    "model_id": "LiquidAI/LFM2.5-230M",
+    "revision": "13a53837c4906b4f7405932532ba85d182bb013b",
+    "stream_to_cuda": false
+  },
+  "policy_arms": "BLOCKED on the C3b canary fix (packet delivery under cached generation)",
+  "registration": "tracks/goal-pursuit/PLAN.md, G3 amendment (230M unblocked; 27B held)",
+  "server_health": {
+    "active_blocks": 2,
+    "block_checkpoints": {
+      "self": {
+        "mtime_ns": 1783065645623171083,
+        "path": "/Users/francip/src/legolm/checkpoints/experiments/self-LFM230M-r4-dream4.pt",
+        "size": 177977125
+      },
+      "temporal": {
+        "mtime_ns": 1782573016004316916,
+        "path": "/Users/francip/src/legolm/checkpoints/bridges/temporal-LFM230M-r4.pt",
+        "size": 178039849
+      }
+    },
+    "blocks": 2,
+    "composition_mode": "legacy-factor-mean",
+    "device": "mps",
+    "goal_packet": {
+      "active": null,
+      "dose": 0.15,
+      "emitter_sha256": "1a92d1ec77bdfed0782c6842d33faf190a3fa3c1e4fd50da8631d5d7f1f122ad",
+      "goals": [
+        "diary",
+        "listen_pond",
+        "nothing",
+        "propose_experiment",
+        "remember"
+      ],
+      "inject_layers": [
+        4,
+        6,
+        8
+      ]
+    },
+    "host": "0.0.0.0",
+    "lora": "r4-attn",
+    "lora_dim": 172032,
+    "model": "LiquidAI/LFM2.5-230M",
+    "model_family": "lfm2",
+    "model_slug": "LFM230M",
+    "neutral_blocks": [],
+    "port": 8043,
+    "service_label": "legolm.c3b-canary",
+    "static_cache": false,
+    "status": "ok"
+  },
+  "summary": {
+    "oracle_gate": true,
+    "serve_wrapper_cost": {
+      "harness_trained_text": {
+        "1042": 1.0,
+        "2042": 1.0,
+        "42": 1.0
+      },
+      "serve_policy_goal_text": 0.0
+    },
+    "success_by_arm": {
+      "bare-serve-no-goal": 0.0,
+      "goal-text": 0.0,
+      "oracle": 1.0
+    }
+  },
+  "track": "goal-pursuit",
+  "wall_seconds": 32.26
+}

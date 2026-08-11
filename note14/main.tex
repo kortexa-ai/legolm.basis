@@ -1,0 +1,251 @@
+\ifdefined\XeTeXrevision\else\pdfoutput=1\fi
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black,
+  urlcolor=blue!60!black, pdftitle={The Host Is Part of the Block},
+  pdfauthor={Franci Penov}}
+\title{The Host Is Part of the Block:\\A Goal-Pursuit Ladder at Two Scales\\and the Composition-Matching Law}
+\author{Franci Penov \\ kortexa.ai \\ \texttt{francip@kortexa.ai}}
+\date{2026-08-11}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The cadence notes~\cite{penov2026carrier,penov2026writer} left a goal
+living in a conditioning channel and a creature-scale loop that holds
+it; this note makes the goal DO something. A registered ladder (G0-G3
+plus a temporal-pressure rung) puts a frozen host on a chained-clue
+errand --- look, open, submit, under a tick budget, with every
+episode's actions and observations recorded as first-class transcripts
+--- at 230M with the validated activation-packet channel and at 27B
+with the validated weight-block channel. Three findings. First, the
+scale answer: zero-shot, BOTH hosts are below the task (0.00 with the
+goal in text); trained by 384 steps of oracle cloning, both are perfect
+when the goal rides in text (1.00 at every seed, both venues); trained
+with the goal in the channel, both carry a partial want
+(0.70/0.80/1.00 at 230M, 0.60/0.80/0.70 at 27B) that
+directs behavior without surviving symbol-level conflict --- the
+interesting gap is channel-vs-text, not small-vs-large. Second, the
+environment fought the preregistration three times --- a reveal-order
+leak, a mis-specified control floor, a Markovian degeneracy --- and the
+registered controls caught all three; the diagnosis runs are kept.
+Third, and the note's title: a conditioning artifact works exactly on
+the host composition it was trained under. The same emitter that
+passes its gate in-harness passes through the production server's
+cached-generate delivery path on a matched host (0.60
+vs floors 0.20/0.00) and
+collapses to chance when one more block arms (0.20),
+because the harness composes blocks by addition and the server by
+factor averaging --- a cross-term operator mismatch independently
+documented in the serving stack's own audit. The law held four times in
+one arc (two GT rungs, two canaries), and its constructive corner
+stands: packets retrained under the moving host keep their write-once
+regime at 0.97--1.00, and the trained errand policy delivered through
+the real serving path reaches 0.40 against a
+1.00 harness ceiling and a 0.00 serve floor --- the transfer gap is now
+a measured number, not a fear.
+\end{abstract}
+
+\section{From a want that persists to a want that acts}
+
+Paper 12 measured a goal packet that endures; paper 13 closed its
+re-encoding gap. The registered goal-pursuit line asks the next
+question: can the want DRIVE something --- a multi-step errand through
+tools --- and where does the want have to live for that to work? The
+environment is deliberately small and fully machine-validated: eight
+places, eight items, three-hop clue chains (a note names the next
+place, the last place holds the target beside a generator-drawn
+distractor, submit ends the episode), a tick budget of eight, greedy
+decode, and a transcript for every episode. The distractor makes the
+final submit a forced choice only the goal can decide; the oracle needs
+four ticks. Venues: the 230M creature stack (dream4 armed, the
+activation-packet channel the C-line validated) and the bare 27B column
+(the weight channel the multi-sensor line validated) --- per-venue
+channels, registered as such, because the claim is about WHERE the want
+lives, not one mechanism.
+
+\section{The environment fought back, and the controls won}
+
+Three times the preregistered design was wrong, and three times its own
+control cells said so before any claim shipped. The first G1 run scored
+1.00 everywhere INCLUDING the goal-free floor whose submit is a coin
+flip by construction --- the reveal listed the target first, and every
+trained arm had learned ``submit the first-listed item.'' The floor
+cell and the shuffled control caught it; the order is now randomized;
+the leak run is kept as the diagnosis. The shuffled check itself was
+then found mis-specified (registered against an untrained floor any
+trained policy beats) and re-registered against the trained goal-free
+floor. And G2's truncation rung returned its registered reading (iii):
+each clue names the next move, so the errand is Markovian and
+last-observation context recovers full performance exactly --- the rung
+cannot separate state carriers on this task shape, recorded as a
+task-design note. Its one live cell: a goal entering the packet once
+and surviving on-policy re-encoding lands at 0.60/0.50/0.60 ---
+direction above chance, weaker than text.
+
+\section{The scale answer}
+
+Table~\ref{tab:g1} and Figure~\ref{fig:hostlaw} (left) carry it.
+Zero-shot, the errand defeats both hosts --- 0.00 success with the goal
+stated in text, at 230M and at 27B alike (the 27B's transcripts do not
+even wander well). Trained by oracle cloning with the goal in text,
+both hosts are perfect: 1.00 at every seed, both venues. Trained with
+the goal ONLY in the channel, both venues land in the same band ---
+0.70/0.80/1.00 at 230M through the activation packet,
+0.60/0.80/0.70 at 27B through the weight block --- above their
+trained goal-free floors, below their text ceilings, and in
+packet-vs-context conflict cells the channel's item is almost never
+what gets submitted. The channel carries direction, not symbols, at
+both scales; scale bought nothing on the channel; and the question the
+program inherits is not ``is the model big enough'' but ``what does a
+channel have to be for a want to survive contact with language.''
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\toprule
+venue & trained text & goal block & block done-choice & no-goal floor \\
+\midrule
+230M (activation packet) & 1.00/1.00/1.00 & 0.70/0.80/1.00 & 0.70/0.89/1.00 & 0.60/0.80/0.70 \\
+27B (weight block) & 1.00/1.00/1.00 & 0.60/0.80/0.70 & 0.60/0.80/0.70 & 0.50/0.50/0.80 \\
+\bottomrule
+\end{tabular}
+\caption{G1 at both venues, per seed. Both channels carry a partial
+want; text carries a whole one; the floors are the trained goal-free
+bridges whose submit is a coin flip.}
+\label{tab:g1}
+\end{table}
+
+\section{The composition-matching law}
+
+Four independent cells, one law: \emph{a conditioning artifact works
+on the host composition it was trained under, and on no other.}
+(1)~GT at 230M: a policy bridge trained on the dream4-only host scores
+1.00 --- and 0.00 the moment the production temporal block's delta is
+summed underneath it at evaluation
+(none/countdown/temporal = 1.00/1.00/1.00 /
+1.00/1.00/1.00 /
+0.00/0.00/0.00).
+(2)~GT at 27B reproduces the shape
+(0.00/1.00/0.00 on the temporal arm).
+(3)~The serving canary: the same emitter that passes its C1 gate
+in-harness passes through the production server's cached-generate
+delivery path on a matched dream4-only host --- true
+0.60 against floors 0.20 and
+0.00 --- validating the delivery wiring end to
+end. (4)~Arm one more block and the same canary collapses to chance
+(0.20), even for an emitter retrained under the
+moving temporal host; the residual mismatch is the OPERATOR: the
+harness composes blocks by flat-delta addition, the server by LoRA
+factor averaging with cross-terms --- a bug the serving stack's own
+audit had independently documented. Two investigation lines, one root
+cause; the fix pays both. The law's constructive corner: the emitter
+retrained under the moving host keeps its write-once packets at
+0.97--1.00 across sixteen ticks (1.00 early,
+0.97 late), while its live re-encoding loop
+degrades (0.55/0.25) ---
+the store architecture is robust where the self-loop is not.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+venue & none & countdown & temporal block \\
+\midrule
+230M & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/0.00/0.00 \\
+27B & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/1.00/0.00 \\
+\bottomrule
+\end{tabular}
+\caption{GT per seed: the text arms are ceilinged (the trained policy
+is oracle-optimal, so the tight budget exerts no pressure) and the
+temporal arm measures host mismatch, not time-feeling --- the bridge
+never trained under the summed host.}
+\label{tab:gt}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{host-law.pdf}
+\caption{Left: the scale answer --- zero-shot below task, trained-text
+perfect, channel partial, at both venues. Right: the law at the
+serving boundary --- the same artifacts pass on matched hosts
+(harness+dream4, server+dream4), collapse under one extra block
+(server+temporal, the operator mismatch), and the trained policy
+delivered through the real serving path reaches
+0.40 against a 1.00 harness ceiling.}
+\label{fig:hostlaw}
+\end{figure}
+
+\section{The serving stake, measured}
+
+G3 ran the errand against an isolated instance of the production
+server --- the real prompt wrapper, block composition, and
+cached-generate path, never the production port. Zero-shot serve
+floors: 0.00 with and without goal text; oracle 1.00 through the same
+plumbing. Then the trained policy bridge, exported as a packet store
+and delivered through the server's own generation path:
+\textbf{policy+goal-text 0.40} --- the first
+positive serve-side block result in the program --- and policy without
+goal text 0.10, confirming the division of labor
+(the channel carries competence, the text carries the want). The
+serve wrapper's cost against the 1.00 harness ceiling is now a number
+(0.60), with a registered follow-up:
+retrain the policy under the serve template --- the same law, applied
+to the prompt regime.
+
+\section{What stands}
+
+A creature-scale stack now has the full chain measured: a want that
+persists (paper 12), re-writes itself (paper 13), directs a multi-step
+errand when trained (this note), and partially survives delivery
+through the real serving path --- with the one blocking defect between
+here and the live creature located, named, and independently confirmed:
+the serving stack's composition operator. The law this arc kept
+re-measuring belongs beside papers 7 and 9's negatives: zero
+weight-space interference was never enough, and matching the host ---
+its blocks, its operator, its template --- is not a detail of
+deployment but part of the block's identity. Every registration,
+amendment, diagnosis run, and full episode transcript is in the
+tracks' PLAN files and the bundled artifacts.
+
+\section{Reproducibility}
+
+Thirteen artifacts are bundled beside this note --- the goal-pursuit
+ladder at both venues (including the kept leak-diagnosis run), the
+serve-composition emitter, and both canaries; every number and the
+figure render from them alone. {\sloppy Harnesses:
+\texttt{goal\_pursuit.py}, \texttt{goal\_pursuit\_27b.py} and
+\texttt{g3\_serve.py} in \texttt{tracks/goal-pursuit/};
+\texttt{own\_cadence.py} and \texttt{c3b\_canary.py} in
+\texttt{tracks/own-cadence/}; registrations and results, each dated
+before its run, in the tracks' \texttt{PLAN.md} files.\par}
+
+\begin{thebibliography}{9}
+\bibitem{penov2026carrier} F.~Penov. The Carrier Holds, the Emitter
+Leaks. Preprint, 2026.
+\url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{penov2026writer} F.~Penov. The Writer Wins, the Emitter
+Learns. Preprint, 2026.
+\url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{penov2026thirdblock} F.~Penov. The Third Block Composes.
+Preprint, 2026. \url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{penov2026interference} F.~Penov. Zero Weight-Space
+Interference Is Not Enough. Preprint, 2026.
+\url{https://github.com/kortexa-ai/legolm.basis}.
+\bibitem{lfm2026} Liquid AI. LFM2.5 model family. Model releases,
+2025--2026. \url{https://huggingface.co/LiquidAI}.
+\bibitem{qwen2026} Qwen Team. Qwen3.5 and Qwen3.6 model families.
+Model releases, 2025--2026. \url{https://huggingface.co/Qwen}.
+\end{thebibliography}
+
+\end{document}
