@@ -12,7 +12,7 @@
   pdfauthor={Franci Penov}}
 \title{The Host Is Part of the Block:\\A Goal-Pursuit Ladder at Two Scales\\and the Composition-Matching Law}
 \author{Franci Penov \\ kortexa.ai \\ \texttt{francip@kortexa.ai}}
-\date{2026-08-11}
+\date{2026-08-11 (v1); revised 2026-08-15 (v2)}
 
 \begin{document}
 \maketitle
@@ -37,30 +37,28 @@ environment fought the preregistration three times --- a reveal-order
 leak, a mis-specified control floor, a Markovian degeneracy --- and the
 registered controls caught all three; the diagnosis runs are kept.
 Third, and the note's title: a conditioning artifact works exactly on
-the host composition it was trained under. The same emitter that
-passes its gate in-harness passes through the production server's
-cached-generate delivery path on a matched host (0.60
-vs floors 0.20/0.00) and
-collapses to chance when one more block arms (0.20),
-because the harness composes blocks by addition and the server by
-factor averaging --- a cross-term operator mismatch independently
-documented in the serving stack's own audit. The law held four times in
-one arc (two GT rungs, two canaries), and its constructive corner
-stands: packets retrained under the moving host keep their write-once
-regime at 0.97--1.00, and the trained errand policy delivered through
-the real serving path reaches 0.40 against a
-1.00 harness ceiling and a 0.00 serve floor --- the transfer gap is now
-a measured number, not a fear. (Addendum, 2026-08-15: the registered
-re-runs turn both of these numbers over. Training the policy under the
-temporal-armed host inverts the GT table exactly --- temporal 1.00,
-the text arms 0.00 --- and training it under the host the SERVER
-actually presents, which is bare because an unfed block contributes
-nothing, closes the 0.40 serve gap to 1.00. The law holds in both
-directions, and the serve wrapper costs nothing. The pressure rung the
-note leaves open also ran: under a hidden variable budget with noisy
-observations, the temporal block gives the frozen 230M the same
-wall-timed submission behavior a countdown sentence gives it, with
-frozen-time and shuffled-time controls both at the no-signal baseline.)
+the host composition it was trained under --- and this revision can
+state the law symmetrically, because its registered re-runs completed
+both directions. At 230M the GT policy bridge scores 1.00 under the
+host it trained under and 0.00 under any other, seat for seat: trained
+dream4-only, the text arms are perfect and the temporal arm dead;
+retrained under the temporal-armed host, the table inverts exactly,
+and the swap reproduces at T=4 with fresh bridges. The serving
+boundary obeys the same law: the trained errand policy first reached
+0.40 through the real serving path --- read, wrongly, as the serve
+wrapper's cost --- until the diagnosis that the isolated instance's
+one block was never fed, so the server presents a BARE host; retrained
+under that bare host, the same policy scores 1.00 through the
+identical wrapper, cached-generate path, and byte-identical template.
+The transfer gap was the training host both times; the serve wrapper
+costs nothing; the operator mismatch (harness addition vs server
+factor averaging, independently documented in the serving stack's own
+audit) remains the one live defect for multi-block serving. And the
+law's payoff rung follows it home: with per-arm host matching, a
+temporal block carrying no time words gives the frozen 230M the same
+wall-timed behavior under a hidden, noisy budget that a countdown
+sentence gives it --- frozen-time and shuffled-time controls both at
+the no-signal baseline --- the program's first time-feeling positive.
 \end{abstract}
 
 \section{From a want that persists to a want that acts}
@@ -158,7 +156,16 @@ moving temporal host; the residual mismatch is the OPERATOR: the
 harness composes blocks by flat-delta addition, the server by LoRA
 factor averaging with cross-terms --- a bug the serving stack's own
 audit had independently documented. Two investigation lines, one root
-cause; the fix pays both. The law's constructive corner: the emitter
+cause; the fix pays both. (5)~The registered re-run makes the first
+cell symmetric: the same recipe with the regime bridge trained under
+the temporal-armed host inverts Table~\ref{tab:gt} exactly ---
+temporal 1.00/1.00/1.00 on the oracle path, none and countdown
+0.00/0.00/0.00 with $\sim$50 invalid actions per cell --- and a T=4
+closure pair reproduces the swap seat for seat with freshly trained
+bridges (Table~\ref{tab:gtswap}); train/serve host match fully
+determines the outcome in both directions. (6)~The serving boundary's
+re-run closes cell (3)'s residue the same way
+(Section~\ref{sec:serve}). The law's constructive corner: the emitter
 retrained under the moving host keeps its write-once packets at
 0.97--1.00 across sixteen ticks (1.00 early,
 0.97 late), while its live re-encoding loop
@@ -179,8 +186,30 @@ venue & none & countdown & temporal block \\
 \caption{GT per seed: the text arms are ceilinged (the trained policy
 is oracle-optimal, so the tight budget exerts no pressure) and the
 temporal arm measures host mismatch, not time-feeling --- the bridge
-never trained under the summed host.}
+never trained under the summed host. The re-run that trains under it
+inverts the table (Table~\ref{tab:gtswap}).}
 \label{tab:gt}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llrrr}
+\toprule
+budget & regime bridge trained under & none & countdown & temporal \\
+\midrule
+T=5 & dream4-only (original) & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/0.00/0.00 \\
+T=5 & dream4+temporal (re-run) & 0.00/0.00/0.00 & 0.00/0.00/0.00 & 1.00/1.00/1.00 \\
+T=4 & dream4-only & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/0.00/0.00 \\
+T=4 & dream4+temporal & 0.00/0.00/0.00 & 0.00/0.00/0.00 & 1.00/1.00/1.00 \\
+\bottomrule
+\end{tabular}
+\caption{The GT-230M swap, per seed: train/serve host match fully
+determines the outcome in both directions, at two budgets, with
+freshly trained bridges each time. Every matched cell runs the oracle
+path (mean done-tick 4.0 flat); every mismatched cell emits invalid
+actions until the budget dies.}
+\label{tab:gtswap}
 \end{table}
 
 \begin{figure}[t]
@@ -192,49 +221,102 @@ serving boundary --- the same artifacts pass on matched hosts
 (harness+dream4, server+dream4), collapse under one extra block
 (server+temporal, the operator mismatch), and the trained policy
 delivered through the real serving path reaches
-0.40 against a 1.00 harness ceiling.}
+0.40 against a 1.00 harness ceiling --- a gap the bare-host retrain
+closes to 1.00 (Section~\ref{sec:serve}); the figure keeps the v1
+number as the mismatched half of its pair.}
 \label{fig:hostlaw}
 \end{figure}
 
-\section{The serving stake, measured}
+\section{The serving stake, measured --- and closed}
+\label{sec:serve}
 
 G3 ran the errand against an isolated instance of the production
 server --- the real prompt wrapper, block composition, and
 cached-generate path, never the production port. Zero-shot serve
 floors: 0.00 with and without goal text; oracle 1.00 through the same
-plumbing. Then the trained policy bridge, exported as a packet store
-and delivered through the server's own generation path:
-\textbf{policy+goal-text 0.40} --- the first
-positive serve-side block result in the program --- and policy without
-goal text 0.10, confirming the division of labor
-(the channel carries competence, the text carries the want). The
-serve wrapper's cost against the 1.00 harness ceiling is now a number
-(0.60), with a registered follow-up:
-retrain the policy under the serve template --- the same law, applied
-to the prompt regime.
+plumbing. The trained policy bridge, exported as a packet store and
+delivered through the server's own generation path, reached
+\textbf{policy+goal-text 0.40} --- the first positive serve-side block
+result in the program --- and this note's first version read the 0.60
+shortfall as the serve wrapper's cost, registering a follow-up to
+retrain the policy under the serve template.
+
+Both attributions were wrong, and the note's own law says why. The
+serve template is byte-identical to the harness template, measured
+directly on the tokenizer --- there was never a template to retrain
+under. The actual mismatch: the isolated instance armed one block, the
+self block, and never fed it; an unfed block's features are
+\texttt{None}, the server's composition then applies no injection at
+all, and so the policy bridge --- trained under a dream4-armed host ---
+was served against a \emph{bare} one. Retrained under the bare host by
+the identical recipe, seed, and chains, the same policy scores
+\textbf{1.00} through the identical serving path, with the zero-shot
+floors still at 0.00 and policy without goal text at 0.30 (the
+division of labor again: the channel carries competence, the text
+carries the want). The serve wrapper costs nothing; the delivery path
+is clean end to end; and the 0.40 stands in the record as the
+mismatched half of its pair, exactly as GT's first run does in
+Table~\ref{tab:gtswap}.
+
+\section{Feeling the clock: the pressure rung, run under the law's discipline}
+
+GT could not test time-feeling: its trained policy is oracle-exact, so
+done-tick 4.0 flat leaves urgency nothing to buy, and removing the
+last slack tick at T=4 changes nothing (measured,
+Table~\ref{tab:gtswap}). The registered pressure rung supplies
+something to buy --- a HIDDEN budget drawn per chain from $\{4\dots8\}$
+and never stated in any prompt, plus observation noise
+($\epsilon=0.35$ per look at a clue) --- so the optimal policy must
+retry smudged looks while the remaining ticks cover the path and
+submit the goal item the instant they do not. Every arm trains under
+its own evaluation host (the discipline this note's law demands), and
+every eval chain runs at every budget with its noise tape held fixed,
+which makes the comparison a within-chain identity test: the visible
+log is identical across budgets, so an arm with no time signal
+\emph{cannot} behave differently across them --- and does not.
+
+With no signal the model scores 0.94 and dies at the wall; with a
+countdown sentence, 0.98--1.00; with the temporal block and no time
+words anywhere in the context, \textbf{0.98--1.00}. Every failure in
+the grid sits at T=4, and pooling those rows the decomposition is
+clean: temporal 0.97 against a shuffled-time control (the same host
+variation at random $(t',T')$) at 0.73, $z=+2.53$; the shuffled
+control against a frozen-time control (one fixed timestamp) at 0.67,
+$z=+0.56$; the frozen control against no signal at all, 0.67 versus
+0.70, $z=-0.28$. A block frozen at one timestamp buys nothing; one
+that varies as much but at random buys nothing; only the delta that
+tracks the real remaining time helps, and it helps exactly as much as
+the words do. The guess-rate carries the mechanism: at T=4 the arms
+that submit early without opening the last place are precisely the two
+that know the time. The claim is bounded to the pressure rows --- at
+$T\ge5$ every arm is at 1.00 --- and it is the program's first
+time-feeling positive.
 
 \section{What stands}
 
 A creature-scale stack now has the full chain measured: a want that
 persists (paper 12), re-writes itself (paper 13), directs a multi-step
-errand when trained (this note), and partially survives delivery
-through the real serving path --- with the one blocking defect between
-here and the live creature located, named, and independently confirmed:
-the serving stack's composition operator. The law this arc kept
-re-measuring belongs beside papers 7 and 9's negatives: zero
-weight-space interference was never enough, and matching the host ---
-its blocks, its operator, its template --- is not a detail of
-deployment but part of the block's identity. Every registration,
-amendment, diagnosis run, and full episode transcript is in the
-tracks' PLAN files and the bundled artifacts.
+errand when trained (this note), survives delivery through the real
+serving path at full strength once trained under the host the server
+actually presents, and modulates on felt remaining time under
+pressure --- with the one live defect for multi-block serving located,
+named, and independently confirmed: the serving stack's composition
+operator. The law this arc kept re-measuring, and this revision
+completed in both directions, belongs beside papers 7 and 9's
+negatives: zero weight-space interference was never enough, and
+matching the host --- its blocks, their fed state, its operator ---
+is not a detail of deployment but part of the block's identity. Every
+registration, amendment, diagnosis run, and full episode transcript
+is in the tracks' PLAN files and the bundled artifacts.
 
 \section{Reproducibility}
 
 Twenty artifacts are bundled beside this note --- the goal-pursuit
 ladder at both venues (including the kept leak-diagnosis run), the
-serve-composition emitter, both canaries, and the addendum's four runs
-(the hostmatched re-run, its T=4 closure pair, the bare-host serve
-retrain, and the pressure rung with its two time controls); every
+serve-composition emitter, both canaries, and the v2 revision's four
+runs (the hostmatched re-run, its T=4 closure pair, the bare-host
+serve retrain, and the pressure rung with its two time controls);
+every
 number and the figure render from them alone. {\sloppy Harnesses:
 \texttt{goal\_pursuit.py}, \texttt{goal\_pursuit\_27b.py},
 \texttt{g3\_serve.py}, \texttt{g3b\_retrain.py} and
@@ -242,99 +324,6 @@ number and the figure render from them alone. {\sloppy Harnesses:
 \texttt{own\_cadence.py} and \texttt{c3b\_canary.py} in
 \texttt{tracks/own-cadence/}; registrations and results, each dated
 before its run, in the tracks' \texttt{PLAN.md} files.\par}
-
-\section*{Addendum (2026-08-15): the exact inversion}
-
-The registered follow-up ran: the same GT recipe at 230M with one
-change --- the regime bridge's training forwards run under the
-temporal-armed host, the tick sampled uniformly per example (the
-production-composition discipline the serving arc converged on). The
-outcome is the original run's numbers with the arms swapped seat for
-seat (Table~\ref{tab:gtaddendum}): the temporal arm scores
-1.00/1.00/1.00 with mean done-tick 4.0 flat --- the oracle path
-exactly --- while none and countdown fall to 0.00/0.00/0.00 with
-$\sim$50 invalid actions per cell, because now \emph{they} are the
-mismatched compositions: their evaluation host is dream4-only and the
-bridge trained under dream4+temporal. Same arms, same chains, same
-budget; the only variable is which host the bridge trained under, and
-it fully determines the outcome in both directions. This is the law's
-seventh sighting across the program and the first with a full
-symmetric swap. A same-day closure pair at T=4 --- zero oracle slack
---- reproduces the swap seat for seat with freshly trained bridges:
-removing the last slack tick changes nothing, because the matched
-policy is oracle-exact and feels no pressure. It also retroactively
-settles Table~\ref{tab:gt}'s
-temporal column: 0.00 was never a time-feeling negative, only the law
-again. Artifacts \texttt{goal-pursuit-gt-230m-hostmatched.*} join the
-bundle.
-
-\medskip\noindent\textbf{And the time question itself, answered.} GT
-could not test time-feeling because its trained policy is oracle-exact:
-done-tick 4.0 flat leaves nothing for urgency to buy. The registered
-pressure rung supplies something to buy --- a HIDDEN budget drawn per
-chain from $\{4\dots8\}$ and never stated, plus observation noise
-($\epsilon=0.35$ per look at a clue) --- so the optimal policy must
-retry smudged looks while the remaining ticks cover the path and submit
-the goal item the instant they do not. Every eval chain runs at every
-budget with its noise tape held fixed, which makes the comparison a
-within-chain identity test: the visible log is the same across budgets,
-so an arm with no time signal \emph{cannot} behave differently, and does
-not. Per-arm host matching throughout, so no cell measures the law by
-accident.
-
-With no time signal the model scores 0.94 and dies at the wall; with a
-countdown sentence, 0.98--1.00; with the temporal block and no time
-words anywhere in the context, \textbf{0.98--1.00}. Every failure in the
-grid sits at $T=4$, and pooling those rows the decomposition is clean:
-temporal 0.97 against a shuffled-time control at 0.73 ($z=+2.53$), the
-shuffled control against a frozen-time control at 0.67 ($z=+0.56$), and
-the frozen control against no signal at all, 0.67 versus 0.70
-($z=-0.28$). A temporal block frozen at one timestamp buys nothing; one
-whose delta varies exactly as much but at random $(t',T')$ buys nothing;
-only the delta that tracks the real remaining time helps --- and it
-helps as much as the sentence does. The guess-rate says the same
-mechanically: at $T=4$ the arms that submit early without opening the
-last place are precisely the two that know the time (temporal
-0.20--0.30, countdown 0.20--0.30) against 0.00--0.20 for the three that
-do not. A weight-space block gives a frozen 230M the wall-timed behavior
-a countdown gives it, without symbols. The claim is bounded to the
-pressure rows: at $T\ge5$ every arm is at 1.00. Artifacts
-\texttt{goal-pursuit-gtn-230m\{,-dense,-dense-control\}.*}.
-
-\medskip\noindent\textbf{A correction to the serving number, from the
-same law.} Section~5 reports the trained errand policy reaching
-0.40 through the real serving path against a 1.00 harness ceiling, and
-calls the 0.60 shortfall the serve wrapper's cost. That attribution was
-wrong, and the law this note is about says why. The isolated instance
-armed one block — the self block — and never fed it; an unfed block's
-features are \texttt{None}, the server's composition then applies no
-injection at all, and so the policy bridge, trained under a
-\emph{dream4-armed} host, was served against a \emph{bare} one. Retrained
-under the bare host by the identical recipe, seed, and chains, the same
-policy scores \textbf{1.00} through the same serving path --- the same
-wrapper, the same cached-generate delivery, the same prompt template
-(which, measured directly, is byte-identical to the harness's) --- with
-the zero-shot serve floors still at 0.00 and the no-goal-text control at
-0.30. The serve wrapper costs nothing. The transfer gap was the training
-host, one more time, and the delivery path is clean end to end.
-Artifacts \texttt{goal-pursuit-g3b-230m.*} join the bundle; the original
-G3 run stands as the mismatched half of the pair.
-
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{lrrr}
-\toprule
-regime bridge trained under & none & countdown & temporal block \\
-\midrule
-dream4-only (original) & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/0.00/0.00 \\
-dream4+temporal (re-run) & 0.00/0.00/0.00 & 0.00/0.00/0.00 & 1.00/1.00/1.00 \\
-\bottomrule
-\end{tabular}
-\caption{The pair of GT-230M runs, per seed: train/serve host match
-fully determines the outcome, in both directions.}
-\label{tab:gtaddendum}
-\end{table}
 
 \begin{thebibliography}{9}
 \bibitem{penov2026carrier} F.~Penov. The Carrier Holds, the Emitter
