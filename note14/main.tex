@@ -56,7 +56,11 @@ temporal-armed host inverts the GT table exactly --- temporal 1.00,
 the text arms 0.00 --- and training it under the host the SERVER
 actually presents, which is bare because an unfed block contributes
 nothing, closes the 0.40 serve gap to 1.00. The law holds in both
-directions, and the serve wrapper costs nothing.)
+directions, and the serve wrapper costs nothing. The pressure rung the
+note leaves open also ran: under a hidden variable budget with noisy
+observations, the temporal block gives the frozen 230M the same
+wall-timed submission behavior a countdown sentence gives it, with
+frozen-time and shuffled-time controls both at the no-signal baseline.)
 \end{abstract}
 
 \section{From a want that persists to a want that acts}
@@ -226,13 +230,15 @@ tracks' PLAN files and the bundled artifacts.
 
 \section{Reproducibility}
 
-Seventeen artifacts are bundled beside this note --- the goal-pursuit
+Twenty artifacts are bundled beside this note --- the goal-pursuit
 ladder at both venues (including the kept leak-diagnosis run), the
-serve-composition emitter, both canaries, and the addendum's
-hostmatched re-run with its T=4 closure pair; every number and the
-figure render from them alone. {\sloppy Harnesses:
-\texttt{goal\_pursuit.py}, \texttt{goal\_pursuit\_27b.py} and
-\texttt{g3\_serve.py} in \texttt{tracks/goal-pursuit/};
+serve-composition emitter, both canaries, and the addendum's four runs
+(the hostmatched re-run, its T=4 closure pair, the bare-host serve
+retrain, and the pressure rung with its two time controls); every
+number and the figure render from them alone. {\sloppy Harnesses:
+\texttt{goal\_pursuit.py}, \texttt{goal\_pursuit\_27b.py},
+\texttt{g3\_serve.py}, \texttt{g3b\_retrain.py} and
+\texttt{gtn\_pressure.py} in \texttt{tracks/goal-pursuit/};
 \texttt{own\_cadence.py} and \texttt{c3b\_canary.py} in
 \texttt{tracks/own-cadence/}; registrations and results, each dated
 before its run, in the tracks' \texttt{PLAN.md} files.\par}
@@ -259,11 +265,41 @@ removing the last slack tick changes nothing, because the matched
 policy is oracle-exact and feels no pressure. It also retroactively
 settles Table~\ref{tab:gt}'s
 temporal column: 0.00 was never a time-feeling negative, only the law
-again. Time-feeling itself remains untested at ceiling --- done-tick
-4.0 flat leaves nothing for urgency to buy --- and the registered
-pressure rung (a hidden variable budget under observation noise, where
-the optimal policy must guess exactly at the wall) is the open path.
-Artifacts \texttt{goal-pursuit-gt-230m-hostmatched.*} join the bundle.
+again. Artifacts \texttt{goal-pursuit-gt-230m-hostmatched.*} join the
+bundle.
+
+\medskip\noindent\textbf{And the time question itself, answered.} GT
+could not test time-feeling because its trained policy is oracle-exact:
+done-tick 4.0 flat leaves nothing for urgency to buy. The registered
+pressure rung supplies something to buy --- a HIDDEN budget drawn per
+chain from $\{4\dots8\}$ and never stated, plus observation noise
+($\epsilon=0.35$ per look at a clue) --- so the optimal policy must
+retry smudged looks while the remaining ticks cover the path and submit
+the goal item the instant they do not. Every eval chain runs at every
+budget with its noise tape held fixed, which makes the comparison a
+within-chain identity test: the visible log is the same across budgets,
+so an arm with no time signal \emph{cannot} behave differently, and does
+not. Per-arm host matching throughout, so no cell measures the law by
+accident.
+
+With no time signal the model scores 0.94 and dies at the wall; with a
+countdown sentence, 0.98--1.00; with the temporal block and no time
+words anywhere in the context, \textbf{0.98--1.00}. Every failure in the
+grid sits at $T=4$, and pooling those rows the decomposition is clean:
+temporal 0.97 against a shuffled-time control at 0.73 ($z=+2.53$), the
+shuffled control against a frozen-time control at 0.67 ($z=+0.56$), and
+the frozen control against no signal at all, 0.67 versus 0.70
+($z=-0.28$). A temporal block frozen at one timestamp buys nothing; one
+whose delta varies exactly as much but at random $(t',T')$ buys nothing;
+only the delta that tracks the real remaining time helps --- and it
+helps as much as the sentence does. The guess-rate says the same
+mechanically: at $T=4$ the arms that submit early without opening the
+last place are precisely the two that know the time (temporal
+0.20--0.30, countdown 0.20--0.30) against 0.00--0.20 for the three that
+do not. A weight-space block gives a frozen 230M the wall-timed behavior
+a countdown gives it, without symbols. The claim is bounded to the
+pressure rows: at $T\ge5$ every arm is at 1.00. Artifacts
+\texttt{goal-pursuit-gtn-230m\{,-dense,-dense-control\}.*}.
 
 \medskip\noindent\textbf{A correction to the serving number, from the
 same law.} Section~5 reports the trained errand policy reaching
