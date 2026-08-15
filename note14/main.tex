@@ -50,7 +50,13 @@ stands: packets retrained under the moving host keep their write-once
 regime at 0.97--1.00, and the trained errand policy delivered through
 the real serving path reaches 0.40 against a
 1.00 harness ceiling and a 0.00 serve floor --- the transfer gap is now
-a measured number, not a fear.
+a measured number, not a fear. (Addendum, 2026-08-15: the registered
+re-runs turn both of these numbers over. Training the policy under the
+temporal-armed host inverts the GT table exactly --- temporal 1.00,
+the text arms 0.00 --- and training it under the host the SERVER
+actually presents, which is bare because an unfed block contributes
+nothing, closes the 0.40 serve gap to 1.00. The law holds in both
+directions, and the serve wrapper costs nothing.)
 \end{abstract}
 
 \section{From a want that persists to a want that acts}
@@ -220,7 +226,7 @@ tracks' PLAN files and the bundled artifacts.
 
 \section{Reproducibility}
 
-Sixteen artifacts are bundled beside this note --- the goal-pursuit
+Seventeen artifacts are bundled beside this note --- the goal-pursuit
 ladder at both venues (including the kept leak-diagnosis run), the
 serve-composition emitter, both canaries, and the addendum's
 hostmatched re-run with its T=4 closure pair; every number and the
@@ -258,6 +264,25 @@ again. Time-feeling itself remains untested at ceiling --- done-tick
 pressure rung (a hidden variable budget under observation noise, where
 the optimal policy must guess exactly at the wall) is the open path.
 Artifacts \texttt{goal-pursuit-gt-230m-hostmatched.*} join the bundle.
+
+\medskip\noindent\textbf{A correction to the serving number, from the
+same law.} Section~5 reports the trained errand policy reaching
+0.40 through the real serving path against a 1.00 harness ceiling, and
+calls the 0.60 shortfall the serve wrapper's cost. That attribution was
+wrong, and the law this note is about says why. The isolated instance
+armed one block — the self block — and never fed it; an unfed block's
+features are \texttt{None}, the server's composition then applies no
+injection at all, and so the policy bridge, trained under a
+\emph{dream4-armed} host, was served against a \emph{bare} one. Retrained
+under the bare host by the identical recipe, seed, and chains, the same
+policy scores \textbf{1.00} through the same serving path --- the same
+wrapper, the same cached-generate delivery, the same prompt template
+(which, measured directly, is byte-identical to the harness's) --- with
+the zero-shot serve floors still at 0.00 and the no-goal-text control at
+0.30. The serve wrapper costs nothing. The transfer gap was the training
+host, one more time, and the delivery path is clean end to end.
+Artifacts \texttt{goal-pursuit-g3b-230m.*} join the bundle; the original
+G3 run stands as the mismatched half of the pair.
 
 \begin{table}[h]
 \centering
