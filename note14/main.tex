@@ -220,15 +220,60 @@ tracks' PLAN files and the bundled artifacts.
 
 \section{Reproducibility}
 
-Thirteen artifacts are bundled beside this note --- the goal-pursuit
+Sixteen artifacts are bundled beside this note --- the goal-pursuit
 ladder at both venues (including the kept leak-diagnosis run), the
-serve-composition emitter, and both canaries; every number and the
+serve-composition emitter, both canaries, and the addendum's
+hostmatched re-run with its T=4 closure pair; every number and the
 figure render from them alone. {\sloppy Harnesses:
 \texttt{goal\_pursuit.py}, \texttt{goal\_pursuit\_27b.py} and
 \texttt{g3\_serve.py} in \texttt{tracks/goal-pursuit/};
 \texttt{own\_cadence.py} and \texttt{c3b\_canary.py} in
 \texttt{tracks/own-cadence/}; registrations and results, each dated
 before its run, in the tracks' \texttt{PLAN.md} files.\par}
+
+\section*{Addendum (2026-08-15): the exact inversion}
+
+The registered follow-up ran: the same GT recipe at 230M with one
+change --- the regime bridge's training forwards run under the
+temporal-armed host, the tick sampled uniformly per example (the
+production-composition discipline the serving arc converged on). The
+outcome is the original run's numbers with the arms swapped seat for
+seat (Table~\ref{tab:gtaddendum}): the temporal arm scores
+1.00/1.00/1.00 with mean done-tick 4.0 flat --- the oracle path
+exactly --- while none and countdown fall to 0.00/0.00/0.00 with
+$\sim$50 invalid actions per cell, because now \emph{they} are the
+mismatched compositions: their evaluation host is dream4-only and the
+bridge trained under dream4+temporal. Same arms, same chains, same
+budget; the only variable is which host the bridge trained under, and
+it fully determines the outcome in both directions. This is the law's
+seventh sighting across the program and the first with a full
+symmetric swap. A same-day closure pair at T=4 --- zero oracle slack
+--- reproduces the swap seat for seat with freshly trained bridges:
+removing the last slack tick changes nothing, because the matched
+policy is oracle-exact and feels no pressure. It also retroactively
+settles Table~\ref{tab:gt}'s
+temporal column: 0.00 was never a time-feeling negative, only the law
+again. Time-feeling itself remains untested at ceiling --- done-tick
+4.0 flat leaves nothing for urgency to buy --- and the registered
+pressure rung (a hidden variable budget under observation noise, where
+the optimal policy must guess exactly at the wall) is the open path.
+Artifacts \texttt{goal-pursuit-gt-230m-hostmatched.*} join the bundle.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+regime bridge trained under & none & countdown & temporal block \\
+\midrule
+dream4-only (original) & 1.00/1.00/1.00 & 1.00/1.00/1.00 & 0.00/0.00/0.00 \\
+dream4+temporal (re-run) & 0.00/0.00/0.00 & 0.00/0.00/0.00 & 1.00/1.00/1.00 \\
+\bottomrule
+\end{tabular}
+\caption{The pair of GT-230M runs, per seed: train/serve host match
+fully determines the outcome, in both directions.}
+\label{tab:gtaddendum}
+\end{table}
 
 \begin{thebibliography}{9}
 \bibitem{penov2026carrier} F.~Penov. The Carrier Holds, the Emitter
