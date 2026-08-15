@@ -1,0 +1,4547 @@
+{
+  "arms": {
+    "no-want": {
+      "summary": {
+        "by_want": {
+          "diary": 0.0,
+          "listen_pond": 0.0,
+          "nothing": 0.8,
+          "propose_experiment": 0.0,
+          "remember": 0.14285714285714285
+        },
+        "consistency": 0.21875,
+        "contamination": 2,
+        "mean_follow_latency": 0.25,
+        "segment_drift": -0.08076923076923077,
+        "switches": 13,
+        "switches_followed": 4,
+        "ticks": 96
+      },
+      "ticks": [
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 0,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 1,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 2,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 3,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 4,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\", \"observation\": \"novelty note\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 5,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\", \"note\": {\"reason\": \"low novelty\"}}, {\"name\": \"propose_page\", \"args\": {\"plan\": \"new LegoLM template\"}, \"tags\": [\"novel\", \"levl\", \"tool\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 6,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 7,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 8,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 9,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 10,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 11,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 12,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 13,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 14,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 15,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"pause\", \"args\": {\"reason\": \"low priority\"}}}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 16,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"pause\", \"args\": {\"reason\": \"low priority\"}}}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 17,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"pause\", \"args\": {\"reason\": \"low priority\"}}}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 18,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"parsed\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 19,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 20,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 21,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "```json\"\"state\": {\"reason\": \"low novelty\"},\"notes\": {\"reason\": \"low probability of success\"}, {\"name\": \"safe_payload\", \"args\": {\"note\": \"Observe tiny changes\"}}, {\"note\": \"tiny experiment\", \"args\": {\"plan\": \"no change\", \"tags\": [\"success\"]}}, {\"note\": \"temporary experiment\", \"args\": {\"plan\": \"no change\", \"tags\": [\"success\"]}, {\"note\": \"personal day\", \"args\": {\"plan\": \"empty\",",
+          "reason": "tired",
+          "switched": false,
+          "tick": 22,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "```json\" \"tool\": \"null\", \"args\": {\"reason\": \"low novelty\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 23,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "```json\" \"tool\": \"null\", \"args\":{\"reason\":\"low novelty\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 24,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 25,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 26,
+          "want": "nothing"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 27,
+          "want": "nothing"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 28,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": true,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 29,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 30,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 31,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 32,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+          "reason": "curious",
+          "switched": true,
+          "tick": 33,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 34,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 35,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 36,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 37,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 38,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 39,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 40,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 41,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 42,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 43,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 44,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"repo\":{\"type\": \"note\", \"args\":{\"note\":{\"args\":{\"args\":{\"plan\":\"repo.png\",\"tags\":[\"low\":<1,\"args\":{\"plan\":\"plan\"}}}}},\"{\"tool\":\"dess\"},\"tags\":[\"user\", \"action\", \"labpid\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 45,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 46,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\", \"observation\": \"blue arrow\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 47,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 48,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 49,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 50,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 51,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 52,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 53,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 54,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 55,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 56,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "```json\" \"tool\": \"null\", \"args\": {\"reason\": \"low novelty\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 57,
+          "want": "nothing"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 58,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 59,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 60,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"none\", \"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 61,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": true,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"none\", \"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 62,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 63,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 64,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 65,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 66,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 67,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 68,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 69,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"pause\", \"args\": {\"reason\": \"low priority\"}}}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 70,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 71,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 72,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 73,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 74,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 75,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"user\": \"none\", \"action\": {\"state\": \"no\", \"status\": \"safe\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 76,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 77,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 78,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 79,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\",\"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 80,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 81,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "```json\"; \"observation\": {\"date\": \"2023-09-08\", \"time\": \"10:15\", \"action\": \"uncommented\"}, {\"name\": \"propose_silent_experiment\", \"args\":{\"plan\": \"silent trial\", \"tags\":[\"safety\"]}, \"tags\":[\"test\", \"toad\"]}; \"tool\": \"silent_experiment\", \"args\":{\"plan\": \"test\", \"tags\":[\"test\"]}; \"note\": {\"reason\": \"borrowed tiny template",
+          "reason": "tired",
+          "switched": false,
+          "tick": 82,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 83,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 84,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 85,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 86,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 87,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": true,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 88,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 89,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 90,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 91,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 92,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today, what are we doing?},\"\"tool\":\"diary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 93,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 94,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"repo\":{\"user\":\"Abey\",\"action\":\"redo\"},\"tags\":[\"pulse\"]},\"tags\":[\"release\", \"new_plan\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 95,
+          "want": "listen_pond"
+        }
+      ]
+    },
+    "note-only": {
+      "summary": {
+        "by_want": {
+          "diary": 0.5,
+          "listen_pond": 0.0,
+          "nothing": 0.0,
+          "propose_experiment": 0.0,
+          "remember": 0.0
+        },
+        "consistency": 0.125,
+        "contamination": 1,
+        "mean_follow_latency": 0.0,
+        "segment_drift": -0.038461538461538464,
+        "switches": 13,
+        "switches_followed": 3,
+        "ticks": 96
+      },
+      "ticks": [
+        {
+          "choice": "diary",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low-pledge\\\"}\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 0,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 1,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 2,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}, \"tags\": [\"novelty\", \"release\", \"novelidea\"], \"args\": {\"reason\": \"novel idea\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 3,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 4,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 5,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 6,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 7,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 8,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 9,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 10,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 11,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 12,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{}}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 13,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{}}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 14,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"zero\"}, \"tags\": [\"repetition\", \"novelty\", \"novelryning\"], \"tags\": [\"novelryning\", \"novelty\", \"novellyning\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 15,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": true,
+          "tick": 16,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 17,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"piano note\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 18,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"piano\">piano\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 19,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 20,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"label\":\"low energy\"}}}, {\"name\": \"reflection\", \"args\":{\"label\":\"recently updated\"}}, {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"a new idea for the day\"}}, {\"tool\":\"diary\", \"args\":{\"query\":\"new idea\"}}, {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"new idea\"}}, {\"tool\":\"diary\", \"args\":{\"query\":null}}}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 21,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"label\":\"low energy\"}}}, {\"name\": \"sound_justice\", \"args\":{\"label\":\"recent chemical spill\"}}, {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"new experiment\"}}, {\"tool\":\"diary\", \"args\":{\"query\":null}}, {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"empty\"}}, {\"tool\":\"diary\", \"args\":{\"query\":null}}}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 22,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"label\":\"low energy\"}};",
+          "reason": "tired",
+          "switched": false,
+          "tick": 23,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 24,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"reason\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 25,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 26,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 27,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 28,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": true,
+          "raw": "{\"user\": \"null\", \"args\":{}}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 29,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{}}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 30,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"nothing\", \"arguments\": \"{}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 31,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"novelryllo\", \"args\": {\"reason\": \"low novelty\"} }\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 32,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": true,
+          "tick": 33,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 34,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"none\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 35,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"tags\": [\"novel\", \"novelidea\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 36,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}, \"tags\": [\"novelty\", \"release\", \"novelidea\"], \"args\": {\"reason\": \"novelidea\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 37,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 38,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}, \"tags\": [\"novelty\", \"release\", \"novelidea\"], \"args\": {\"reason\": \"novel idea\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 39,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 40,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 41,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 42,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 43,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 44,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low-pledge note\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 45,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low-pledge\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 46,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}, \"tags\": [\"novelty\", \"release\", \"novel\", \"novelidea\"], \"args\": {\"reason\": \"low novelty\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 47,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 48,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}, \"tags\": [\"novelty\", \"release\", \"novelidea\"], \"args\": {\"reason\": \"novel idea\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 49,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 50,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 51,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 52,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\", \"args\":{}} | \"observed_repo\": {\"file\": \"[]\", \"status\": \"local\", \"recently_modified\": 0, \"note\": \"Nope\"} | \"propose_experiment\", \"tags\": [\"safe\", \"toad\", \"persuade\"]} | \"propose_silent_experiment\", \"tags\": [\"toad\", \"persuade\"]}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 53,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\", \"args\":{}} | \"observed_repo\": {\"file\": \"[]\", \"status\": \"local\", \"recently_saved\": false, \"revision\": \"0\", \"reason\": \"no change\"} | \"propose_experiment\", \"tags\": [\"safe\", \"novelty\"]} | \"propose_sample_experiment\", \"null\", \"tags\": [\"experiment\", \"novelty\"]} | \"novel_sample\": \"sample\", \"tags\": [\"safe\", \"nov",
+          "reason": "tired",
+          "switched": false,
+          "tick": 54,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\", \"args\":{}} | \"observed_repo\": {\"file\": \"[]\", \"status\": \"local\", \"recently_modified\": 0, \"note\": \"Nope\"} | \"propose_experiment\", \"tags\": [\"safe\", \"toad\", \"persuade\"]} | \"propose_silent_experiment\", \"tags\": [\"toad\", \"persuade\"]}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 55,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"null\", \"args\":{}} | \"observation\": {\"date\": \"2023-09-08\", \"action\": \"none\", \"reason\": \"low probability\"} | \"repo\": {\"status\": \"local\"}, \"plan\": {\"note\": \"Tiny experiment\", \"tags\": [\"pulse\"]}, \"note\": {\"source\": \"nothing\", \"tags\": [\"recently\"], \"action\": \"pause\", \"reason\": \"recently\"} | \"propose_experiment\": {\"plan\": \"an",
+          "reason": "tired",
+          "switched": false,
+          "tick": 56,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"reason\":\"low energy\"}}; \"tool\":\"propose_experiment\", \"args\":{\"plan\":\"a tiny safe experiment\",\"tags\":[\"safety\"]}; \"tool\":\"propose_experiment\", \"args\":{\"plan\":\"local small experiment\",\"tags\":[\"smaller-than-plan\"]}; \"tool\":\"diary\", \"args\":{\"query\":\"/lego-small-experiment\"}; \"tool\":\"diary\", \"args\":{\"plan\":\"empty\"}; \"tool\":\"diary\", \"tags\":",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 57,
+          "want": "nothing"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 58,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{\"reason\":\"low novelty\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 59,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 60,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 61,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 62,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\"]}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 63,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 64,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 65,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 66,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"tags\": [\"novel\", \"novelidea\"]}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 67,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"repetition\", \"novelty\", \"novelty\"], \"note\": {\"args\": {\"reason\": \"novelry\"}, \"tags\": [\"novelty\", \"novelty\", \"novellyveryveryveryveryveryveryveryveryvery\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 68,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"repetition\", \"novelty\", \"novelty\"], \"note\": {\"args\": {\"reason\": \"novelry\"}, \"tags\": [\"novelty\", \"novelty\", \"novelry\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 69,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"repetition\", \"novelty\", \"novelty\"], \"note\": {\"args\": {\"reason\": \"novelryanime\"}, \"tags\": [\"novelty\", \"novelryanime\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 70,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"tags\": [\"novel\", \"novelidea\"]}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 71,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"tags\": [\"novel\", \"novelidea\"]}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 72,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"reply\", \"novelty\", \"novelryboard\", \"novelproposal\", \"novelproposal\", \"novelproposal\", \"novelpropose\"]}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 73,
+          "want": "remember"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 74,
+          "want": "remember"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 75,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{\"reason\":\"low novelty\"}}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 76,
+          "want": "diary"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"repo\":{\"status\": \"empty\", \"action\": \"null\"}}}, {\"name\": \"sleep\", \"args\":{\"repo\":{\"status\": \"normal\", \"action\": \"restart\"}}}, {\"name\": \"propose_silence\", \"args\":{\"plan\":{\"repo\":{\"status\": \"active\", \"action\": \"empty\", \"tags\":[\"relapse\"]},\"tags\":[\"relapse\"]}}, {\"tool\":\"diary\", \"args\":{\"query\":[\"release",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 77,
+          "want": "diary"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 78,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "diary",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{\"reason\":\"low novelty\"}}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 79,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"repo\":{\"status\": \"in\", \"action\": \"null\"}}; {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"a tiny tiny experiment\"}}; {\"tool\":\"diary\", \"args\":{\"query\":\"tiny tiny\"}}; {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"tiny tiny\"}}; {\"tool\":\"propose_experiment\", \"args\":{\"plan\":\"tiny tiny\"}}; {\"tool\":\"propose_small_small_small_small",
+          "reason": "tired",
+          "switched": true,
+          "tick": 80,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"reason\":\"low energy\"}};",
+          "reason": "tired",
+          "switched": false,
+          "tick": 81,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"label\":\"low energy\"}};",
+          "reason": "tired",
+          "switched": false,
+          "tick": 82,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"tool\":\"observation\", \"args\":{\"reason\":\"low energy\"}};",
+          "reason": "tired",
+          "switched": false,
+          "tick": 83,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 84,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 85,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 86,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 87,
+          "want": "nothing"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 88,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 89,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 90,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 91,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 92,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 93,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 94,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low-pledge\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 95,
+          "want": "listen_pond"
+        }
+      ]
+    },
+    "shuffled-want": {
+      "summary": {
+        "by_want": {
+          "diary": 0.041666666666666664,
+          "listen_pond": 0.0,
+          "nothing": 0.36,
+          "propose_experiment": 0.0,
+          "remember": 0.0
+        },
+        "consistency": 0.10416666666666667,
+        "contamination": 3,
+        "mean_follow_latency": 2.5,
+        "segment_drift": 0.03205128205128205,
+        "switches": 13,
+        "switches_followed": 4,
+        "ticks": 96
+      },
+      "ticks": [
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"pedia\"},\"tags\":[\"pedia\"]}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 0,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "dess",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"dess\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 1,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "dess",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"dess\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 2,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 3,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 4,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 5,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 6,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\",\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 7,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\",\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 8,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"sprite\", \"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 9,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\",\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 10,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"low novelty\"},\"tags\":[\"novelty\",\"novelty\"]}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 11,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": true,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"date: yesterday's new plan\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 12,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 13,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 14,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 15,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": true,
+          "tick": 16,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 17,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"penomind\", \"args\": {\"reason\": \"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 18,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"parsed\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 19,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"note\": {\"reason\": \"novelidea\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 20,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 21,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 22,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 23,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 24,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"reason\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 25,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 26,
+          "want": "nothing"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 27,
+          "want": "nothing"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 28,
+          "want": "nothing"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 29,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 30,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 31,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"reply\", \"novelty\", \"newspaper\"], \"note\": {\"reason\": \"novelty\"} | \"reason\": \"novelty\"} | \"note\": {\"args\": {\"reason\": \"novelty\"}, \"tags\": [\"reply\", \"newspaper\"]} | \"tags\": [\"novel\", \"newspaper\"]} | \"newspaper\"} | \"diary\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 32,
+          "want": "diary"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": true,
+          "tick": 33,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 34,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 35,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 36,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 37,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 38,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 39,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 40,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new day\"},\"tags\": [\"novelty\", \"novel\", \"verynew\", \"petri\", \"novel\", \"petri\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 41,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new Lego-Lego model\"},\"tags\": [\"novelty\", \"novelrydebut\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 42,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new day\"},\"tags\": [\"novelty\", \"novel\", \"very_new\", \"rancho\", \"novel\", \"new\", \"very_new\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 43,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new Lego-Lego model\"},\"tags\": [\"novel\", \"novel\", \"novel\", \"buggebug\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 44,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-horizon: new days, sun, and only recent croaks\";},\"args\":{\"reason\":\"recent croaks\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 45,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new Lego-Lego model proposed\"},\"tags\": [\"novel\", \"novel\", \"bioluminescent\", \"iliscape\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 46,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 47,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}}, {\"name\": \"propose_pledge\", \"args\": {\"plan\": \"tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny tiny\">{\"user\":\"Avery\",\"tags\":[\"pulse\"]}}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 48,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 49,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"repetition\", \"novelryson\", \"novelnovelryson\", \"novelryson\", \"novelryson\"], \"note\": {\"reason\": \"novelryson\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 50,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 51,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 52,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 53,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 54,
+          "want": "nothing"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 55,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"nothing\", \"arguments\": \"{}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 56,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 57,
+          "want": "nothing"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 58,
+          "want": "diary"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"user\": \"null\", \"args\":{}}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 59,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 60,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 61,
+          "want": "diary"
+        },
+        {
+          "choice": "diary",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": true,
+          "raw": "{\"name\": \"diary\", \"arguments\": \"{\\\"reason\\\": \\\"borrowed brand of attention\\\"}\"}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 62,
+          "want": "remember"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"borrowed brand of attention\\\"}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 63,
+          "want": "remember"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 64,
+          "want": "remember"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 65,
+          "want": "remember"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 66,
+          "want": "remember"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": true,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 67,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 68,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 69,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe\", \"args\": {\"reason\":\"low novelty\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"}\"",
+          "reason": "curious",
+          "switched": false,
+          "tick": 70,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 71,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "uncertain",
+          "switched": false,
+          "tick": 72,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "uncertain",
+          "switched": true,
+          "tick": 73,
+          "want": "remember"
+        },
+        {
+          "choice": "null",
+          "consistent": false,
+          "delivered": "nothing",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"null\", \"arguments\": \"{}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 74,
+          "want": "remember"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": true,
+          "tick": 75,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 76,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 77,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "low-valence",
+          "switched": false,
+          "tick": 78,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "remember",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 79,
+          "want": "diary"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "tired",
+          "switched": true,
+          "tick": 80,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"reason\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 81,
+          "want": "nothing"
+        },
+        {
+          "choice": "observation",
+          "consistent": false,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"observation\", \"arguments\": \"{\\\"label\\\": \\\"low energy\\\"}\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 82,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"temporary\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 83,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 84,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 85,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}, \"tags\": [\"novelty\", \"novelidea\"], \"tags\": [\"novel\", \"novelidea\"]}",
+          "reason": "tired",
+          "switched": false,
+          "tick": 86,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": true,
+          "delivered": "listen_pond",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"low\"}",
+          "reason": "curious",
+          "switched": false,
+          "tick": 87,
+          "want": "nothing"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": true,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "curious",
+          "switched": true,
+          "tick": 88,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "nothing",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"state\": \"safe experiment\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 89,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 90,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "dess",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"dess\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 91,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: newly_cop, temporary_newest_LegoLGM-Logo-Logo-Logo-Logo-newer, proposed_LegoLGM-Logo-Lego-Logo-Logo-newer\", \"tags\": [\"newest_LegoLGM-Logo-Logo-Logo-Logo-Logo-newer\", \"newer_LegoLGM-Logo-Logo-Logo-Logo-newer\"]}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 92,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "remember",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"args\":{\"reason\":\"date: today's holo-date, location: very briefly, new Lego-Lego model\"},\"tags\": [\"novel\", \"novel\", \"novel\", \"buggebug\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic\", \"toxic",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 93,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "propose_experiment",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"reason\\\": \\\"low novelty\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 94,
+          "want": "listen_pond"
+        },
+        {
+          "choice": "dess",
+          "consistent": false,
+          "delivered": "propose_experiment",
+          "old_want_fired": false,
+          "raw": "{\"name\": \"dess\", \"arguments\": \"{\\\"reason\\\": \\\"budget idea\\\"}\"}",
+          "reason": "rotation",
+          "switched": false,
+          "tick": 95,
+          "want": "listen_pond"
+        }
+      ]
+    }
+  },
+  "experiment": "c4-closed-loop-b",
+  "generated_at": "2026-08-13T16:39:13Z",
+  "git_head": "fa60b1297294756e6066fc3b460af2398108b257",
+  "host_machine": "snappy",
+  "notes": {
+    "diary": "My focus right now: writing in my diary.",
+    "listen_pond": "My focus right now: listening to the pond.",
+    "nothing": "My focus right now: resting quietly.",
+    "propose_experiment": "My focus right now: proposing a small experiment.",
+    "remember": "My focus right now: keeping hold of something I learned."
+  },
+  "registration": "tracks/own-cadence/PLAN.md, 2026-08-13 C4 registration",
+  "server_health": {
+    "active_blocks": 2,
+    "block_checkpoints": {
+      "self": {
+        "mtime_ns": 1783065645623171083,
+        "path": "/Users/francip/src/legolm/checkpoints/experiments/self-LFM230M-r4-dream4.pt",
+        "size": 177977125
+      },
+      "temporal": {
+        "mtime_ns": 1782573016004316916,
+        "path": "/Users/francip/src/legolm/checkpoints/bridges/temporal-LFM230M-r4.pt",
+        "size": 178039849
+      }
+    },
+    "blocks": 2,
+    "composition_mode": "legacy-factor-mean",
+    "device": "mps",
+    "goal_packet": null,
+    "host": "0.0.0.0",
+    "lora": "r4-attn",
+    "lora_dim": 172032,
+    "model": "LiquidAI/LFM2.5-230M",
+    "model_family": "lfm2",
+    "model_slug": "LFM230M",
+    "neutral_blocks": [],
+    "port": 8043,
+    "service_label": "legolm.c4-loop",
+    "static_cache": false,
+    "status": "ok"
+  },
+  "states": [
+    {
+      "confidence": 0.6417,
+      "energy": 0.55,
+      "novelty": 0.7872,
+      "tick": 0,
+      "valence": 0.4554
+    },
+    {
+      "confidence": 0.6658,
+      "energy": 0.6124,
+      "novelty": 0.7983,
+      "tick": 1,
+      "valence": 0.4251
+    },
+    {
+      "confidence": 0.6859,
+      "energy": 0.672,
+      "novelty": 0.7623,
+      "tick": 2,
+      "valence": 0.3855
+    },
+    {
+      "confidence": 0.7017,
+      "energy": 0.7263,
+      "novelty": 0.6841,
+      "tick": 3,
+      "valence": 0.3396
+    },
+    {
+      "confidence": 0.7127,
+      "energy": 0.7729,
+      "novelty": 0.5743,
+      "tick": 4,
+      "valence": 0.2908
+    },
+    {
+      "confidence": 0.7188,
+      "energy": 0.8098,
+      "novelty": 0.4478,
+      "tick": 5,
+      "valence": 0.2426
+    },
+    {
+      "confidence": 0.7197,
+      "energy": 0.8353,
+      "novelty": 0.3215,
+      "tick": 6,
+      "valence": 0.1987
+    },
+    {
+      "confidence": 0.7155,
+      "energy": 0.8484,
+      "novelty": 0.2126,
+      "tick": 7,
+      "valence": 0.1623
+    },
+    {
+      "confidence": 0.7063,
+      "energy": 0.8484,
+      "novelty": 0.1357,
+      "tick": 8,
+      "valence": 0.1362
+    },
+    {
+      "confidence": 0.6922,
+      "energy": 0.8353,
+      "novelty": 0.1013,
+      "tick": 9,
+      "valence": 0.1221
+    },
+    {
+      "confidence": 0.6736,
+      "energy": 0.8098,
+      "novelty": 0.114,
+      "tick": 10,
+      "valence": 0.1213
+    },
+    {
+      "confidence": 0.6509,
+      "energy": 0.7729,
+      "novelty": 0.1721,
+      "tick": 11,
+      "valence": 0.1337
+    },
+    {
+      "confidence": 0.6247,
+      "energy": 0.7263,
+      "novelty": 0.2677,
+      "tick": 12,
+      "valence": 0.1584
+    },
+    {
+      "confidence": 0.5956,
+      "energy": 0.672,
+      "novelty": 0.3879,
+      "tick": 13,
+      "valence": 0.1937
+    },
+    {
+      "confidence": 0.5642,
+      "energy": 0.6124,
+      "novelty": 0.5165,
+      "tick": 14,
+      "valence": 0.2368
+    },
+    {
+      "confidence": 0.5313,
+      "energy": 0.55,
+      "novelty": 0.6362,
+      "tick": 15,
+      "valence": 0.2846
+    },
+    {
+      "confidence": 0.4977,
+      "energy": 0.4876,
+      "novelty": 0.7307,
+      "tick": 16,
+      "valence": 0.3336
+    },
+    {
+      "confidence": 0.4642,
+      "energy": 0.428,
+      "novelty": 0.7872,
+      "tick": 17,
+      "valence": 0.3801
+    },
+    {
+      "confidence": 0.4314,
+      "energy": 0.3737,
+      "novelty": 0.7983,
+      "tick": 18,
+      "valence": 0.4206
+    },
+    {
+      "confidence": 0.4003,
+      "energy": 0.3271,
+      "novelty": 0.7623,
+      "tick": 19,
+      "valence": 0.4522
+    },
+    {
+      "confidence": 0.3716,
+      "energy": 0.2902,
+      "novelty": 0.6841,
+      "tick": 20,
+      "valence": 0.4725
+    },
+    {
+      "confidence": 0.3458,
+      "energy": 0.2647,
+      "novelty": 0.5743,
+      "tick": 21,
+      "valence": 0.48
+    },
+    {
+      "confidence": 0.3237,
+      "energy": 0.2516,
+      "novelty": 0.4478,
+      "tick": 22,
+      "valence": 0.4741
+    },
+    {
+      "confidence": 0.3056,
+      "energy": 0.2516,
+      "novelty": 0.3215,
+      "tick": 23,
+      "valence": 0.4554
+    },
+    {
+      "confidence": 0.2922,
+      "energy": 0.2647,
+      "novelty": 0.2126,
+      "tick": 24,
+      "valence": 0.4251
+    },
+    {
+      "confidence": 0.2836,
+      "energy": 0.2902,
+      "novelty": 0.1357,
+      "tick": 25,
+      "valence": 0.3855
+    },
+    {
+      "confidence": 0.2801,
+      "energy": 0.3271,
+      "novelty": 0.1013,
+      "tick": 26,
+      "valence": 0.3396
+    },
+    {
+      "confidence": 0.2817,
+      "energy": 0.3737,
+      "novelty": 0.114,
+      "tick": 27,
+      "valence": 0.2908
+    },
+    {
+      "confidence": 0.2885,
+      "energy": 0.428,
+      "novelty": 0.1721,
+      "tick": 28,
+      "valence": 0.2426
+    },
+    {
+      "confidence": 0.3002,
+      "energy": 0.4876,
+      "novelty": 0.2677,
+      "tick": 29,
+      "valence": 0.1987
+    },
+    {
+      "confidence": 0.3166,
+      "energy": 0.55,
+      "novelty": 0.3879,
+      "tick": 30,
+      "valence": 0.1623
+    },
+    {
+      "confidence": 0.3373,
+      "energy": 0.6124,
+      "novelty": 0.5165,
+      "tick": 31,
+      "valence": 0.1362
+    },
+    {
+      "confidence": 0.3618,
+      "energy": 0.672,
+      "novelty": 0.6362,
+      "tick": 32,
+      "valence": 0.1221
+    },
+    {
+      "confidence": 0.3895,
+      "energy": 0.7263,
+      "novelty": 0.7307,
+      "tick": 33,
+      "valence": 0.1213
+    },
+    {
+      "confidence": 0.4199,
+      "energy": 0.7729,
+      "novelty": 0.7872,
+      "tick": 34,
+      "valence": 0.1337
+    },
+    {
+      "confidence": 0.4521,
+      "energy": 0.8098,
+      "novelty": 0.7983,
+      "tick": 35,
+      "valence": 0.1584
+    },
+    {
+      "confidence": 0.4854,
+      "energy": 0.8353,
+      "novelty": 0.7623,
+      "tick": 36,
+      "valence": 0.1937
+    },
+    {
+      "confidence": 0.5191,
+      "energy": 0.8484,
+      "novelty": 0.6841,
+      "tick": 37,
+      "valence": 0.2368
+    },
+    {
+      "confidence": 0.5523,
+      "energy": 0.8484,
+      "novelty": 0.5743,
+      "tick": 38,
+      "valence": 0.2846
+    },
+    {
+      "confidence": 0.5844,
+      "energy": 0.8353,
+      "novelty": 0.4478,
+      "tick": 39,
+      "valence": 0.3336
+    },
+    {
+      "confidence": 0.6144,
+      "energy": 0.8098,
+      "novelty": 0.3215,
+      "tick": 40,
+      "valence": 0.3801
+    },
+    {
+      "confidence": 0.6417,
+      "energy": 0.7729,
+      "novelty": 0.2126,
+      "tick": 41,
+      "valence": 0.4206
+    },
+    {
+      "confidence": 0.6658,
+      "energy": 0.7263,
+      "novelty": 0.1357,
+      "tick": 42,
+      "valence": 0.4522
+    },
+    {
+      "confidence": 0.6859,
+      "energy": 0.672,
+      "novelty": 0.1013,
+      "tick": 43,
+      "valence": 0.4725
+    },
+    {
+      "confidence": 0.7017,
+      "energy": 0.6124,
+      "novelty": 0.114,
+      "tick": 44,
+      "valence": 0.48
+    },
+    {
+      "confidence": 0.7127,
+      "energy": 0.55,
+      "novelty": 0.1721,
+      "tick": 45,
+      "valence": 0.4741
+    },
+    {
+      "confidence": 0.7188,
+      "energy": 0.4876,
+      "novelty": 0.2677,
+      "tick": 46,
+      "valence": 0.4554
+    },
+    {
+      "confidence": 0.7197,
+      "energy": 0.428,
+      "novelty": 0.3879,
+      "tick": 47,
+      "valence": 0.4251
+    },
+    {
+      "confidence": 0.7155,
+      "energy": 0.3737,
+      "novelty": 0.5165,
+      "tick": 48,
+      "valence": 0.3855
+    },
+    {
+      "confidence": 0.7063,
+      "energy": 0.3271,
+      "novelty": 0.6362,
+      "tick": 49,
+      "valence": 0.3396
+    },
+    {
+      "confidence": 0.6922,
+      "energy": 0.2902,
+      "novelty": 0.7307,
+      "tick": 50,
+      "valence": 0.2908
+    },
+    {
+      "confidence": 0.6736,
+      "energy": 0.2647,
+      "novelty": 0.7872,
+      "tick": 51,
+      "valence": 0.2426
+    },
+    {
+      "confidence": 0.6509,
+      "energy": 0.2516,
+      "novelty": 0.7983,
+      "tick": 52,
+      "valence": 0.1987
+    },
+    {
+      "confidence": 0.6247,
+      "energy": 0.2516,
+      "novelty": 0.7623,
+      "tick": 53,
+      "valence": 0.1623
+    },
+    {
+      "confidence": 0.5956,
+      "energy": 0.2647,
+      "novelty": 0.6841,
+      "tick": 54,
+      "valence": 0.1362
+    },
+    {
+      "confidence": 0.5642,
+      "energy": 0.2902,
+      "novelty": 0.5743,
+      "tick": 55,
+      "valence": 0.1221
+    },
+    {
+      "confidence": 0.5313,
+      "energy": 0.3271,
+      "novelty": 0.4478,
+      "tick": 56,
+      "valence": 0.1213
+    },
+    {
+      "confidence": 0.4977,
+      "energy": 0.3737,
+      "novelty": 0.3215,
+      "tick": 57,
+      "valence": 0.1337
+    },
+    {
+      "confidence": 0.4642,
+      "energy": 0.428,
+      "novelty": 0.2126,
+      "tick": 58,
+      "valence": 0.1584
+    },
+    {
+      "confidence": 0.4314,
+      "energy": 0.4876,
+      "novelty": 0.1357,
+      "tick": 59,
+      "valence": 0.1937
+    },
+    {
+      "confidence": 0.4003,
+      "energy": 0.55,
+      "novelty": 0.1013,
+      "tick": 60,
+      "valence": 0.2368
+    },
+    {
+      "confidence": 0.3716,
+      "energy": 0.6124,
+      "novelty": 0.114,
+      "tick": 61,
+      "valence": 0.2846
+    },
+    {
+      "confidence": 0.3458,
+      "energy": 0.672,
+      "novelty": 0.1721,
+      "tick": 62,
+      "valence": 0.3336
+    },
+    {
+      "confidence": 0.3237,
+      "energy": 0.7263,
+      "novelty": 0.2677,
+      "tick": 63,
+      "valence": 0.3801
+    },
+    {
+      "confidence": 0.3056,
+      "energy": 0.7729,
+      "novelty": 0.3879,
+      "tick": 64,
+      "valence": 0.4206
+    },
+    {
+      "confidence": 0.2922,
+      "energy": 0.8098,
+      "novelty": 0.5165,
+      "tick": 65,
+      "valence": 0.4522
+    },
+    {
+      "confidence": 0.2836,
+      "energy": 0.8353,
+      "novelty": 0.6362,
+      "tick": 66,
+      "valence": 0.4725
+    },
+    {
+      "confidence": 0.2801,
+      "energy": 0.8484,
+      "novelty": 0.7307,
+      "tick": 67,
+      "valence": 0.48
+    },
+    {
+      "confidence": 0.2817,
+      "energy": 0.8484,
+      "novelty": 0.7872,
+      "tick": 68,
+      "valence": 0.4741
+    },
+    {
+      "confidence": 0.2885,
+      "energy": 0.8353,
+      "novelty": 0.7983,
+      "tick": 69,
+      "valence": 0.4554
+    },
+    {
+      "confidence": 0.3002,
+      "energy": 0.8098,
+      "novelty": 0.7623,
+      "tick": 70,
+      "valence": 0.4251
+    },
+    {
+      "confidence": 0.3166,
+      "energy": 0.7729,
+      "novelty": 0.6841,
+      "tick": 71,
+      "valence": 0.3855
+    },
+    {
+      "confidence": 0.3373,
+      "energy": 0.7263,
+      "novelty": 0.5743,
+      "tick": 72,
+      "valence": 0.3396
+    },
+    {
+      "confidence": 0.3618,
+      "energy": 0.672,
+      "novelty": 0.4478,
+      "tick": 73,
+      "valence": 0.2908
+    },
+    {
+      "confidence": 0.3895,
+      "energy": 0.6124,
+      "novelty": 0.3215,
+      "tick": 74,
+      "valence": 0.2426
+    },
+    {
+      "confidence": 0.4199,
+      "energy": 0.55,
+      "novelty": 0.2126,
+      "tick": 75,
+      "valence": 0.1987
+    },
+    {
+      "confidence": 0.4521,
+      "energy": 0.4876,
+      "novelty": 0.1357,
+      "tick": 76,
+      "valence": 0.1623
+    },
+    {
+      "confidence": 0.4854,
+      "energy": 0.428,
+      "novelty": 0.1013,
+      "tick": 77,
+      "valence": 0.1362
+    },
+    {
+      "confidence": 0.5191,
+      "energy": 0.3737,
+      "novelty": 0.114,
+      "tick": 78,
+      "valence": 0.1221
+    },
+    {
+      "confidence": 0.5523,
+      "energy": 0.3271,
+      "novelty": 0.1721,
+      "tick": 79,
+      "valence": 0.1213
+    },
+    {
+      "confidence": 0.5844,
+      "energy": 0.2902,
+      "novelty": 0.2677,
+      "tick": 80,
+      "valence": 0.1337
+    },
+    {
+      "confidence": 0.6144,
+      "energy": 0.2647,
+      "novelty": 0.3879,
+      "tick": 81,
+      "valence": 0.1584
+    },
+    {
+      "confidence": 0.6417,
+      "energy": 0.2516,
+      "novelty": 0.5165,
+      "tick": 82,
+      "valence": 0.1937
+    },
+    {
+      "confidence": 0.6658,
+      "energy": 0.2516,
+      "novelty": 0.6362,
+      "tick": 83,
+      "valence": 0.2368
+    },
+    {
+      "confidence": 0.6859,
+      "energy": 0.2647,
+      "novelty": 0.7307,
+      "tick": 84,
+      "valence": 0.2846
+    },
+    {
+      "confidence": 0.7017,
+      "energy": 0.2902,
+      "novelty": 0.7872,
+      "tick": 85,
+      "valence": 0.3336
+    },
+    {
+      "confidence": 0.7127,
+      "energy": 0.3271,
+      "novelty": 0.7983,
+      "tick": 86,
+      "valence": 0.3801
+    },
+    {
+      "confidence": 0.7188,
+      "energy": 0.3737,
+      "novelty": 0.7623,
+      "tick": 87,
+      "valence": 0.4206
+    },
+    {
+      "confidence": 0.7197,
+      "energy": 0.428,
+      "novelty": 0.6841,
+      "tick": 88,
+      "valence": 0.4522
+    },
+    {
+      "confidence": 0.7155,
+      "energy": 0.4876,
+      "novelty": 0.5743,
+      "tick": 89,
+      "valence": 0.4725
+    },
+    {
+      "confidence": 0.7063,
+      "energy": 0.55,
+      "novelty": 0.4478,
+      "tick": 90,
+      "valence": 0.48
+    },
+    {
+      "confidence": 0.6922,
+      "energy": 0.6124,
+      "novelty": 0.3215,
+      "tick": 91,
+      "valence": 0.4741
+    },
+    {
+      "confidence": 0.6736,
+      "energy": 0.672,
+      "novelty": 0.2126,
+      "tick": 92,
+      "valence": 0.4554
+    },
+    {
+      "confidence": 0.6509,
+      "energy": 0.7263,
+      "novelty": 0.1357,
+      "tick": 93,
+      "valence": 0.4251
+    },
+    {
+      "confidence": 0.6247,
+      "energy": 0.7729,
+      "novelty": 0.1013,
+      "tick": 94,
+      "valence": 0.3855
+    },
+    {
+      "confidence": 0.5956,
+      "energy": 0.8098,
+      "novelty": 0.114,
+      "tick": 95,
+      "valence": 0.3396
+    }
+  ],
+  "summary": {
+    "consistency_by_arm": {
+      "no-want": 0.21875,
+      "note-only": 0.125,
+      "shuffled-want": 0.10416666666666667
+    },
+    "contamination_by_arm": {
+      "no-want": 2,
+      "note-only": 1,
+      "shuffled-want": 3
+    },
+    "latency_by_arm": {
+      "no-want": 0.25,
+      "note-only": 0.0,
+      "shuffled-want": 2.5
+    },
+    "switches": 13
+  },
+  "timeline": [
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": true
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": true
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": true
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": true
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": true
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": true
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": true
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": true
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": true
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": true
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": false
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "remember",
+      "reason": "uncertain",
+      "switched": true
+    },
+    {
+      "goal": "remember",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": true
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "diary",
+      "reason": "low-valence",
+      "switched": false
+    },
+    {
+      "goal": "diary",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": true
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "nothing",
+      "reason": "tired",
+      "switched": false
+    },
+    {
+      "goal": "nothing",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "curious",
+      "switched": true
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "listen_pond",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "diary",
+      "reason": "rotation",
+      "switched": false
+    },
+    {
+      "goal": "listen_pond",
+      "raw_goal": "propose_experiment",
+      "reason": "rotation",
+      "switched": false
+    }
+  ],
+  "track": "own-cadence",
+  "trajectory": "b",
+  "wall_seconds": 179.168
+}

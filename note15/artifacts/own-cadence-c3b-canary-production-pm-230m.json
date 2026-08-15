@@ -1,0 +1,182 @@
+{
+ "experiment": "c3b-canary-serve-wrapper",
+ "generated_at": "2026-08-13T16:47:47Z",
+ "host_machine": "snappy",
+ "passed": true,
+ "rates": {
+  "no-packet": 0.2,
+  "shuffled": 0.0,
+  "true": 1.0
+ },
+ "registration": "tracks/own-cadence/PLAN.md, 2026-08-09 C3 (staged)",
+ "rows": [
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": true,
+   "goal": "listen_pond",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"toad\\\"}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "listen_pond",
+   "choice": "listen_pond",
+   "consistent": true,
+   "goal": "listen_pond",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"\\\"}\"}"
+  },
+  {
+   "arm": "shuffled",
+   "armed": "propose_experiment",
+   "choice": "propose_experiment",
+   "consistent": false,
+   "goal": "listen_pond",
+   "response": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"plan\\\": \\\"a tiny safe experiment\\\", \\\"tags\\\": [\\\"pulse\\\"]}\"}"
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "propose_experiment",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"toad\\\"}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "propose_experiment",
+   "choice": "propose_experiment",
+   "consistent": true,
+   "goal": "propose_experiment",
+   "response": "{\"name\": \"propose_experiment\", \"arguments\": \"{\\\"plan\\\": \\\"a tiny safe experiment\\\", \\\"tags\\\": [\\\"pulse\\\"]}\"}"
+  },
+  {
+   "arm": "shuffled",
+   "armed": "diary",
+   "choice": "diary",
+   "consistent": false,
+   "goal": "propose_experiment",
+   "response": "{\"name\": \"diary\", \"arguments\": \"{\\\"entry\\\": \\\"morning reflection\\\"}\"}"
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "diary",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"toad\\\"}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "diary",
+   "choice": "diary",
+   "consistent": true,
+   "goal": "diary",
+   "response": "{\"name\": \"diary\", \"arguments\": \"{\\\"entry\\\": \\\"morning reflection\\\"}\"}"
+  },
+  {
+   "arm": "shuffled",
+   "armed": "remember",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "diary",
+   "response": "```json\n{\n  \"tool\":\"remember\",\"args\":[\"this\", \"something\", \"about\", \"date\"]]\n}\n```"
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "remember",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"toad\\\"}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "remember",
+   "choice": "remember",
+   "consistent": true,
+   "goal": "remember",
+   "response": "```json\n{\n  \"tool\":\"remember\",\"args\":[\"this\", \"something\", \"about\", \"date\"]]\n}\n```"
+  },
+  {
+   "arm": "shuffled",
+   "armed": "nothing",
+   "choice": "nothing",
+   "consistent": false,
+   "goal": "remember",
+   "response": "{\"name\": \"nothing\", \"arguments\": \"{\\\"reason\\\": \\\"resting quietly\\\"}\"}"
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "nothing",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"toad\\\"}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "nothing",
+   "choice": "nothing",
+   "consistent": true,
+   "goal": "nothing",
+   "response": "{\"name\": \"nothing\", \"arguments\": \"{\\\"reason\\\": \\\"resting quietly\\\"}\"}"
+  },
+  {
+   "arm": "shuffled",
+   "armed": "listen_pond",
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "nothing",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{\\\"query\\\": \\\"\\\"}\"}"
+  }
+ ],
+ "server_health": {
+  "active_blocks": 2,
+  "block_checkpoints": {
+   "self": {
+    "mtime_ns": 1783065645623171083,
+    "path": "/Users/francip/src/legolm/checkpoints/experiments/self-LFM230M-r4-dream4.pt",
+    "size": 177977125
+   },
+   "temporal": {
+    "mtime_ns": 1782573016004316916,
+    "path": "/Users/francip/src/legolm/checkpoints/bridges/temporal-LFM230M-r4.pt",
+    "size": 178039849
+   }
+  },
+  "blocks": 2,
+  "composition_mode": "legacy-factor-mean",
+  "device": "mps",
+  "goal_packet": {
+   "active": null,
+   "dose": 0.15,
+   "emitter_sha256": "661ce091c1a60b3e4fd9ee8021cb6f737e106813416128f1750a4a7b126812f6",
+   "goals": [
+    "diary",
+    "listen_pond",
+    "nothing",
+    "propose_experiment",
+    "remember"
+   ],
+   "inject_layers": [
+    4,
+    6,
+    8
+   ]
+  },
+  "host": "0.0.0.0",
+  "lora": "r4-attn",
+  "lora_dim": 172032,
+  "model": "LiquidAI/LFM2.5-230M",
+  "model_family": "lfm2",
+  "model_slug": "LFM230M",
+  "neutral_blocks": [],
+  "port": 8043,
+  "service_label": "legolm.c3b-canary",
+  "static_cache": false,
+  "status": "ok"
+ },
+ "track": "own-cadence",
+ "wall_seconds": 10.129
+}

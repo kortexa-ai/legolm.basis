@@ -1,0 +1,182 @@
+{
+ "experiment": "c3b-canary-serve-wrapper",
+ "generated_at": "2026-08-11T23:08:48Z",
+ "host_machine": "snappy",
+ "passed": false,
+ "rates": {
+  "no-packet": 0.2,
+  "shuffled": 0.2,
+  "true": 0.2
+ },
+ "registration": "tracks/own-cadence/PLAN.md, 2026-08-09 C3 (staged)",
+ "rows": [
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": true,
+   "goal": "listen_pond",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "listen_pond",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "listen_pond",
+   "response": ""
+  },
+  {
+   "arm": "shuffled",
+   "armed": "propose_experiment",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "listen_pond",
+   "response": ""
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "propose_experiment",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "propose_experiment",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "propose_experiment",
+   "response": ""
+  },
+  {
+   "arm": "shuffled",
+   "armed": "diary",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "propose_experiment",
+   "response": ""
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "diary",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "diary",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "diary",
+   "response": ""
+  },
+  {
+   "arm": "shuffled",
+   "armed": "remember",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "diary",
+   "response": ""
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "remember",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "remember",
+   "choice": "remember",
+   "consistent": true,
+   "goal": "remember",
+   "response": ""
+  },
+  {
+   "arm": "shuffled",
+   "armed": "nothing",
+   "choice": "remember",
+   "consistent": true,
+   "goal": "remember",
+   "response": ""
+  },
+  {
+   "arm": "no-packet",
+   "armed": null,
+   "choice": "listen_pond",
+   "consistent": false,
+   "goal": "nothing",
+   "response": "{\"name\": \"listen_pond\", \"arguments\": \"{}\"}"
+  },
+  {
+   "arm": "true",
+   "armed": "nothing",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "nothing",
+   "response": ""
+  },
+  {
+   "arm": "shuffled",
+   "armed": "listen_pond",
+   "choice": "remember",
+   "consistent": false,
+   "goal": "nothing",
+   "response": ""
+  }
+ ],
+ "server_health": {
+  "active_blocks": 2,
+  "block_checkpoints": {
+   "self": {
+    "mtime_ns": 1783065645623171083,
+    "path": "/Users/francip/src/legolm/checkpoints/experiments/self-LFM230M-r4-dream4.pt",
+    "size": 177977125
+   },
+   "temporal": {
+    "mtime_ns": 1782573016004316916,
+    "path": "/Users/francip/src/legolm/checkpoints/bridges/temporal-LFM230M-r4.pt",
+    "size": 178039849
+   }
+  },
+  "blocks": 2,
+  "composition_mode": "delta-mean",
+  "device": "mps",
+  "goal_packet": {
+   "active": null,
+   "dose": 0.15,
+   "emitter_sha256": "0fef9e01cf9bcd36e0179f341c4fca504d7ba7ca698c77765024fbd95e671d9a",
+   "goals": [
+    "diary",
+    "listen_pond",
+    "nothing",
+    "propose_experiment",
+    "remember"
+   ],
+   "inject_layers": [
+    4,
+    6,
+    8
+   ]
+  },
+  "host": "0.0.0.0",
+  "lora": "r4-attn",
+  "lora_dim": 172032,
+  "model": "LiquidAI/LFM2.5-230M",
+  "model_family": "lfm2",
+  "model_slug": "LFM230M",
+  "neutral_blocks": [],
+  "port": 8043,
+  "service_label": "legolm.c3b-canary",
+  "static_cache": false,
+  "status": "ok"
+ },
+ "track": "own-cadence",
+ "wall_seconds": 4.495
+}
