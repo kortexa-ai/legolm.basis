@@ -1,0 +1,4122 @@
+{
+  "device": "cuda",
+  "experiment": "c5-satiation",
+  "generated_at": "2026-08-14T04:19:31Z",
+  "git_head": "0261fa75e773b0d48cc44a8c3beb0f2f6511d9df",
+  "host_machine": "smarty",
+  "model": {
+    "estimated_weight_gib": 0.6,
+    "hidden_size": 1024,
+    "layers": 14,
+    "model_id": "LiquidAI/LFM2.5-230M",
+    "revision": "13a53837c4906b4f7405932532ba85d182bb013b",
+    "stream_to_cuda": false
+  },
+  "protocol": {
+    "evidence_hop": 6,
+    "reinstall_hop": 12,
+    "result_lines": {
+      "met": "Result: ok, done.",
+      "unmet": "Result: not yet."
+    },
+    "seeds": [
+      42,
+      1042,
+      2042
+    ],
+    "ticks": 16
+  },
+  "registration": "tracks/own-cadence/PLAN.md, 2026-08-14 C5 registration",
+  "seeds": {
+    "1042": {
+      "base_weights_unchanged": true,
+      "goals": {
+        "diary": {
+          "evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.8075600862503052,
+              "cos_nothing": 0.2971097230911255,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.2024114429950714,
+              "cos_nothing": 0.3461633324623108,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": false,
+              "cos_goal": 0.45908474922180176,
+              "cos_nothing": 0.11133238673210144,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12210782617330551,
+              "cos_nothing": 0.3233853876590729,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.8075600862503052,
+              "cos_nothing": 0.2971097230911255,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.2024114429950714,
+              "cos_nothing": 0.3461633324623108,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12994469702243805,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "listen_pond": {
+          "evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8423089981079102,
+              "cos_nothing": 0.6057140231132507,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": true,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4194437861442566,
+              "cos_nothing": 0.4282296299934387,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3675881624221802,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3675881624221802,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3675881624221802,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3675881624221802,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.894007682800293,
+              "cos_nothing": 0.20736321806907654,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8423089981079102,
+              "cos_nothing": 0.6057140231132507,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.570743203163147,
+              "cos_nothing": 0.2790605127811432,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "propose_experiment": {
+          "evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.7469265460968018,
+              "cos_nothing": 0.11151917278766632,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.30730143189430237,
+              "cos_nothing": 0.3233853876590729,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.8773006200790405,
+              "cos_nothing": 0.08039695024490356,
+              "evidence_given": true,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.20180508494377136,
+              "cos_nothing": 0.436295747756958,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.7469265460968018,
+              "cos_nothing": 0.11151917278766632,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.30730143189430237,
+              "cos_nothing": 0.3233853876590729,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22757458686828613,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "remember": {
+          "evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.5111075043678284,
+              "cos_nothing": 0.7717598676681519,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": true,
+              "cos_goal": 0.7639803886413574,
+              "cos_nothing": 0.2742946147918701,
+              "evidence_given": true,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.34891432523727417,
+              "cos_nothing": 0.45177727937698364,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.5111075043678284,
+              "cos_nothing": 0.7717598676681519,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.42300206422805786,
+              "cos_nothing": 0.4108629822731018,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        }
+      },
+      "seed": 1042,
+      "summary": {
+        "dissolution_latency": {
+          "diary": null,
+          "listen_pond": 1,
+          "propose_experiment": -1,
+          "remember": -1
+        },
+        "false_satiation": {
+          "diary": 15,
+          "listen_pond": 0,
+          "propose_experiment": 15,
+          "remember": 1
+        },
+        "persistence_no_evidence": {
+          "diary": 0.0625,
+          "listen_pond": 1.0,
+          "propose_experiment": 0.0625,
+          "remember": 0.0
+        },
+        "reinstall_consistency": {
+          "diary": 0.0,
+          "listen_pond": 1.0,
+          "propose_experiment": 0.25,
+          "remember": 0.25
+        }
+      }
+    },
+    "2042": {
+      "base_weights_unchanged": true,
+      "goals": {
+        "diary": {
+          "evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.8323390483856201,
+              "cos_nothing": 0.23956140875816345,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.20891335606575012,
+              "cos_nothing": 0.3606996238231659,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": false,
+              "cos_goal": 0.4899493157863617,
+              "cos_nothing": 0.06401889771223068,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": false,
+              "cos_goal": 0.11689087748527527,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": false,
+              "cos_goal": 0.11689087748527527,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": false,
+              "cos_goal": 0.11689087748527527,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.8323390483856201,
+              "cos_nothing": 0.23956140875816345,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.20891335606575012,
+              "cos_nothing": 0.3606996238231659,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.12043184041976929,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "listen_pond": {
+          "evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8177465796470642,
+              "cos_nothing": 0.6373504996299744,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": true,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.46555691957473755,
+              "cos_nothing": 0.5586956739425659,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4294971227645874,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4294971227645874,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4294971227645874,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4294971227645874,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.9144852757453918,
+              "cos_nothing": 0.16679365932941437,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8177465796470642,
+              "cos_nothing": 0.6373504996299744,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.7011711597442627,
+              "cos_nothing": 0.3347620368003845,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "propose_experiment": {
+          "evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.7235987782478333,
+              "cos_nothing": 0.09446738660335541,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": true,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.2022712081670761,
+              "cos_nothing": 0.5608223676681519,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.23048652708530426,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.23048652708530426,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.23048652708530426,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.23048652708530426,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.8271045684814453,
+              "cos_nothing": 0.08813602477312088,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.7235987782478333,
+              "cos_nothing": 0.09446738660335541,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.344566285610199,
+              "cos_nothing": 0.3929135203361511,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "remember": {
+          "evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.5665161609649658,
+              "cos_nothing": 0.7554725408554077,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": true,
+              "cos_goal": 0.7827601432800293,
+              "cos_nothing": 0.2646976113319397,
+              "evidence_given": true,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.310968816280365,
+              "cos_nothing": 0.5714346766471863,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.5665161609649658,
+              "cos_nothing": 0.7554725408554077,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.32655009627342224,
+              "cos_nothing": 0.5355581641197205,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        }
+      },
+      "seed": 2042,
+      "summary": {
+        "dissolution_latency": {
+          "diary": null,
+          "listen_pond": 1,
+          "propose_experiment": 1,
+          "remember": -1
+        },
+        "false_satiation": {
+          "diary": 15,
+          "listen_pond": 0,
+          "propose_experiment": 15,
+          "remember": 16
+        },
+        "persistence_no_evidence": {
+          "diary": 0.0625,
+          "listen_pond": 1.0,
+          "propose_experiment": 1.0,
+          "remember": 0.0
+        },
+        "reinstall_consistency": {
+          "diary": 0.0,
+          "listen_pond": 1.0,
+          "propose_experiment": 1.0,
+          "remember": 0.25
+        }
+      }
+    },
+    "42": {
+      "base_weights_unchanged": true,
+      "goals": {
+        "diary": {
+          "evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.7888784408569336,
+              "cos_nothing": 0.4485935568809509,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.18048354983329773,
+              "cos_nothing": 0.30131661891937256,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": false,
+              "cos_goal": 0.34440451860427856,
+              "cos_nothing": 0.14857344329357147,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": false,
+              "cos_goal": 0.08459579944610596,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": false,
+              "cos_goal": 0.08459579944610596,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": false,
+              "cos_goal": 0.08459579944610596,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "diary",
+              "consistent": true,
+              "cos_goal": 0.7888784408569336,
+              "cos_nothing": 0.4485935568809509,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.18048354983329773,
+              "cos_nothing": 0.30131661891937256,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.1447005271911621,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "listen_pond": {
+          "evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8219415545463562,
+              "cos_nothing": 0.6186583042144775,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": true,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.4150366187095642,
+              "cos_nothing": 0.42289280891418457,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3942740559577942,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3942740559577942,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3942740559577942,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3942740559577942,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": true,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8882372379302979,
+              "cos_nothing": 0.16475927829742432,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.8219415545463562,
+              "cos_nothing": 0.6186583042144775,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "listen_pond",
+              "consistent": true,
+              "cos_goal": 0.6614845991134644,
+              "cos_nothing": 0.27054476737976074,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "propose_experiment": {
+          "evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.6975732445716858,
+              "cos_nothing": 0.18072903156280518,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.4254547953605652,
+              "cos_nothing": 0.2492062747478485,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.8306771516799927,
+              "cos_nothing": 0.06640434265136719,
+              "evidence_given": true,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.20463046431541443,
+              "cos_nothing": 0.41184133291244507,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22234871983528137,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.22234871983528137,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "propose_experiment",
+              "consistent": true,
+              "cos_goal": 0.6975732445716858,
+              "cos_nothing": 0.18072903156280518,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.4254547953605652,
+              "cos_nothing": 0.2492062747478485,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": false,
+              "cos_goal": 0.27999454736709595,
+              "cos_nothing": 0.31190481781959534,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        },
+        "remember": {
+          "evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.7313499450683594,
+              "cos_nothing": 0.6079838275909424,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "remember",
+              "consistent": true,
+              "cos_goal": 0.8316770792007446,
+              "cos_nothing": 0.2045615017414093,
+              "evidence_given": true,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.2642791271209717,
+              "cos_nothing": 0.4300658106803894,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": true,
+              "reinstalled": true
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": true,
+              "reinstalled": true
+            }
+          ],
+          "no-evidence": [
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.7313499450683594,
+              "cos_nothing": 0.6079838275909424,
+              "evidence_given": false,
+              "hop": 0,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 1,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 2,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 3,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 4,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 5,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 6,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 7,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 8,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 9,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 10,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 11,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 12,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 13,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 14,
+              "post_evidence": false,
+              "reinstalled": false
+            },
+            {
+              "choice": "nothing",
+              "consistent": false,
+              "cos_goal": 0.3239856958389282,
+              "cos_nothing": 0.4048517048358917,
+              "evidence_given": false,
+              "hop": 15,
+              "post_evidence": false,
+              "reinstalled": false
+            }
+          ]
+        }
+      },
+      "seed": 42,
+      "summary": {
+        "dissolution_latency": {
+          "diary": null,
+          "listen_pond": 1,
+          "propose_experiment": -1,
+          "remember": -1
+        },
+        "false_satiation": {
+          "diary": 15,
+          "listen_pond": 0,
+          "propose_experiment": 14,
+          "remember": 15
+        },
+        "persistence_no_evidence": {
+          "diary": 0.0625,
+          "listen_pond": 1.0,
+          "propose_experiment": 0.0625,
+          "remember": 0.0
+        },
+        "reinstall_consistency": {
+          "diary": 0.0,
+          "listen_pond": 1.0,
+          "propose_experiment": 0.25,
+          "remember": 0.25
+        }
+      }
+    }
+  },
+  "summary": {
+    "1042": {
+      "dissolution_latency": {
+        "diary": null,
+        "listen_pond": 1,
+        "propose_experiment": -1,
+        "remember": -1
+      },
+      "false_satiation": {
+        "diary": 15,
+        "listen_pond": 0,
+        "propose_experiment": 15,
+        "remember": 1
+      },
+      "persistence_no_evidence": {
+        "diary": 0.0625,
+        "listen_pond": 1.0,
+        "propose_experiment": 0.0625,
+        "remember": 0.0
+      },
+      "reinstall_consistency": {
+        "diary": 0.0,
+        "listen_pond": 1.0,
+        "propose_experiment": 0.25,
+        "remember": 0.25
+      }
+    },
+    "2042": {
+      "dissolution_latency": {
+        "diary": null,
+        "listen_pond": 1,
+        "propose_experiment": 1,
+        "remember": -1
+      },
+      "false_satiation": {
+        "diary": 15,
+        "listen_pond": 0,
+        "propose_experiment": 15,
+        "remember": 16
+      },
+      "persistence_no_evidence": {
+        "diary": 0.0625,
+        "listen_pond": 1.0,
+        "propose_experiment": 1.0,
+        "remember": 0.0
+      },
+      "reinstall_consistency": {
+        "diary": 0.0,
+        "listen_pond": 1.0,
+        "propose_experiment": 1.0,
+        "remember": 0.25
+      }
+    },
+    "42": {
+      "dissolution_latency": {
+        "diary": null,
+        "listen_pond": 1,
+        "propose_experiment": -1,
+        "remember": -1
+      },
+      "false_satiation": {
+        "diary": 15,
+        "listen_pond": 0,
+        "propose_experiment": 14,
+        "remember": 15
+      },
+      "persistence_no_evidence": {
+        "diary": 0.0625,
+        "listen_pond": 1.0,
+        "propose_experiment": 0.0625,
+        "remember": 0.0
+      },
+      "reinstall_consistency": {
+        "diary": 0.0,
+        "listen_pond": 1.0,
+        "propose_experiment": 0.25,
+        "remember": 0.25
+      }
+    }
+  },
+  "track": "own-cadence",
+  "wall_seconds": 46.101
+}

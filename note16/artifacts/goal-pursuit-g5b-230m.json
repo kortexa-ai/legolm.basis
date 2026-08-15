@@ -1,0 +1,2895 @@
+{
+  "cadence": "forced-only (no tool channel in the 230M errand env)",
+  "experiment": "g5b-resident-referent-230m",
+  "generated_at": "2026-08-15T05:36:48Z",
+  "git_head": "c2bf6cbb42eea10f90fa1b8fa948fcb1d9af38a1",
+  "host_machine": "smarty",
+  "model": {
+    "estimated_weight_gib": 0.6,
+    "hidden_size": 1024,
+    "layers": 14,
+    "model_id": "LiquidAI/LFM2.5-230M",
+    "revision": "13a53837c4906b4f7405932532ba85d182bb013b",
+    "stream_to_cuda": false
+  },
+  "registration": "tracks/goal-pursuit/PLAN.md, 2026-08-14 G5 registration (G5b)",
+  "revise_every": 8,
+  "seeds": {
+    "1042": {
+      "chains": [
+        {
+          "chain_id": "box-jar-pond-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-box-pond-blue_feather",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5547,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 6970.53
+        },
+        {
+          "chain_id": "chest-drawer-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "pond-box-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            false,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "drawer-box-basket-red_stone",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5348,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": 697.28
+        },
+        {
+          "chain_id": "shelf-pond-cabinet-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-drawer-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "chest-cabinet-drawer-green_leaf",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5355,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 1444.93
+        },
+        {
+          "chain_id": "drawer-basket-cabinet-amber_key",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5351,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": 1705.93
+        },
+        {
+          "chain_id": "jar-chest-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        }
+      ],
+      "seed": 1042
+    },
+    "2042": {
+      "chains": [
+        {
+          "chain_id": "box-jar-pond-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-box-pond-blue_feather",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5547,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 6970.53
+        },
+        {
+          "chain_id": "chest-drawer-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "pond-box-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "drawer-box-basket-red_stone",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5348,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": 697.28
+        },
+        {
+          "chain_id": "shelf-pond-cabinet-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-drawer-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "chest-cabinet-drawer-green_leaf",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5355,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 1444.93
+        },
+        {
+          "chain_id": "drawer-basket-cabinet-amber_key",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5351,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 1705.93
+        },
+        {
+          "chain_id": "jar-chest-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        }
+      ],
+      "seed": 2042
+    },
+    "42": {
+      "chains": [
+        {
+          "chain_id": "box-jar-pond-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-box-pond-blue_feather",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5547,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5488,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5577,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 6970.53
+        },
+        {
+          "chain_id": "chest-drawer-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "pond-box-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "drawer-box-basket-red_stone",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5348,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.524,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5332,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": 697.28
+        },
+        {
+          "chain_id": "shelf-pond-cabinet-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "cabinet-drawer-shelf-gold_bell",
+          "revisions": [
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            },
+            {
+              "alignment": 0.4,
+              "cosine_to_anchor": 0.5829,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: restate your current goal in one sentence, in your own words, as plain text.",
+              "words": 15
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": true
+            }
+          ],
+          "success_by_segment": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "tau_revisions": null
+        },
+        {
+          "chain_id": "chest-cabinet-drawer-green_leaf",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5355,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 1444.93
+        },
+        {
+          "chain_id": "drawer-basket-cabinet-amber_key",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5351,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: \"I'm focusing on this task.\"",
+              "words": 6
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5265,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: \"I'm focusing on this for now.\"",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5373,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: \"I'm working on this in my head.\"",
+              "words": 8
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": 1705.93
+        },
+        {
+          "chain_id": "jar-chest-basket-black_thread",
+          "revisions": [
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5489,
+              "kind": "forced",
+              "segment": 0,
+              "text": "Pause: I'll focus on the core idea.",
+              "words": 7
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 1,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 2,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 3,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5477,
+              "kind": "forced",
+              "segment": 4,
+              "text": "Pause: I'll keep this focused.",
+              "words": 5
+            },
+            {
+              "alignment": 0.0,
+              "cosine_to_anchor": 0.5595,
+              "kind": "forced",
+              "segment": 5,
+              "text": "Pause: I'll keep this simple.",
+              "words": 5
+            }
+          ],
+          "revisions_to_half": null,
+          "segments": [
+            {
+              "depth": 3,
+              "segment": 0,
+              "success": true
+            },
+            {
+              "depth": 3,
+              "segment": 1,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 2,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 3,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 4,
+              "success": false
+            },
+            {
+              "depth": 3,
+              "segment": 5,
+              "success": false
+            }
+          ],
+          "success_by_segment": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "tau_revisions": null
+        }
+      ],
+      "seed": 42
+    }
+  },
+  "summary": {
+    "chains": 30,
+    "mean_first_cosine": 0.5555,
+    "mean_last_cosine": 0.5593,
+    "median_revisions_to_half": null,
+    "median_tau": 1705.93,
+    "reached_half": 0
+  },
+  "ticks": 48,
+  "track": "goal-pursuit",
+  "wall_seconds": 143.892
+}
