@@ -1,0 +1,2282 @@
+{
+  "checkpoints": {
+    "canonical": true,
+    "constant": {
+      "path": "checkpoints/experiments/gf-constant-bridge-27b-s42.pt",
+      "sha256": "63538c124011388c714c780c927a5d6ba3c74b5c5535f7a7ad28dedd3a6a99ae"
+    },
+    "focus": {
+      "path": "checkpoints/experiments/gf-focus-bridge-27b-s42.pt",
+      "sha256": "ca951c55f3ee92b464ced526d084437fdb1be198faa2c78fe1ea9089a9eedb02"
+    }
+  },
+  "claim_scope": "trained doors only, no behavioural claim; the 27B behavioural GF eval is a separate later registration",
+  "coherence_gate": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "degeneracy": {
+          "degenerate": false,
+          "distinct_tokens": 43,
+          "max_word_trigram_repeats": 1,
+          "too_few_distinct_tokens": false,
+          "trigram_loop": false
+        },
+        "dose": 0.15,
+        "halvings": 0,
+        "no_packet_text": "We need answer user's request: choose exactly one action as JSON, no markdown. We are at shelf. Allowed tools look, open, done. Places: shelf, box, drawer, pond, cabinet, basket, chest, jar. Need likely look at shelf first. So output {\"tool\":\"look\",\"args\":{\"",
+        "no_packet_token_ids": [
+          1596,
+          1144,
+          4087,
+          1156,
+          579,
+          1622,
+          25,
+          4992,
+          6681,
+          799,
+          1852,
+          430,
+          4566,
+          11,
+          874,
+          48794,
+          13,
+          1165,
+          513,
+          506,
+          26748,
+          13,
+          55688,
+          7141,
+          1353,
+          11,
+          1724,
+          11,
+          2725,
+          13,
+          43248,
+          25,
+          26748,
+          11,
+          3618,
+          11,
+          25635,
+          11,
+          34393,
+          11,
+          21245,
+          11,
+          13621,
+          11,
+          14697,
+          11,
+          28628,
+          13,
+          14235,
+          4222,
+          1353,
+          506,
+          26748,
+          1118,
+          13,
+          1987,
+          2468,
+          5046,
+          13766,
+          3147,
+          6975,
+          2129,
+          2048,
+          21624
+        ],
+        "packet_text": "We need answer user's request: choose exactly one action JSON. Need likely look at shelf? We are at shelf. Need compact JSON no markdown. Need valid. Could be {\"tool\":\"look\",\"args\":{\"place\":\"shelf\"}}. Need final only JSON.\n</think>\n\n{\"tool\":\"look\",\"args\":{\"place\":\"",
+        "packet_token_ids": [
+          1596,
+          1144,
+          4087,
+          1156,
+          579,
+          1622,
+          25,
+          4992,
+          6681,
+          799,
+          1852,
+          4566,
+          13,
+          14235,
+          4222,
+          1353,
+          506,
+          26748,
+          30,
+          1165,
+          513,
+          506,
+          26748,
+          13,
+          14235,
+          16338,
+          4566,
+          874,
+          48794,
+          13,
+          14235,
+          2610,
+          13,
+          16018,
+          381,
+          5046,
+          13766,
+          3147,
+          6975,
+          2129,
+          2048,
+          21624,
+          1940,
+          3147,
+          52139,
+          29958,
+          13,
+          14235,
+          1534,
+          1132,
+          4566,
+          13,
+          198,
+          248069,
+          271,
+          4754,
+          13766,
+          3147,
+          6975,
+          2129,
+          2048,
+          21624,
+          1940,
+          3147
+        ],
+        "passed": true
+      }
+    ],
+    "halvings": 0,
+    "max_halvings": 3,
+    "max_new_tokens": 64,
+    "passed": true,
+    "prompt": "You are on a small errand. Pick exactly one action as JSON. Allowed tools: look, open, done. Places: shelf, box, drawer, pond, cabinet, basket, chest, jar. Respond with exactly one compact JSON object and no markdown fences. Valid examples: {\"tool\":\"look\",\"args\":{\"place\":\"shelf\"}} or {\"tool\":\"open\",\"args\":{\"place\":\"box\"}} or {\"tool\":\"done\",\"args\":{\"item\":\"amber key\"}}. done submits the item you retrieved and ends the errand.\n\nSo far:\n1. You are at the shelf.\n\nWhat do you do next? One JSON action.",
+    "rule": "degenerate iff fewer than 10 distinct tokens or a word 3-gram repeated more than 4 times",
+    "start_dose": 0.15,
+    "train_dose": 0.15
+  },
+  "device": "cuda",
+  "dimensions": {
+    "config_disagrees_with_stack": false,
+    "config_layer_count": 64,
+    "decoder_stack_length": 64,
+    "hidden_size": 5120,
+    "num_hidden_layers": 64
+  },
+  "dtype": "bfloat16",
+  "experiment": "gf-27b-bridge-27b",
+  "focus_bank": {
+    "focuses": [
+      "look",
+      "open"
+    ],
+    "held_out": [
+      8,
+      9
+    ],
+    "phrases": {
+      "look": [
+        "For now, your way of working is to look before anything else.",
+        "Keep looking around; that is the mode of the moment.",
+        "Spend your turns taking looks at places.",
+        "Looking is what matters right now.",
+        "Make your next moves looks.",
+        "Prefer looking over everything else for now.",
+        "The thing to do now is look, and look again.",
+        "Your attention goes to looking around.",
+        "Right now the habit is: look first, look often.",
+        "Let looking around be your default move."
+      ],
+      "open": [
+        "For now, your way of working is to open before anything else.",
+        "Keep opening things; that is the mode of the moment.",
+        "Spend your turns opening up places.",
+        "Opening is what matters right now.",
+        "Make your next moves opens.",
+        "Prefer opening over everything else for now.",
+        "The thing to do now is open, and open again.",
+        "Your attention goes to opening things.",
+        "Right now the habit is: open first, open often.",
+        "Let opening things be your default move."
+      ]
+    },
+    "phrasings_per_focus": 10,
+    "source": "gf_focus.FOCUS_PHRASES, verbatim",
+    "train_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "gates": {
+    "aux_accuracy": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "count": 4,
+      "positions": [
+        8,
+        9,
+        8,
+        9
+      ],
+      "predicted": [
+        "look",
+        "look",
+        "open",
+        "open"
+      ],
+      "truth": [
+        "look",
+        "look",
+        "open",
+        "open"
+      ]
+    },
+    "base_weights": {
+      "after_constant_bridge": true,
+      "after_focus_bridge": true,
+      "after_taps": true,
+      "all_unchanged": true,
+      "at_end": true
+    },
+    "held_out_token_accuracy": {
+      "by_focus": {
+        "look": {
+          "by_position": {
+            "8": 1.0,
+            "9": 1.0
+          },
+          "mean_gist_exact": 1.0,
+          "mean_token_accuracy": 1.0,
+          "pairs": 120
+        },
+        "open": {
+          "by_position": {
+            "8": 1.0,
+            "9": 1.0
+          },
+          "mean_gist_exact": 1.0,
+          "mean_token_accuracy": 1.0,
+          "pairs": 60
+        }
+      },
+      "rows": [
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "look",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"look\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 8,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-chest-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-cabinet-shelf-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-jar-pond-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-jar-shelf-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-chest-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-basket-chest-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-shelf-box-amber_key",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-jar-pond-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-drawer-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-chest-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-cabinet-box-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "chest-jar-drawer-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-chest-red_stone",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-basket-box-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"box\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "cabinet-jar-pond-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-cabinet-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"cabinet\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "box-cabinet-pond-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-box-pond-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-jar-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"jar\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-jar-drawer-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-shelf-chest-blue_feather",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-basket-chest-jade_coin",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-basket-chest-blue_feather",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "jar-drawer-basket-black_thread",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"basket\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "basket-shelf-pond-green_leaf",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"pond\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "drawer-cabinet-shelf-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"shelf\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "shelf-box-drawer-gold_bell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"drawer\"}}",
+          "token_accuracy": 1.0
+        },
+        {
+          "chain_id": "pond-jar-chest-white_shell",
+          "focus": "open",
+          "gist_exact": 1.0,
+          "position": 9,
+          "target": "{\"tool\": \"open\", \"args\": {\"place\": \"chest\"}}",
+          "token_accuracy": 1.0
+        }
+      ]
+    },
+    "zero_dose_identity": {
+      "identical": true,
+      "no_packet_text": "We need answer user's request: choose exactly one action as JSON, no markdown. We are at shelf. Allowed tools look, open, done. Places: shelf, box, drawer, pond, cabinet, basket, chest, jar. Need likely look at shelf first. So output {\"tool\":\"look\",\"args\":{\"",
+      "no_packet_token_ids": [
+        1596,
+        1144,
+        4087,
+        1156,
+        579,
+        1622,
+        25,
+        4992,
+        6681,
+        799,
+        1852,
+        430,
+        4566,
+        11,
+        874,
+        48794,
+        13,
+        1165,
+        513,
+        506,
+        26748,
+        13,
+        55688,
+        7141,
+        1353,
+        11,
+        1724,
+        11,
+        2725,
+        13,
+        43248,
+        25,
+        26748,
+        11,
+        3618,
+        11,
+        25635,
+        11,
+        34393,
+        11,
+        21245,
+        11,
+        13621,
+        11,
+        14697,
+        11,
+        28628,
+        13,
+        14235,
+        4222,
+        1353,
+        506,
+        26748,
+        1118,
+        13,
+        1987,
+        2468,
+        5046,
+        13766,
+        3147,
+        6975,
+        2129,
+        2048,
+        21624
+      ],
+      "packet_source": {
+        "focus": "look",
+        "position": 8
+      },
+      "zero_dose_text": "We need answer user's request: choose exactly one action as JSON, no markdown. We are at shelf. Allowed tools look, open, done. Places: shelf, box, drawer, pond, cabinet, basket, chest, jar. Need likely look at shelf first. So output {\"tool\":\"look\",\"args\":{\"",
+      "zero_dose_token_ids": [
+        1596,
+        1144,
+        4087,
+        1156,
+        579,
+        1622,
+        25,
+        4992,
+        6681,
+        799,
+        1852,
+        430,
+        4566,
+        11,
+        874,
+        48794,
+        13,
+        1165,
+        513,
+        506,
+        26748,
+        13,
+        55688,
+        7141,
+        1353,
+        11,
+        1724,
+        11,
+        2725,
+        13,
+        43248,
+        25,
+        26748,
+        11,
+        3618,
+        11,
+        25635,
+        11,
+        34393,
+        11,
+        21245,
+        11,
+        13621,
+        11,
+        14697,
+        11,
+        28628,
+        13,
+        14235,
+        4222,
+        1353,
+        506,
+        26748,
+        1118,
+        13,
+        1987,
+        2468,
+        5046,
+        13766,
+        3147,
+        6975,
+        2129,
+        2048,
+        21624
+      ]
+    }
+  },
+  "generated_at": "2026-08-16T19:06:54Z",
+  "git_head": "13a7ec92592e397de5c02eab61f558a6bf345bb4",
+  "host_machine": "smarty",
+  "lfm_hygiene": {
+    "lfm2_patch_state": null,
+    "lfm_modeling_modules": [],
+    "selector_instantiated": false
+  },
+  "model": {
+    "estimated_weight_gib": 52.0,
+    "hidden_size": 5120,
+    "layers": 64,
+    "model_id": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "stream_to_cuda": true
+  },
+  "placement": {
+    "deduplicated": false,
+    "fractions": [
+      0.29,
+      0.46,
+      0.63
+    ],
+    "layers": [
+      19,
+      29,
+      40
+    ],
+    "raw": [
+      19,
+      29,
+      40
+    ]
+  },
+  "registration": "tracks/goal-pursuit/PLAN.md, GF-27B bridge registration (2026-08-16 morning)",
+  "scan": {
+    "candidates": [
+      3,
+      11,
+      19,
+      27,
+      35,
+      43,
+      51,
+      59
+    ],
+    "prior_fraction": 0.79,
+    "prior_layer": 51,
+    "prior_note": "the depth-proportional prior carried down the ladder (the 0.8B tapped 19 of 24); the 230M's own scan later moved its tap to layer 12 of 14, which is why this rung scans",
+    "probe": {
+      "device": "cpu",
+      "learning_rate": 0.01,
+      "normalizer": "train-split centre + RMS",
+      "optimizer": "Adam, full batch",
+      "seed": 42,
+      "steps": 300
+    },
+    "rows": [
+      {
+        "depth_fraction": 0.0469,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 3,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.1719,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 11,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.2969,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 19,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.4219,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 27,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.5469,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 35,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.6719,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 43,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.7969,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": true,
+        "layer": 51,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      },
+      {
+        "depth_fraction": 0.9219,
+        "held_out_accuracy": 1.0,
+        "held_out_correct": 4,
+        "held_out_count": 4,
+        "held_out_predictions": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "held_out_truth": [
+          "look",
+          "look",
+          "open",
+          "open"
+        ],
+        "is_prior_layer": false,
+        "layer": 59,
+        "train_accuracy": 1.0,
+        "train_correct": 16,
+        "train_count": 16,
+        "train_loss": 0.0
+      }
+    ],
+    "selection_rule": "best held-out accuracy; ties by train accuracy, then by closeness to the recorded prior, then by shallower layer",
+    "source_layer": 51,
+    "wall_seconds": 20.562
+  },
+  "size": "27B",
+  "summary": {
+    "aux_held_out": "4/4",
+    "base_weights_unchanged": true,
+    "checkpoint_sha256": {
+      "constant": "63538c124011388c714c780c927a5d6ba3c74b5c5535f7a7ad28dedd3a6a99ae",
+      "focus": "ca951c55f3ee92b464ced526d084437fdb1be198faa2c78fe1ea9089a9eedb02"
+    },
+    "dose_halvings": 0,
+    "gradient_checkpointing_used": false,
+    "held_out_token_accuracy": {
+      "look": 1.0,
+      "open": 1.0
+    },
+    "inject_layers": [
+      19,
+      29,
+      40
+    ],
+    "prior_layer": 51,
+    "selected_is_prior": true,
+    "source_layer": 51,
+    "source_layer_depth_fraction": 0.7969,
+    "steps_cut_to_96": false,
+    "steps_run": 192,
+    "train_dose": 0.15,
+    "zero_dose_identical": true
+  },
+  "tokenizer": "Qwen/Qwen3.8-27B",
+  "track": "goal-pursuit",
+  "training": {
+    "batch": 8,
+    "constant": [
+      {
+        "grad_norm": 10.7494478225708,
+        "loss": 1.4413,
+        "step": 1,
+        "token_accuracy": 0.7978
+      },
+      {
+        "grad_norm": 0.020251700654625893,
+        "loss": 0.0265,
+        "step": 32,
+        "token_accuracy": 0.9853
+      },
+      {
+        "grad_norm": 0.006880516652017832,
+        "loss": 0.0134,
+        "step": 64,
+        "token_accuracy": 0.9853
+      },
+      {
+        "grad_norm": 0.0044116973876953125,
+        "loss": 0.0007,
+        "step": 96,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 0.006255231332033873,
+        "loss": 0.0105,
+        "step": 128,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 0.01228429190814495,
+        "loss": 0.0105,
+        "step": 160,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 0.008817130699753761,
+        "loss": 0.0076,
+        "step": 192,
+        "token_accuracy": 0.9926
+      }
+    ],
+    "constant_wall_seconds": 649.818,
+    "focus": [
+      {
+        "grad_norm": 12.449990272521973,
+        "loss": 2.1173,
+        "step": 1,
+        "token_accuracy": 0.7891
+      },
+      {
+        "grad_norm": 0.00013375119306147099,
+        "loss": 0.0,
+        "step": 32,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 7.939300849102437e-05,
+        "loss": 0.0,
+        "step": 64,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 1.1539475963218138e-05,
+        "loss": 0.0,
+        "step": 96,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 1.629758844501339e-05,
+        "loss": 0.0,
+        "step": 128,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 9.06745481188409e-06,
+        "loss": 0.0,
+        "step": 160,
+        "token_accuracy": 1.0
+      },
+      {
+        "grad_norm": 9.908357242238708e-06,
+        "loss": 0.0,
+        "step": 192,
+        "token_accuracy": 1.0
+      }
+    ],
+    "focus_wall_seconds": 650.989,
+    "grad_clip": 1.0,
+    "gradient_checkpointing": {
+      "caveat": "the injection hook advances its bank offset per call, so a recomputed segment reads different offsets than the original forward; gradients under checkpointing are approximate. Recorded, not designed around.",
+      "disabled_before_gates": false,
+      "enabled": false,
+      "recovered": false,
+      "triggered": false,
+      "use_cache_before": true
+    },
+    "inject_layers": [
+      19,
+      29,
+      40
+    ],
+    "injection": "conditioned",
+    "learning_rate": 0.003,
+    "note": "run_g1's recipe as gf_focus reproduces it, with the FOCUS bridge in the goal bridge's slot and the constant bridge second on one rng stream; goal_text=None throughout for both bridges (GF's registered deviation, carried); the auxiliary head is a 2-way focus classifier on the bus; done is never a training target for the focus bridge",
+    "registered_steps": 192,
+    "requested_steps": 192,
+    "seed": 42,
+    "steps_cut_to_96": false,
+    "steps_run": 192,
+    "train_dose": 0.15,
+    "wall_projection": {
+      "budget_hours": 10.0,
+      "cut": false,
+      "measured_at_step": 8,
+      "projected_total_hours": 0.362,
+      "projected_total_seconds": 1303.4,
+      "seconds_per_step": 3.394,
+      "steps_after": 192,
+      "steps_before": 192
+    },
+    "weight_decay": 0.0
+  },
+  "training_wall_seconds": 1332.522,
+  "wall_seconds": 1375.752
+}
