@@ -533,6 +533,35 @@ the headline's strongest clause, which is what it is for. Artifacts: the per-see
 \texttt{goal-pursuit-gf-27b-bridge-s*}, \texttt{gf-27b-eval-s*} and
 \texttt{gf3-27b-s*} files under \texttt{findings/}.
 
+\section*{Addendum (2026-08-21, morning): three overnight cells}
+
+\emph{The door test at 27B, three seeds.} Door seeds 1042 and 2042
+reproduce the first: with the referent in the pair the prefix door
+follows it 1.00/1.00/1.00 and the bus door 0.50/0.60/0.50; in
+the conflict cell the prefix wins 59 of
+60 against the bus's 0.
+The asymmetry of Section~2 is not close at scale.
+\emph{A contrary prompt.} The packet's claim to independence from
+the client's text was measured where it bites: the OPEN packet against
+a prompt saying look first. Mean open share across the three door
+seeds --- habit 0.25, hostile text alone
+0.21, packet alone 0.74,
+packet with the hostile text 0.46, packet
+with congruent text 0.87. The packet keeps
+about half its lean against a contrary instruction at equal dose
+(ownership 0.55/0.71/0.33 by seed, 0.53 pooled) and adds to an
+agreeing one. The two doors share the decision; neither erases the
+other. \emph{The drive is necessary.} At 230M the prefix door with no
+packet at all --- hooks disarmed --- scores 0.0/0.0/0.0: the model looks
+at every tick and never acts on the resident referent. Over the
+goal-exchange constant it scores 1.00; over a goal-exchange constant
+trained first in a fresh stream 0.6/1.0/1.0; over the focus-exchange
+constant 0.63. The prefix pins the referent and the drive supplies the
+doing; a resident want with no drive under it is a thought the model
+never acts on. Artifacts \texttt{goal-pursuit-g6-27b-s*},
+\texttt{goal-pursuit-gfh-27b*}, \texttt{goal-pursuit-gf3r-d-230m}
+under \texttt{findings/}.
+
 \section{Reproducibility}
 
 Every number renders from the bundled artifacts; the figure and tables
