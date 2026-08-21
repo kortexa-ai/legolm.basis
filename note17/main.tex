@@ -51,9 +51,11 @@ matching instruction text (0.683 vs
 both doors at once: the goal through the prefix, the manner through
 the bus, on the frozen 27B --- the mix swings to the focused tool
 (open 0.20\,$\to$\,0.70)
-while the errand completes at prefix-only's level (0.9 /
-1.0 / 0.8), the
-cost of style paid in ticks, the doors physically disjoint. In one
+while the errand still completes (0.9 /
+1.0 / 0.8 on the
+first door seed; across three door seeds the OPEN packet costs about
+one errand in five, 0.97\,$\to$\,0.77, while
+the mix swing replicates at every seed), the doors physically disjoint. In one
 sentence, honestly flagged as an analogy: tell a big-enough model what
 you want at the front door and how you want it done through the side
 door, and it does both --- a small one can only be told how, and then
@@ -381,11 +383,12 @@ prefix + LOOK & 1.00 & 5.60 & 1.0/0.0 & 0.64/0.18/0.18 & 1/0/9 & +0.44 \\
 prefix + OPEN & 0.80 & 5.88 & 0.2/0.8 & 0.17/0.70/0.13 & 0/1/9 & +0.75 \\
 \bottomrule
 \end{tabular}
-\caption{GF-3 at 27B: the goal in the prefix, the manner on the bus,
-ten chains. Success holds at prefix-only's level while the mix and the
-first tick follow the packet; the paired columns compare each packet
-arm against prefix-only chain by chain (ticks over chains both arms
-solved).}
+\caption{GF-3 at 27B, door seed 42 (the first of three; see the
+addendum for seeds 1042 and 2042): the goal in the prefix, the manner
+on the bus, ten chains. On this seed success holds at prefix-only's
+level while the mix and the first tick follow the packet; the paired
+columns compare each packet arm against prefix-only chain by chain
+(ticks over chains both arms solved).}
 \label{tab:gf3}
 \end{table}
 
@@ -419,7 +422,8 @@ natively: the host tolerates the full dose, reads the focus at every
 depth, and leans instead of gripping, the bus door now equal to
 instruction text without any text. And the two doors compose on the
 frozen 27B: the goal resident in the prefix, the manner on the bus,
-behavior taking the style while the want survives. The program's
+behavior taking the style while the want survives --- at a price,
+across three door seeds, of about one errand in five (the addendum). The program's
 arbitration thesis~\cite{penov2026onestage} --- one stage, one act
 --- gains its first two-door positive at the scale the promotion
 principle names, with the mechanism that makes it clean: the doors
@@ -499,6 +503,35 @@ asymmetry is not a small-host artifact: at 27B the prefix door IS the
 text door, the bus carries no noun, and the referent that acts is the
 one that entered at the input. Artifact
 \texttt{findings/goal-pursuit-g6-27b.json}.
+
+\section*{Addendum (2026-08-20, night): two more door seeds at 27B}
+
+Every 27B number above came from one door seed, stated as the
+standing limitation; door seeds 1042 and 2042 were then trained by
+the identical recipe and the eval and GF-3 re-run verbatim. The lean
+replicates at every seed: under the OPEN packet the open share goes
+from 0.24/0.22/0.29 (habit) to 0.68/0.70/0.82 (packet),
+against text at 0.67/0.78/0.73, done alive throughout. One dissent is recorded:
+seed 2042's LOOK door is mis-directed (look share falls under its own
+packet), a door-quality failure at the gate's one non-1.00 held-out
+number. The composition does NOT replicate at the registered
+tolerance. The mix swing is seed-robust --- with the goal resident,
+the OPEN packet moves open from 0.20/0.22/0.28 to
+0.70/0.75/0.73 --- but it costs the errand at every seed:
+success 0.9/1.0/1.0 under prefix-only becomes 0.8/0.7/0.8
+under the OPEN packet (LOOK: 1.0/1.0/0.8), pooled
+0.97\,$\to$\,0.77; chain by chain the OPEN
+packet hurts 6 of 30 and helps 0, LOOK hurts
+2 and helps 1. Section~6's ``the cost of
+style is ticks, not goals'' was the first seed's luck; across three
+the cost is goals too --- small, consistent, one-directional. The
+corrected claim: at 27B the want survives the packet
+(0.77 against the 230M grip's 0.03) and takes the style,
+which is composition in the sense creature scale never shows, at a
+price of about one errand in five. The registered replicate reversed
+the headline's strongest clause, which is what it is for. Artifacts: the per-seed
+\texttt{goal-pursuit-gf-27b-bridge-s*}, \texttt{gf-27b-eval-s*} and
+\texttt{gf3-27b-s*} files under \texttt{findings/}.
 
 \section{Reproducibility}
 
